@@ -1,0 +1,12 @@
+Starting negotiation session.
+Round 1
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(mun. & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Accept)
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Big, Park: Small, Functionality: Commercial, ])
+Round 2
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Accept)
+  Turn 3: Party 3       (Accept)
+Found an agreement: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: Small, Functionality: Farming, ]
+Finished negotiation session in 0,022s
+Error: could not log session details
