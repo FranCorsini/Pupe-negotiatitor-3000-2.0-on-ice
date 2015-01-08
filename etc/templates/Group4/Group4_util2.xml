@@ -46,13 +46,13 @@
 <item evaluation="3" index="4" value="Industrial"> 
 </item> 
 </issue> 
-<weight index="1" value="0.39736796709579675"> 
+<weight index="1" value="0.3994956098112737"> 
 </weight> 
-<weight index="2" value="0.2037102841177518"> 
+<weight index="2" value="0.20127359161872238"> 
 </weight> 
-<weight index="3" value="0.10210311117401087"> 
+<weight index="3" value="0.10010539891020352"> 
 </weight> 
-<weight index="4" value="0.29681863761244065"> 
+<weight index="4" value="0.29912539965980045"> 
 </weight> 
 </objective> 
 <discount_factor value="1.0"> 

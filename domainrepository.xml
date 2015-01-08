@@ -15,10 +15,10 @@
                 <profile url="file:etc/templates/partydomain/party8_utility.xml"/>
                 <profile url="file:etc/templates/partydomain/party9_utility.xml"/>
             </domainRepItem>
-            <domainRepItem url="file:etc/templates/Group 4/Group 4.xml">
-                <profile url="file:etc/templates/Group 4/Group 4_util3.xml"/>
-                <profile url="file:etc/templates/Group 4/Group 4_util4.xml"/>
-                <profile url="file:etc/templates/Group 4/Group 4_util5.xml"/>
+            <domainRepItem url="file:etc/templates/Group4/Group4.xml">
+                <profile url="file:etc/templates/Group4/Group4_util1.xml"/>
+                <profile url="file:etc/templates/Group4/Group4_util2.xml"/>
+                <profile url="file:etc/templates/Group4/Group4_util3.xml"/>
             </domainRepItem>
         </domainRepItem>
         <protocolRepItem/>
