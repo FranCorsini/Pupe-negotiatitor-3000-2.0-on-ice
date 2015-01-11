@@ -51,8 +51,7 @@ public class Groupn extends AbstractNegotiationParty {
 		// with 50% chance, counter offer
 		// if we are the first party, also offer.
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
-			
-			BidGenerator bidGenerator = new BidGenerator();
+			BidGenerator bidGenerator = new BidGenerator(threshold);
 			//do something to get the bid as answer
 			
 			//placeholder to get answer
@@ -85,5 +84,24 @@ public class Groupn extends AbstractNegotiationParty {
 		
 		
 	}
+
+	public Double getCurrentUtility() {
+		return currentUtility;
+	}
+
+	public void setCurrentUtility(Double currentUtility) {
+		this.currentUtility = currentUtility;
+	}
+
+	public Double getThreshold() {
+		return threshold;
+	}
+
+	public void setThreshold(Double threshold) {
+		this.threshold = threshold;
+	}
+	
+	
+	
 
 }

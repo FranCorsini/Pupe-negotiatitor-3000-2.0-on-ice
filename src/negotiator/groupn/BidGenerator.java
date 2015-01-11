@@ -4,9 +4,10 @@ import negotiator.Bid;
 
 public class BidGenerator {
 
-	
-	public BidGenerator(){
-		
+	private Double threshold;
+
+	public BidGenerator(Double tempThreshold) {
+		threshold = tempThreshold;
 	}
 	
 }
