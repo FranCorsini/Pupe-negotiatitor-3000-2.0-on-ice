@@ -12,27 +12,33 @@ import negotiator.utility.UtilitySpace;
 public class Party {
 
 	private String name;
-	private List<Issue> issues;
+	private List<IssueModel> issueModels;
 	
 	public Party(String name,UtilitySpace utility){
 		this.name = name;
-		createIssues(utility);
+		createIssueModels(utility);
 		setInitialWeights();
 	}
 	
-	private void createIssues(UtilitySpace utility){
+	private void createIssueModels(UtilitySpace utility){
+		int i = 0;
 		for( Entry<Objective, Evaluator> e : utility.getEvaluators()) {
-			String issueName = e.getKey().getName().toString();
-			Issue iss = new Issue(issueName);
-			issues.add(iss);
+			String IssueModelName = e.getKey().getName().toString();
+			IssueModel iss = new IssueModel(IssueModelName,i);
+			issueModels.add(iss);
+			
+			//for ( ){
+			//need to populate the discrete values here
+			//}
+			i++;
 		}
 	}
 	
 	private void setInitialWeights(){
-		int n = issues.size();
+		int n = issueModels.size();
 		float averageweight = 1/n;
 		for (int i = 0; i < n; i++){
-			issues.get(i).setValue(averageweight);
+			issueModels.get(i).setValue(averageweight);
 		}
 	}
 	
@@ -41,6 +47,11 @@ public class Party {
 	}
 	
 	public Double estimateUtility(Bid b){
+		
+		for ( int i = 0; i< issueModels.size(); i++){
+			//b.getIssues().get(i).
+			//TODO
+		}
 		Double d = null;
 		
 		return d;
