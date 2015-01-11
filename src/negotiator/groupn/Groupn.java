@@ -79,10 +79,7 @@ public class Groupn extends AbstractNegotiationParty {
 	@Override
 	public void receiveMessage(Object sender, Action action) {
 		
-		//get answer from offerevaluator
-		OfferEvaluator offerEvaluator = new OfferEvaluator();
 		
-		//placeholder
 		Bid b = Action.getBidFromAction(action);
 		currentUtility = getUtility(b);
 		
