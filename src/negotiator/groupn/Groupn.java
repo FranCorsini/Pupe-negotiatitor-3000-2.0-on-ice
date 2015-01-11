@@ -26,7 +26,7 @@ public class Groupn extends AbstractNegotiationParty {
 
 	private Bid highestBid;
 	private Bid lastGivenBid;
-	private List<Groupn> parties;
+	private ArrayList<String> parties = new ArrayList<String>();
 	
 	private ArrayList<String> issues = new ArrayList<String>();
 
@@ -50,7 +50,6 @@ public class Groupn extends AbstractNegotiationParty {
 		for( Entry<Objective, Evaluator> e : utilitySpace.getEvaluators()) {
 			issues.add(e.getKey().getName());
 		}
-		
 		
 	}
 
@@ -95,6 +94,10 @@ public class Groupn extends AbstractNegotiationParty {
 	 */
 	@Override
 	public void receiveMessage(Object sender, Action action) {
+		
+		if (!parties.contains(sender.toString())){
+			parties.add(sender.toString());
+		}
 		
 		if(action instanceof Offer){
 			lastGivenBid = Action.getBidFromAction(action);
