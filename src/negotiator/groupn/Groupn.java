@@ -85,13 +85,10 @@ public class Groupn extends AbstractNegotiationParty {
 		
 		if(action instanceof Offer){
 			lastGivenBid = Action.getBidFromAction(action);
+			currentUtility = getUtility(lastGivenBid);
+			updateHighestBid(lastGivenBid);
 		}
 		
-		
-		Bid b = Action.getBidFromAction(action);
-		currentUtility = getUtility(b);
-		
-		updateHighestBid(b);
 		
 	}
 
