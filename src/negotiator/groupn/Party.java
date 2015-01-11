@@ -16,7 +16,6 @@ public class Party {
 	
 	public Party(String name,UtilitySpace utility){
 		this.name = name;
-		//create issues
 		createIssues(utility);
 		setInitialWeights();
 	}
