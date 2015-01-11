@@ -19,6 +19,7 @@ public class Groupn extends AbstractNegotiationParty {
 	
 	private Double currentUtility = 0.0;
 	private Double threshold = 0.6;
+	private Bid highestBid;
 	
 	/**
 	 * Please keep this constructor. This is called by genius.
@@ -51,7 +52,7 @@ public class Groupn extends AbstractNegotiationParty {
 		// with 50% chance, counter offer
 		// if we are the first party, also offer.
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
-			BidGenerator bidGenerator = new BidGenerator(threshold);
+			BidGenerator bidGenerator = new BidGenerator(this);
 			//do something to get the bid as answer
 			
 			//placeholder to get answer
@@ -68,6 +69,8 @@ public class Groupn extends AbstractNegotiationParty {
 	}
 
 
+
+
 	/**
 	 * All offers proposed by the other parties will be received as a message.
 	 * You can use this information to your advantage, for example to predict their utility.
@@ -78,13 +81,21 @@ public class Groupn extends AbstractNegotiationParty {
 	@Override
 	public void receiveMessage(Object sender, Action action) {
 		
-		
 		Bid b = Action.getBidFromAction(action);
 		currentUtility = getUtility(b);
 		
+		updateHighestBid(b);
 		
 	}
 
+	private void updateHighestBid(Bid b){
+		//TODO it check if it is the highest and in caser it updates it
+	}
+	
+	
+	
+	//*******GETTER AND SETTER********
+	
 	public Double getCurrentUtility() {
 		return currentUtility;
 	}
@@ -101,7 +112,13 @@ public class Groupn extends AbstractNegotiationParty {
 		this.threshold = threshold;
 	}
 	
-	
+	public Bid getHighestBid() {
+		return highestBid;
+	}
+
+	public void setHighestBid(Bid highestBid) {
+		this.highestBid = highestBid;
+	}
 	
 
 }
