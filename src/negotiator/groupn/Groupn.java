@@ -34,6 +34,8 @@ public class Groupn extends AbstractNegotiationParty {
 				  long randomSeed) {
 		// Make sure that this constructor calls it's parent.
 		super(utilitySpace, deadlines, timeline, randomSeed);
+		
+		
 	}
 
 	/**
@@ -49,6 +51,11 @@ public class Groupn extends AbstractNegotiationParty {
 		// with 50% chance, counter offer
 		// if we are the first party, also offer.
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
+			
+			BidGenerator bidGenerator = new BidGenerator();
+			//do something to get the bid as answer
+			
+			//placeholder to get answer
 			Bid b=generateRandomBid();
 			while (currentUtility<threshold) {
 				b = generateRandomBid();
@@ -71,6 +78,11 @@ public class Groupn extends AbstractNegotiationParty {
 	 */
 	@Override
 	public void receiveMessage(Object sender, Action action) {
+		
+		//get answer from offerevaluator
+		OfferEvaluator offerEvaluator = new OfferEvaluator();
+		
+		//placeholder
 		Bid b = Action.getBidFromAction(action);
 		currentUtility = getUtility(b);
 		
