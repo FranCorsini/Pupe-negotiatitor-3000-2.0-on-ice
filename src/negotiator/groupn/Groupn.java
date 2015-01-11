@@ -1,7 +1,9 @@
 package negotiator.groupn;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import negotiator.Bid;
 import negotiator.DeadlineType;
@@ -9,7 +11,9 @@ import negotiator.Timeline;
 import negotiator.actions.Accept;
 import negotiator.actions.Action;
 import negotiator.actions.Offer;
+import negotiator.issue.Objective;
 import negotiator.parties.AbstractNegotiationParty;
+import negotiator.utility.Evaluator;
 import negotiator.utility.UtilitySpace;
 
 /**
@@ -19,9 +23,13 @@ public class Groupn extends AbstractNegotiationParty {
 	
 	private Double currentUtility = 0.0;
 	private Double threshold = 0.6;
+
 	private Bid highestBid;
 	private Bid lastGivenBid;
 	private List<Groupn> parties;
+	
+	private ArrayList<String> issues = new ArrayList<String>();
+
 	
 	/**
 	 * Please keep this constructor. This is called by genius.
@@ -37,6 +45,11 @@ public class Groupn extends AbstractNegotiationParty {
 				  long randomSeed) {
 		// Make sure that this constructor calls it's parent.
 		super(utilitySpace, deadlines, timeline, randomSeed);
+		
+		// Get issues
+		for( Entry<Objective, Evaluator> e : utilitySpace.getEvaluators()) {
+			issues.add(e.getKey().getName());
+		}
 		
 		
 	}
