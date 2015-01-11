@@ -17,23 +17,24 @@ public class Party {
 	public Party(String name, Domain domain){
 		this.name = name;
 		createIssueModels(domain);
-		//setInitialWeights();
+		setInitialWeights();
 	}
 	
 	private void createIssueModels(Domain domain){		
-		for (Issue i : domain.getIssues()) {
-			List<ValueDiscrete> values = ((IssueDiscrete) i).getValues();
-			issueModels.add(new IssueModel(i.getName(), values));
+		for (Issue issue : domain.getIssues()) {
+			List<ValueDiscrete> values = ((IssueDiscrete) issue).getValues();
+			issueModels.add(new IssueModel(issue.getName(), values));
 		}
 	}
 	
-//	private void setInitialWeights(){
-//		int n = issueModels.size();name = tempName;
-//		float averageweight = 1/n;
-//		for (int i = 0; i < n; i++){
-//			issueModels.get(i).setValue(averageweight);
-//		}
-//	}
+	private void setInitialWeights(){
+		int n = issueModels.size();
+		double averageWeight = 1/n;
+		
+		for (IssueModel issue : issueModels) {
+			issue.setValue(averageWeight);
+		}
+	}
 	
 	public void updateWithBid(Bid bid,Action action){
 		//TODO update somehow the expected weighs

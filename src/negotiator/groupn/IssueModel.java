@@ -7,7 +7,7 @@ import negotiator.issue.ValueDiscrete;
 public class IssueModel{
 
 	private List<ValueDiscrete> values;
-	private float value;
+	private double value;
 	private String name;
 	
 	public IssueModel(String name, List<ValueDiscrete> values){
@@ -15,11 +15,11 @@ public class IssueModel{
 		this.values = values;
 	}
 	
-	public void setValue(float a){
+	public void setValue(double a){
 		value = a;
 	}
 	
-	public float getValue(){
+	public double getValue(){
 		return value;
 	}
 
