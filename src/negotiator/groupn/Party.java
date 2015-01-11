@@ -1,46 +1,39 @@
 package negotiator.groupn;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map.Entry;
 
 import negotiator.Bid;
+import negotiator.Domain;
 import negotiator.actions.Action;
-import negotiator.issue.Objective;
-import negotiator.utility.Evaluator;
-import negotiator.utility.UtilitySpace;
+import negotiator.issue.Issue;
+import negotiator.issue.IssueDiscrete;
+import negotiator.issue.ValueDiscrete;
 
 public class Party {
 
 	private String name;
-	private List<IssueModel> issueModels;
+	private ArrayList<IssueModel> issueModels = new ArrayList<IssueModel>();
 	
-	public Party(String name,UtilitySpace utility){
+	public Party(String name, Domain domain){
 		this.name = name;
-		createIssueModels(utility);
-		setInitialWeights();
+		createIssueModels(domain);
+		//setInitialWeights();
 	}
 	
-	private void createIssueModels(UtilitySpace utility){
-		int i = 0;
-		for( Entry<Objective, Evaluator> e : utility.getEvaluators()) {
-			String IssueModelName = e.getKey().getName().toString();
-			IssueModel iss = new IssueModel(IssueModelName,i);
-			issueModels.add(iss);
-			
-			//for ( ){
-			//need to populate the discrete values here
-			//}
-			i++;
+	private void createIssueModels(Domain domain){		
+		for (Issue i : domain.getIssues()) {
+			List<ValueDiscrete> values = ((IssueDiscrete) i).getValues();
+			issueModels.add(new IssueModel(i.getName(), values));
 		}
 	}
 	
-	private void setInitialWeights(){
-		int n = issueModels.size();
-		float averageweight = 1/n;
-		for (int i = 0; i < n; i++){
-			issueModels.get(i).setValue(averageweight);
-		}
-	}
+//	private void setInitialWeights(){
+//		int n = issueModels.size();name = tempName;
+//		float averageweight = 1/n;
+//		for (int i = 0; i < n; i++){
+//			issueModels.get(i).setValue(averageweight);
+//		}
+//	}
 	
 	public void updateWithBid(Bid bid,Action action){
 		//TODO update somehow the expected weighs

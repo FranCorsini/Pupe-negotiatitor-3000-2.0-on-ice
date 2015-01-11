@@ -1,17 +1,18 @@
 package negotiator.groupn;
 
-import negotiator.issue.ISSUETYPE;
-import negotiator.issue.Issue;
-import negotiator.issue.Value;
-import negotiator.utility.EvaluatorDiscrete;
+import java.util.List;
 
-public class IssueModel extends EvaluatorDiscrete{
+import negotiator.issue.ValueDiscrete;
 
-	private String name;
+public class IssueModel{
+
+	private List<ValueDiscrete> values;
 	private float value;
+	private String name;
 	
-	public IssueModel(String tempName){
-		name = tempName;
+	public IssueModel(String name, List<ValueDiscrete> values){
+		this.name = name;
+		this.values = values;
 	}
 	
 	public void setValue(float a){
