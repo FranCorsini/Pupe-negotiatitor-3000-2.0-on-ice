@@ -3,6 +3,7 @@ package negotiator.groupn;
 import java.util.List;
 import java.util.Map;
 
+import negotiator.Bid;
 import negotiator.DeadlineType;
 import negotiator.Timeline;
 import negotiator.actions.Accept;
@@ -15,14 +16,17 @@ import negotiator.utility.UtilitySpace;
  * This is your negotiation party.
  */
 public class Groupn extends AbstractNegotiationParty {
-
+	
+	private Double currentUtility = 0.0;
+	private Double threshold = 0.6;
+	
 	/**
 	 * Please keep this constructor. This is called by genius.
 	 *
 	 * @param utilitySpace Your utility space.
 	 * @param deadlines The deadlines set for this negotiation.
 	 * @param timeline Value counting from 0 (start) to 1 (end).
-	 * @param randomSeed If you use any randomization, use this seed for it.
+	 * @param randomSeed If you use any randomisation, use this seed for it.
 	 */
 	public Groupn(UtilitySpace utilitySpace,
 				  Map<DeadlineType, Object> deadlines,
@@ -44,8 +48,13 @@ public class Groupn extends AbstractNegotiationParty {
 
 		// with 50% chance, counter offer
 		// if we are the first party, also offer.
-		if (!validActions.contains(Accept.class) || Math.random() > 0.5) {
-			return new Offer(generateRandomBid());
+		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
+			Bid b=generateRandomBid();
+			while (currentUtility<threshold) {
+				b = generateRandomBid();
+				currentUtility=getUtility(b);
+			}
+			return new Offer(b);
 		}
 		else {
 			return new Accept();
@@ -62,7 +71,10 @@ public class Groupn extends AbstractNegotiationParty {
 	 */
 	@Override
 	public void receiveMessage(Object sender, Action action) {
-		// Here you can listen to other parties' messages		
+		Bid b = Action.getBidFromAction(action);
+		currentUtility = getUtility(b);
+		
+		
 	}
 
 }
