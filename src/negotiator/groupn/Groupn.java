@@ -131,6 +131,22 @@ public class Groupn extends AbstractNegotiationParty {
 	public void setHighestBid(Bid highestBid) {
 		this.highestBid = highestBid;
 	}
+
+	public Bid getLastGivenBid() {
+		return lastGivenBid;
+	}
+
+	public void setLastGivenBid(Bid lastGivenBid) {
+		this.lastGivenBid = lastGivenBid;
+	}
+
+	public HashMap<String, Party> getParties() {
+		return parties;
+	}
+
+	public void setParties(HashMap<String, Party> parties) {
+		this.parties = parties;
+	}
 	
 
 }
