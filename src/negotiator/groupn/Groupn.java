@@ -20,6 +20,8 @@ public class Groupn extends AbstractNegotiationParty {
 	private Double currentUtility = 0.0;
 	private Double threshold = 0.6;
 	private Bid highestBid;
+	private Bid lastGivenBid;
+	private List<Groupn> parties;
 	
 	/**
 	 * Please keep this constructor. This is called by genius.
@@ -81,6 +83,11 @@ public class Groupn extends AbstractNegotiationParty {
 	@Override
 	public void receiveMessage(Object sender, Action action) {
 		
+		if(action instanceof Offer){
+			lastGivenBid = Action.getBidFromAction(action);
+		}
+		
+		
 		Bid b = Action.getBidFromAction(action);
 		currentUtility = getUtility(b);
 		
@@ -89,7 +96,7 @@ public class Groupn extends AbstractNegotiationParty {
 	}
 
 	private void updateHighestBid(Bid b){
-		//TODO it check if it is the highest and in caser it updates it
+		//TODO it check if it is the highest and in case update it
 	}
 	
 	
