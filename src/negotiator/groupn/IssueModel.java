@@ -10,7 +10,7 @@ public class IssueModel extends EvaluatorDiscrete{
 	private String name;
 	private float value;
 	
-	public IssueModel(String tempName, int n){
+	public IssueModel(String tempName){
 		name = tempName;
 	}
 	
