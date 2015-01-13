@@ -32,6 +32,8 @@ public class Groupn extends AbstractNegotiationParty {
 	private HashMap<String, Party> parties = new HashMap<String, Party>();
 	private HashMap<Bid, Double> possibleBids = new HashMap<Bid, Double>();
 	private ArrayList<List<ValueDiscrete>> values = new ArrayList<List<ValueDiscrete>>(); 
+	private BidGenerator bidGenerator;
+	private boolean isFirstturn;
 	
 
 	
@@ -49,21 +51,27 @@ public class Groupn extends AbstractNegotiationParty {
 				  long randomSeed) {
 		// Make sure that this constructor calls it's parent.
 		super(utilitySpace, deadlines, timeline, randomSeed);
+		
+		//it's the first turn
+		isFirstturn = true;
+		
+		
 		for (Issue issue : utilitySpace.getDomain().getIssues()) {
 			values.add(((IssueDiscrete) issue).getValues());	
 		}
-		
 		possibleBids = generatePossibleBids(utilitySpace.getDomain());
+		
+		//creates the generator
+		bidGenerator = new BidGenerator(this, possibleBids);
 	}
+	
+	
 	
 	private HashMap<Bid, Double> generatePossibleBids(Domain domain) {
 		HashMap<Bid, Double> bids = new HashMap<Bid, Double>();
-		
 		ArrayList<Issue> issues = domain.getIssues();
 		for (int i = 0; i < issues.size(); i++) {
-			
 		}
-		
 		return bids;
 	}
 	
@@ -81,14 +89,21 @@ public class Groupn extends AbstractNegotiationParty {
 		// with 50% chance, counter offer
 		// if we are the first party, also offer.
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
-			BidGenerator bidGenerator = new BidGenerator(this);
-			//do something to get the bid as answer
+			Bid b = null;
+			//if it's first turn, get out with best possible bid
+			if(isFirstturn == true){
+				b= bidGenerator.generateBid();
+				isFirstturn = false;
+			}
 			
-			//placeholder to get answer
-			Bid b=generateRandomBid();
-			while (currentUtility<threshold) {
-				b = generateRandomBid();
-				currentUtility=getUtility(b);
+			
+			//do something to get the bid as answer
+			else{
+				//placeholder to get answer
+				while (currentUtility<threshold) {
+					b = generateRandomBid();
+					currentUtility=getUtility(b);
+				}
 			}
 			return new Offer(b);
 		}
@@ -96,7 +111,6 @@ public class Groupn extends AbstractNegotiationParty {
 			return new Accept();
 		}
 	}
-
 
 
 
