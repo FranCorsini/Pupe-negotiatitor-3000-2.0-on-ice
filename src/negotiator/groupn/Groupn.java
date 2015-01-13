@@ -92,20 +92,19 @@ public class Groupn extends AbstractNegotiationParty {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
 			if(isFirstturn == true){
-				b= bidGenerator.generateBid();
+				b= bidGenerator.generateBestOverallBid();
 				isFirstturn = false;
 			}
 			
-			
 			//do something to get the bid as answer
 			else{
-				//placeholder to get answer
-				while (currentUtility<threshold) {
-					b = generateRandomBid();
-					currentUtility=getUtility(b);
-				}
+				//it generates the best not used bid
+				b = bidGenerator.generateBestNotAlredyUsedBid();
 			}
+			
 			return new Offer(b);
+					
+			
 		}
 		else {
 			return new Accept();
@@ -123,6 +122,11 @@ public class Groupn extends AbstractNegotiationParty {
 	 */
 	@Override
 	public void receiveMessage(Object sender, Action action) {
+		
+		//if you recieve an offer it means you are not the first to play
+		if (isFirstturn == true){
+			isFirstturn = false;
+		}
 		
 		if (!parties.containsKey(sender.toString())){
 			Party party = new Party(sender.toString(), utilitySpace.getDomain());

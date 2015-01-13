@@ -17,8 +17,8 @@ public class BidGenerator {
 	private Bid highestBid;
 	private Groupn groupn;
 	private HashMap<String, Party> parties = new HashMap<String,Party>();
-	private HashMap<Bid,Double> bidMap = new HashMap<Bid,Double>();
-	private ArrayList<Bid> alredyUsedBids = new ArrayList<Bid>();
+	private HashMap<Bid,Double> bidMap = new HashMap<Bid,Double>(); //unused bids
+	private HashMap<Bid,Double> alredyUsedBids = new HashMap<Bid,Double>();
 	
 
 	public BidGenerator(Groupn temp, HashMap<Bid,Double> map) {
@@ -29,10 +29,27 @@ public class BidGenerator {
 		bidMap = map;
 	}
 	
-	//standard bid: it gets the best one
-	public Bid generateBid(){
+	/*
+	 * The best overall bid(even those alredy offered)
+	 */
+	public Bid generateBestOverallBid(){
+		Bid bestBid = null;
+		
+		if(alredyUsedBids.size() == 0){
+			bestBid = getBestUtilityBid(bidMap);
+		}
+		else {
+			bestBid = getBestUtilityBid(alredyUsedBids);
+		}
+		
+		return bestBid;
+	}
+	
+	/*
+	 * The best not already offered bid
+	 */
+	public Bid generateBestNotAlredyUsedBid(){
 		Bid bestBid = getBestUtilityBid(bidMap);
-		alredyUsedBids.add(bestBid);
 		return bestBid;
 	}
 	
@@ -43,7 +60,6 @@ public class BidGenerator {
 		bids = getBidsWithCondition(indexOfIssue,valueOfIssue);
 		
 		Bid bestBid = getBestUtilityBid(bids);
-		alredyUsedBids.add(bestBid);
 		return bestBid;
 	}
 	
@@ -59,7 +75,6 @@ public class BidGenerator {
 		}
 		
 		Bid bestBid = getBestUtilityBid(bids);
-		alredyUsedBids.add(bestBid);
 		return bestBid;
 	}
 	
@@ -72,6 +87,12 @@ public class BidGenerator {
 				bestUtility = e.getValue();
 				bestBid = e.getKey();
 			}
+		}
+		
+		//updates in alredy used(if not alredy used)
+		if(!(bids.equals(alredyUsedBids))){
+			alredyUsedBids.put(bestBid, bestUtility);
+			bidMap.remove(bestBid);
 		}
 		return bestBid;
 		
