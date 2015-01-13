@@ -1,15 +1,21 @@
 package negotiator.groupn;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import negotiator.Bid;
 import negotiator.DeadlineType;
+import negotiator.Domain;
 import negotiator.Timeline;
 import negotiator.actions.Accept;
 import negotiator.actions.Action;
 import negotiator.actions.Offer;
+import negotiator.issue.Issue;
+import negotiator.issue.IssueDiscrete;
+import negotiator.issue.Value;
+import negotiator.issue.ValueDiscrete;
 import negotiator.parties.AbstractNegotiationParty;
 import negotiator.utility.UtilitySpace;
 
@@ -24,6 +30,8 @@ public class Groupn extends AbstractNegotiationParty {
 	private Bid highestBid;
 	private Bid lastGivenBid;
 	private HashMap<String, Party> parties = new HashMap<String, Party>();
+	private HashMap<Bid, Double> possibleBids = new HashMap<Bid, Double>();
+	private ArrayList<List<ValueDiscrete>> values = new ArrayList<List<ValueDiscrete>>(); 
 	
 
 	
@@ -41,8 +49,24 @@ public class Groupn extends AbstractNegotiationParty {
 				  long randomSeed) {
 		// Make sure that this constructor calls it's parent.
 		super(utilitySpace, deadlines, timeline, randomSeed);
+		for (Issue issue : utilitySpace.getDomain().getIssues()) {
+			values.add(((IssueDiscrete) issue).getValues());	
+		}
 		
+		possibleBids = generatePossibleBids(utilitySpace.getDomain());
 	}
+	
+	private HashMap<Bid, Double> generatePossibleBids(Domain domain) {
+		HashMap<Bid, Double> bids = new HashMap<Bid, Double>();
+		
+		ArrayList<Issue> issues = domain.getIssues();
+		for (int i = 0; i < issues.size(); i++) {
+			
+		}
+		
+		return bids;
+	}
+	
 
 	/**
 	 * Each round this method gets called and ask you to accept or offer. The first party in
@@ -95,6 +119,9 @@ public class Groupn extends AbstractNegotiationParty {
 			lastGivenBid = Action.getBidFromAction(action);
 			currentUtility = getUtility(lastGivenBid);
 			updateHighestBid(lastGivenBid);
+		}
+		else if (action instanceof Accept) {
+			
 		}
 		
 		
