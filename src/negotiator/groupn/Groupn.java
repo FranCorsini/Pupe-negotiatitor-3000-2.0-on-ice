@@ -30,10 +30,12 @@ public class Groupn extends AbstractNegotiationParty {
 	private Bid highestBid;
 	private Bid lastGivenBid;
 	private HashMap<String, Party> parties = new HashMap<String, Party>();
-	private HashMap<Bid, Double> possibleBids = new HashMap<Bid, Double>();
 	private ArrayList<List<ValueDiscrete>> values = new ArrayList<List<ValueDiscrete>>(); 
 	private BidGenerator bidGenerator;
 	private boolean isFirstturn;
+	
+	private HashMap<Bid, Double> possibleBids = new HashMap<Bid, Double>();
+	private UtilitySpace utilitySpace;
 	
 
 	
@@ -55,25 +57,44 @@ public class Groupn extends AbstractNegotiationParty {
 		//it's the first turn
 		isFirstturn = true;
 		
+		this.utilitySpace = utilitySpace;
 		
 		for (Issue issue : utilitySpace.getDomain().getIssues()) {
 			values.add(((IssueDiscrete) issue).getValues());	
 		}
-		possibleBids = generatePossibleBids(utilitySpace.getDomain());
 		
 		//creates the generator
+		generatePossibleBids(0, null);
 		bidGenerator = new BidGenerator(this, possibleBids);
 	}
-	
-	
-	
-	private HashMap<Bid, Double> generatePossibleBids(Domain domain) {
-		HashMap<Bid, Double> bids = new HashMap<Bid, Double>();
-		ArrayList<Issue> issues = domain.getIssues();
-		for (int i = 0; i < issues.size(); i++) {
-		}
-		return bids;
-	}
+
+	private void generatePossibleBids(int n, HashMap<Integer, Value> bidValues){
+        if(n >= values.size()){
+        	Bid b = null;
+        	
+			try {
+				b = new Bid(utilitySpace.getDomain(), bidValues);
+				possibleBids.put(b, utilitySpace.getUtility(b));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+            return;
+        }
+        for(Value v : values.get(n)){      	
+        	HashMap<Integer, Value> currentBid;
+        	
+        	if (n == 0) {
+        		currentBid = new HashMap<Integer, Value>();
+        	}
+        	else {
+        		currentBid = (HashMap<Integer, Value>) bidValues.clone();
+        	}
+        	 	
+        	currentBid.put(n, v);
+            generatePossibleBids(n+1, currentBid);
+            
+        }
+    }
 	
 
 	/**
