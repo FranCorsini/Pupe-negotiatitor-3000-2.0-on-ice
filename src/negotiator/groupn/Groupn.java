@@ -90,7 +90,7 @@ public class Groupn extends AbstractNegotiationParty {
         		currentBid = (HashMap<Integer, Value>) bidValues.clone();
         	}
         	 	
-        	currentBid.put(n, v);
+        	currentBid.put(n+1, v);
             generatePossibleBids(n+1, currentBid);
             
         }
