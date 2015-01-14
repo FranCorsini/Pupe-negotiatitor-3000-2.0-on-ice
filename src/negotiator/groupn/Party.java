@@ -22,7 +22,6 @@ public class Party {
 	public Party(String name, Domain domain){
 		this.name = name;
 		createIssueModels(domain);
-		setInitialWeights();
 	}
 	
 	private void createIssueModels(Domain domain){		
@@ -38,28 +37,22 @@ public class Party {
 		
 	}
 	
-	private void setInitialWeights(){
-		int n = issueModels.size();
-		double averageWeight = 1/n;
-		
-		for (IssueModel issue : issueModels) {
-			issue.setValue(averageWeight);
-		}
-	}
 	
 	
 	public void updateWithBid(Bid bid,Action action){
 		// Update utility
 		for (IssueModel issue: issueModels){
-			int i=0;
 			for (Issue iss : bid.getIssues()){
-				if (issue.getName()==iss.getName()){
-					ValueDiscrete value = new ValueDiscrete();
+				if (issue.getName().equals(iss.getName())){
+					ValueDiscrete value=new ValueDiscrete();
+					int i = iss.getNumber()-1;
 					try {
-						value = (ValueDiscrete) bid.getValue(i);
+						value = (ValueDiscrete)bid.getValue(i+1);
 					} catch (Exception e) {
-						// won't happen
-					}
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} 
+					
 					if (action instanceof Accept){
 						issue.updateUtility(value, rateOfChange);
 						
@@ -77,16 +70,15 @@ public class Party {
 					}
 					break;
 				}
-				i++;
 			}
 		}
 		
 		//update weights
-		int sumSpread=0;
-		int spread=0;
+		double sumSpread=0;
+		double spread=0;
 		for (IssueModel issue: issueModels){
-			int max=0;
-			int min=(int)Double.POSITIVE_INFINITY;
+			double max=Double.NEGATIVE_INFINITY;
+			double min=Double.POSITIVE_INFINITY;
 			for(int p: accepted.get(issue)){
 				max=Math.max(max, p);
 				min=Math.min(min, p);
@@ -95,14 +87,14 @@ public class Party {
 			sumSpread=sumSpread+spread;
 		}
 		for (IssueModel issue: issueModels){
-			int max=0;
-			int min=(int)1e20;
+			double max=Double.NEGATIVE_INFINITY;
+			double min=Double.POSITIVE_INFINITY;
 			for(int p: accepted.get(issue)){
 				max=Math.max(max, p);
 				min=Math.min(min, p);
 			}
 			spread=max-min;
-			issue.setValue(spread/(sumSpread+1));
+			issue.setValue(spread/sumSpread);
 		}
 	}
 	

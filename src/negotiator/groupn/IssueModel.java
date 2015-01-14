@@ -8,7 +8,7 @@ import negotiator.issue.ValueDiscrete;
 public class IssueModel{
 
 	private List<ValueDiscrete> values;
-	private HashMap<ValueDiscrete, Double> utility;
+	private HashMap<String, Double> utility;
 	private double value;
 	private String name;
 	
@@ -16,25 +16,25 @@ public class IssueModel{
 		this.setName(name);
 		this.values = values;
 		
-		this.utility = new HashMap<ValueDiscrete, Double>();
+		this.utility = new HashMap<String, Double>();
 		for (ValueDiscrete option: values) {
-			utility.put(option, 1.0);
+			utility.put(option.getValue(), 1.0);
 		}
 	}
 	
 	public double getUtility(ValueDiscrete option){
-		return utility.get(option);
+		return utility.get(option.getValue());
 	}
 	
 	public void updateUtility(ValueDiscrete option, double change){
-		utility.put(option, utility.get(option) + change);
+		utility.put(option.getValue(), utility.get(option.getValue()) + change);
 		//normalisation
 		double max=0;
 		for(ValueDiscrete o: values){
 			max=Math.max(max, utility.get(o));
 		}
 		for(ValueDiscrete o: values){
-			utility.put(o, Math.max(0, utility.get(o))/max);
+			utility.put(o.getValue(), Math.max(0, utility.get(o.getValue()))/max);
 		}
 	}
 	
