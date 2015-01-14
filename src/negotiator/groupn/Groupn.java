@@ -144,7 +144,7 @@ public class Groupn extends AbstractNegotiationParty {
 	@Override
 	public void receiveMessage(Object sender, Action action) {
 		
-		//if you recieve an offer it means you are not the first to play
+		//if you receive an offer it means you are not the first to play
 		if (isFirstturn == true){
 			isFirstturn = false;
 		}
@@ -154,13 +154,16 @@ public class Groupn extends AbstractNegotiationParty {
 			parties.put(sender.toString(), party);
 		}
 		
+		if (lastGivenBid!=null){
+		parties.get(sender.toString()).updateWithBid(lastGivenBid,action);
+		}
+		
 		if(action instanceof Offer){
 			lastGivenBid = Action.getBidFromAction(action);
 			currentUtility = getUtility(lastGivenBid);
 			updateHighestBid(lastGivenBid);
 		}
 		else if (action instanceof Accept) {
-			
 		}
 		
 		
