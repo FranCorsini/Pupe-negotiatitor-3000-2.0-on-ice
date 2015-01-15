@@ -2,9 +2,11 @@ package negotiator.groupn;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 
 import negotiator.Bid;
+import negotiator.DeadlineType;
 import negotiator.actions.Offer;
 import negotiator.issue.Issue;
 import negotiator.issue.IssueDiscrete;
@@ -16,18 +18,32 @@ public class BidGenerator {
 	private Double threshold;
 	private Bid highestBid;
 	private Groupn groupn;
-	private HashMap<String, Party> parties = new HashMap<String,Party>();
+	//private HashMap<String, Party> parties = new HashMap<String,Party>();
 	private HashMap<Bid,Double> bidMap = new HashMap<Bid,Double>(); //unused bids
 	private HashMap<Bid,Double> alredyUsedBids = new HashMap<Bid,Double>();
+	private ArrayList<Party> parties = new ArrayList<Party>();
+	private Map<DeadlineType, Object> deadline;
+	private int turnsLeft;
 	
 
-	public BidGenerator(Groupn temp, HashMap<Bid,Double> map) {
+	public BidGenerator(Groupn temp, HashMap<Bid,Double> map,int deadline) {
 		threshold = temp.getThreshold();
 		highestBid = temp.getHighestBid();
 		groupn = temp;
-		parties = temp.getParties();
+		//parties = temp.getParties();
 		bidMap = map;
+
 	}
+	
+	
+	public Bid generateBid(){
+		
+		
+		
+		return highestBid;		
+	}
+	
+	
 	
 	/*
 	 * The best overall bid(even those alredy offered)

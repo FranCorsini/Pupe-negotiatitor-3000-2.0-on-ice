@@ -58,14 +58,13 @@ public class Groupn extends AbstractNegotiationParty {
 		isFirstturn = true;
 		
 		this.utilitySpace = utilitySpace;
-		
 		for (Issue issue : utilitySpace.getDomain().getIssues()) {
 			values.add(((IssueDiscrete) issue).getValues());	
 		}
 		
 		//creates the generator
 		generatePossibleBids(0, null);
-		bidGenerator = new BidGenerator(this, possibleBids);
+		bidGenerator = new BidGenerator(this, possibleBids, 30);//30 is placeholder for turns of deadline
 	}
 
 	private void generatePossibleBids(int n, HashMap<Integer, Value> bidValues){
@@ -106,9 +105,8 @@ public class Groupn extends AbstractNegotiationParty {
 	 */
 	@Override
 	public Action chooseAction(List<Class> validActions) {
+		
 
-		// with 50% chance, counter offer
-		// if we are the first party, also offer.
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
@@ -142,7 +140,7 @@ public class Groupn extends AbstractNegotiationParty {
 	 */
 	@Override
 	public void receiveMessage(Object sender, Action action) {
-		
+		super.receiveMessage(sender, action);
 		//if you receive an offer it means you are not the first to play
 		if (isFirstturn == true){
 			isFirstturn = false;
