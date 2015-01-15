@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.9.9)  15 JAN 2015 12:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.9.9)  15 JAN 2015 15:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -41,16 +41,16 @@ Package tocbasic Info: omitting babel extension for `lof'
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 117.
-Package scrartcl Info: You've used obsolete option `10pt'.
-(scrartcl)             \KOMAExecuteOptions{fontsize=10pt} will be
+Package scrartcl Info: You've used obsolete option `11pt'.
+(scrartcl)             \KOMAExecuteOptions{fontsize=11pt} will be
 (scrartcl)             used instead.
-(scrartcl)             You may simply replace `10pt'
-(scrartcl)             by `fontsize=10pt'.
-Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
+(scrartcl)             You may simply replace `11pt'
+(scrartcl)             by `fontsize=11pt'.
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 1267.
 
-(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2012/07/29 v3.11b KOMA-Script font size class option (10p
+(/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2012/07/29 v3.11b KOMA-Script font size class option (11p
 t)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
@@ -66,21 +66,21 @@ Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
 \ta@vblk=\skip43
 \ta@temp=\skip44
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 8
+(typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 373.44246pt
-(typearea)              DIV departure   = -4%
-(typearea)              \evensidemargin = 39.76274pt
-(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 538.0pt
-(typearea)              \topmargin      = 0.36087pt
-(typearea)              \headheight     = 15.0pt
-(typearea)              \headsep        = 18.0pt
-(typearea)              \topskip        = 10.0pt
-(typearea)              \footskip       = 42.0pt
-(typearea)              \baselineskip   = 12.0pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.60002pt
+(typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 1213.
 )
 \c@part=\count80
@@ -424,6 +424,8 @@ LaTeX Info: Redefining \rmfamily on input line 36.
 LaTeX Info: Redefining \sffamily on input line 53.
 LaTeX Info: Redefining \ttfamily on input line 70.
 ))
+LaTeX Info: Redefining \emph on input line 19.
+
 
 LaTeX Warning: Unused global option(s):
     [a4].
@@ -431,35 +433,35 @@ LaTeX Warning: Unused global option(s):
 (./group4.aux)
 \openout1 = `group4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Try loading font information for OT1+Cabin-TLF on input lin
-e 15.
+e 25.
 
 (/usr/share/texlive/texmf-local/tex/latex/cabin/OT1Cabin-TLF.fd
 File: OT1Cabin-TLF.fd 2012/11/17 (autoinst) Font definitions for OT1/Cabin-TLF.
 
 )
 LaTeX Font Info:    Font shape `OT1/Cabin-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 15.
+(Font)              scaled to size 10.95pt on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -469,23 +471,23 @@ LaTeX Font Info:    Font shape `OT1/Cabin-TLF/m/n' will be
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(144.54pt, 308.42795pt, 144.54pt)
-* v-part:(T,H,B)=(144.54pt, 555.96695pt, 144.54pt)
+* h-part:(L,W,R)=(108.405pt, 380.69794pt, 108.405pt)
+* v-part:(T,H,B)=(108.405pt, 628.23694pt, 108.405pt)
 * \paperwidth=597.50793pt
 * \paperheight=845.04694pt
-* \textwidth=308.42795pt
-* \textheight=555.96695pt
-* \oddsidemargin=72.27pt
-* \evensidemargin=72.27pt
-* \topmargin=39.27pt
-* \headheight=15.0pt
-* \headsep=18.0pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=74.68849pt
+* \textwidth=380.69794pt
+* \textheight=628.23694pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-1.265pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.60002pt
+* \marginparwidth=59.7508pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -496,7 +498,7 @@ LaTeX Font Info:    Font shape `OT1/Cabin-TLF/m/n' will be
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 25.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -505,9 +507,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count115
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
 (./group4.out) (./group4.out)
 \@outlinefile=\write3
@@ -545,15 +547,15 @@ e
 \c@mv@tabular=\count122
 \c@mv@boldtabular=\count123
 LaTeX Font Info:    Font shape `OT1/Cabin-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 17.
+(Font)              scaled to size 10.95pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/Cabin-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 17.
+(Font)              scaled to size 20.74pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/Cabin-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 17.
+(Font)              scaled to size 12.0pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/Cabin-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 17.
+(Font)              scaled to size 14.4pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/Cabin-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 19.
+(Font)              scaled to size 14.4pt on input line 27.
 
 (./group4.toc)
 \tf@toc=\write4
@@ -563,34 +565,84 @@ LaTeX Font Info:    Font shape `OT1/Cabin-TLF/b/n' will be
 
 
 {/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `OT1/Cabin-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 30.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+Underfull \hbox (badness 10000) in paragraph at lines 54--61
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/Cabin-TLF/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 69.
+LaTeX Font Info:    Try loading font information for TS1+Cabin-TLF on input lin
+e 90.
+(/usr/share/texlive/texmf-local/tex/latex/cabin/TS1Cabin-TLF.fd
+File: TS1Cabin-TLF.fd 2012/11/17 (autoinst) Font definitions for TS1/Cabin-TLF.
+
+)
+LaTeX Font Info:    Font shape `TS1/Cabin-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 90.
+ [2]
+LaTeX Font Info:    Try loading font information for OML+Cabin-TLF on input lin
+e 144.
+LaTeX Font Info:    No file OMLCabin-TLF.fd. on input line 144.
+
+
+LaTeX Font Warning: Font shape `OML/Cabin-TLF/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textgreater' on input line 144.
+
+
+Overfull \hbox (2.1125pt too wide) in paragraph at lines 140--160
+ [] 
+ []
+
+[3]
+Overfull \hbox (1.05104pt too wide) in paragraph at lines 169--172
+[]\OT1/Cabin-TLF/m/n/10.95 This ba-si-cally re-duces to a two-party ne-go-ti-a-
+tion, since the pref-er-ences for the farmer
+ []
+
+
+Overfull \hbox (5.13231pt too wide) in paragraph at lines 174--194
+ [] 
+ []
+
+
+Overfull \hbox (2.1125pt too wide) in paragraph at lines 210--230
+ [] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+[4] [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (./group4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `group4.out' has not changed.
 (rerunfilecheck)             Checksum: 4FA06A65B80A58424753AE2E4EEADA8D;363.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
- 8396 strings out of 495063
- 126542 string characters out of 3182202
- 228757 words of memory out of 3000000
- 11486 multiletter control sequences out of 15000+200000
- 27607 words of font info for 27 fonts, out of 3000000 for 9000
+ 8476 strings out of 495063
+ 127941 string characters out of 3182202
+ 238936 words of memory out of 3000000
+ 11540 multiletter control sequences out of 15000+200000
+ 30748 words of font info for 42 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,6n,41p,262b,344s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-local/fonts/enc/dvips/cabin/cbn_gipwm5.enc}</usr/sh
-are/texlive/texmf-local/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/share/
-texlive/texmf-local/fonts/type1/impallari/cabin/Cabin-Italic.pfb></usr/share/te
-xlive/texmf-local/fonts/type1/impallari/cabin/Cabin-Regular.pfb>
-Output written on group4.pdf (2 pages, 23510 bytes).
+ 36i,12n,41p,231b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-local/fonts/enc/dvips/cabin/cbn_cgvdav.enc}{/usr/sh
+are/texlive/texmf-local/fonts/enc/dvips/cabin/cbn_gi6ftn.enc}{/usr/share/texliv
+e/texmf-local/fonts/enc/dvips/cabin/cbn_gipwm5.enc}</usr/share/texlive/texmf-lo
+cal/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/share/texlive/texmf-local/
+fonts/type1/impallari/cabin/Cabin-Regular.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmtt12.pfb>
+Output written on group4.pdf (5 pages, 40742 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

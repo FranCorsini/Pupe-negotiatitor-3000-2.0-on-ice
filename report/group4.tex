@@ -1,16 +1,26 @@
-\documentclass[a4,10pt]{scrartcl} 
+\documentclass[a4,11pt]{scrartcl} 
+
 \title{Artificial Intelligence Techniques}
-\subtitle{Negotiation Agent Design in Java}
-\author{Group 4\\Francesco Corsini - 4409159\\Tung Phan - xxxxxxx\\Dirk Meijer - 1369326} 
-\usepackage[margin=2in]{geometry}
+\subtitle{Negotiation Agent Design}
+\author{\emph{Group 4}\\
+\begin{tabular}{ll}
+\texttt{4004868}&Tung Phan\\
+\texttt{4409159}&Francesco Corsini\\
+\texttt{1369326}&Dirk Meijer
+\end{tabular}} 
+
+\usepackage[margin=1.5in]{geometry}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage[sfdefault]{cabin}
 
-
 \setlength{\parindent}{0pt}
+\DeclareTextFontCommand{\emph}{\bf}
 
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{-0.5\baselineskip}}{\temptwo}
 
 \begin{document}
 \maketitle
@@ -21,31 +31,220 @@
 
 \section{Introduction}
 
-Humans are often not the best negotiators. Emotion and the limited 
-processing power of the human brain can prevent us from getting the 
-best results in negotiations. This makes it an interesting area for 
-AIs. A good negotiation agent can aid humans in negotiation, since they 
-are not limited in the same way humans are.
-Negotiation is a complex problem. The first step is knowing your own 
-\emph{utility}, a quantization of your preferences within the 
-negotiation domain. This allows us to make offers that are agreeable to
-ourselves and also inspect offers made by other agents, to base our
-decision of rejection or acception of said offer on.
+    Negotiation is a complex problem and humans are often not the best 
+    negotiators. Emotion and the limited processing capabilities of the 
+    human brain can prevent us from getting the best results in 
+    negotiations. This makes it an interesting area for AIs. A good 
+    negotiation agent can aid humans in negotiation, since they are not 
+    limited in the same way humans are.
 
-With just this information, it is possible to create a functional agent,
-although a rather simple one. Such an agent would only make and accept
-bids that are agreeable to itself. A major issue with this approach is
-that we don't know in what direction to continue the negotiation, since
-we only know our own preferences.
+    The first step is knowing your own \emph{utility}, a quantization 
+    of your preferences within the negotiation domain. This allows us 
+    to make offers that are agreeable to ourselves and also inspect 
+    offers made by other agents, to base our decision of rejection or 
+    acception of said offer on. With just this information, it is 
+    possible to create a functional agent, although a rather simple 
+    one. Such an agent would only make and accept bids that are 
+    agreeable to itself. A major issue with this approach is that we 
+    don't know in what direction to continue the negotiation, since we 
+    only know our own preferences. This means that this strategy might 
+    never converge to a solution, depending on the parameters of the 
+    scenario.
 
-\section{Domain}
+    A good second step, would be to observe the other agents' behavior, 
+    to work out what their utilities are. This allows us to find the 
+    solution that gives us the highest utility, \emph{within} the 
+    solutions we expect to be acceptable to the other parties. To this 
+    end we can think of many different ways to estimate whether a bid 
+    will be agreeable to another party, and many different ways to 
+    generate bids. \\
 
-\section{Agent Design}
+    \noindent The assignment was twofold. Firstly we had to define a 
+    negotiation domain for three parties, in which different degrees of 
+    conflict can exist. The degrees of conflict were specified as 
+    collaborative, moderate and competitive. This will be discussed in 
+    section \ref{domain}.
+
+    Secondly we were asked to program a negotiation agent in the Java 
+    programming language and with the {\sc Genius} negotiation 
+    environment. The agent has to work regardless of the used scenario 
+    and has to incorporate the preferences of other agents in its 
+    decision making process. This will be discussed in section 
+    \ref{agent}.
+
+
+\section{Domain}\label{domain}
+
+    The domain had to exist of multiple issues, each with discrete values.
+    Within the domain, we have created three different scenarios that
+    correspond to different degrees of conflict.
+    
+    \paragraph{Background:}
+    A specific land zone has turned out to be a perfect place to build 
+    a new neighborhood. Up until now it has been used by the farmer to 
+    make his cattle go around. The owner of the land is the 
+    municipality.
+
+    \paragraph{Parties:}
+    \begin{itemize}
+        \item Farmer
+        \item Construction Company
+        \item Municipality
+    \end{itemize}
+
+    \paragraph{Issues:}
+    \begin{itemize}
+        \item Segmentation of the land
+        \begin{itemize}
+            \item S1: Split 33\%, 33\%, 33\%
+            \item S2: 100\% to Farmer
+            \item S3: 100\% to Construction Company
+            \item S4: 100\% to Municipality
+            \item S5: 50\% to Farmer, 50\% to Construction Company
+            \item S6: 50\% to Farmer, 50\% to Municipality
+            \item S7: 50\% to Construction Company, 50\% to Municipality
+        \end{itemize}
+        \item Building a water canal
+        \begin{itemize}
+            \item W1: Big canal
+            \item W2: Medium-sized canal
+            \item W3: Small canal
+            \item W4: No canal
+        \end{itemize}
+        \item Part of the land reserved for a park
+        \begin{itemize}
+            \item P1: Big park
+            \item P2: Medium-size park
+            \item P3: Small park
+            \item P4: No park
+        \end{itemize}
+        \item Building functionality
+        \begin{itemize}
+            \item F1: Factories
+            \item F2: Housing
+            \item F3: Shops
+            \item F4: Farms
+        \end{itemize}
+    \end{itemize}
+    
+    \paragraph{Scenario 1: Competitive} 
+    
+    The municipality is selling the land. Both the farmer and the 
+    construction company want to buy it. But the municipality still 
+    wants to retain a zone for welfare structures.
+    
+    It's going to be difficult for the parties to find an outcome that
+    is agreeable to everyone.
+    
+    \begin{center}
+    \begin{tabular}{|l|l|l|l|}
+        \hline{}
+        {\bf Party}&{\bf Issue}&{\bf Preference}&{\bf Weight}\\
+        \hline\hline
+        Farmer & Segmentation & S2\textgreater S5=S6\textgreater S1\textgreater S3=S4=S7 & 0.4\\
+        \cline{2-4}&Water Canal & W2\textgreater W3\textgreater W1\textgreater W4&0.1\\
+        \cline{2-4}&Park& Don't Care & 0.0\\
+        \cline{2-4}&Functionality&F4\textgreater F2\textgreater F3\textgreater F1& 0.5\\
+        \hline\hline{}
+        Construction Company & Segmentation & S3\textgreater S5=S7\textgreater S1\textgreater S2=S4=S6 & 0.4\\
+        \cline{2-4}&Water Canal & W2\textgreater W3\textgreater W4\textgreater W1&0.2\\
+        \cline{2-4}&Park& P4\textgreater P3\textgreater P2\textgreater P1 & 0.1\\
+        \cline{2-4}&Functionality&F3\textgreater F2\textgreater F1\textgreater F4& 0.3\\
+        \hline\hline{}
+        Municipality & Segmentation & S1\textgreater S5=S6=S7\textgreater S2=S3=S4 & 0.1\\
+        \cline{2-4}&Water Canal & W2\textgreater W1\textgreater W3\textgreater W4&0.3\\
+        \cline{2-4}&Park& P1\textgreater P2\textgreater P3\textgreater P4 & 0.3\\
+        \cline{2-4}&Functionality&F1\textgreater F4\textgreater F3\textgreater F2& 0.2\\
+        \hline
+    \end{tabular}
+    \end{center}
+
+    \paragraph{Scenario 2: Moderate Conflict}
+    
+    The municipality is selling the land. Both the farmer and the 
+    construction company want to buy it. The municipality wants to
+    support independent farmers, so its preference is more in alignment
+    with the farmer than with the construction company.
+    
+    This basically reduces to a two-party negotiation, since the 
+    preferences for the farmer and the municipality are almost 
+    perfectly aligned.
+    
+    \begin{center}
+    \begin{tabular}{|l|l|l|l|}
+        \hline{}
+        {\bf Party}&{\bf Issue}&{\bf Preference}&{\bf Weight}\\
+        \hline\hline
+        Farmer & Segmentation & S2\textgreater S1\textgreater S5=S6\textgreater S3=S4=S7 & 0.4\\
+        \cline{2-4}&Water Canal & W2\textgreater W3\textgreater W1\textgreater W4&0.2\\
+        \cline{2-4}&Park& Don't Care & 0.0\\
+        \cline{2-4}&Functionality&F4\textgreater F2\textgreater F3\textgreater F1& 0.4\\
+        \hline\hline{}
+        Construction Company & Segmentation & S3\textgreater S5=S7\textgreater S1\textgreater S2=S4=S6 & 0.3\\
+        \cline{2-4}&Water Canal & W4\textgreater W3\textgreater W2\textgreater W1&0.1\\
+        \cline{2-4}&Park& P4\textgreater P3\textgreater P2\textgreater P1 & 0.1\\
+        \cline{2-4}&Functionality&F3\textgreater F2\textgreater F1\textgreater F4& 0.5\\
+        \hline\hline{}
+        Municipality & Segmentation & S2\textgreater S1\textgreater S6\textgreater S5\textgreater S3=S4=S7 & 0.2\\
+        \cline{2-4}&Water Canal & W1\textgreater W2\textgreater W3\textgreater W4&0.2\\
+        \cline{2-4}&Park& P1\textgreater P2\textgreater P3\textgreater P4 & 0.2\\
+        \cline{2-4}&Functionality&F4\textgreater F3\textgreater F1\textgreater F2& 0.4\\
+        \hline
+    \end{tabular}
+    \end{center}
+    
+    \paragraph{Scenario 3: Collaborative}
+    
+    The municipality is selling the land, they don't really care what
+    happens to it, as long as they no longer have to maintain it. The
+    farmer wants to buy the land and build a canal, to irrigate his
+    other land. The construction company doesn't necessarily want to
+    buy the land, but they don't want it to turn into a big park, and
+    they want to build houses, shops or factories on the land.
+    
+    Since the three parties all care about very different things, they
+    should be able to find an outcome for which everyone has a high
+    utility.
+    
+    \begin{center}
+    \begin{tabular}{|l|l|l|l|}
+        \hline{}
+        {\bf Party}&{\bf Issue}&{\bf Preference}&{\bf Weight}\\
+        \hline\hline
+        Farmer & Segmentation & S2\textgreater S5=S6\textgreater S1\textgreater S3=S4=S7 & 0.2\\
+        \cline{2-4}&Water Canal & W1\textgreater W2\textgreater W3\textgreater W4 &0.8\\
+        \cline{2-4}&Park& Don't Care & 0.0\\
+        \cline{2-4}&Functionality& Don't Care & 0.0\\
+        \hline\hline{}
+        Construction Company & Segmentation & Don't Care & 0.0\\
+        \cline{2-4}&Water Canal & Don't Care &0.0\\
+        \cline{2-4}&Park& P4\textgreater P3\textgreater P2\textgreater P1 & 0.3\\
+        \cline{2-4}&Functionality& F1=F2=F3\textgreater F4 & 0.7\\
+        \hline\hline{}
+        Municipality & Segmentation & S2=S3=S5\textgreater S1\textgreater S6=S7\textgreater S4 & 1.0\\
+        \cline{2-4}&Water Canal & Don't Care &0.0\\
+        \cline{2-4}&Park& Don't Care & 0.0\\
+        \cline{2-4}&Functionality& Don't Care & 0.0\\
+        \hline
+    \end{tabular}
+    \end{center}
+    
+
+
+\section{Agent Design}\label{agent}
+
 \subsection{Strategy}
+
 \subsection{Implementation}
+
+
 
 \section{Test Results}
 
+
+
 \section{Conclusions and Discussion}
+
+
 
 \end{document}
