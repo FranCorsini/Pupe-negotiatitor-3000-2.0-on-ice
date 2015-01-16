@@ -64,7 +64,8 @@ public class Groupn extends AbstractNegotiationParty {
 		
 		//creates the generator
 		generatePossibleBids(0, null);
-		bidGenerator = new BidGenerator(this, possibleBids, 30);//30 is placeholder for turns of deadline
+		int turns = (int)deadlines.get(DeadlineType.ROUND);
+		bidGenerator = new BidGenerator(this, possibleBids, turns);//30 is placeholder for turns of deadline
 	}
 
 	private void generatePossibleBids(int n, HashMap<Integer, Value> bidValues){
@@ -106,7 +107,6 @@ public class Groupn extends AbstractNegotiationParty {
 	@Override
 	public Action chooseAction(List<Class> validActions) {
 		
-
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
@@ -118,7 +118,7 @@ public class Groupn extends AbstractNegotiationParty {
 			//do something to get the bid as answer
 			else{
 				//it generates the best not used bid
-				b = bidGenerator.generateBestNotAlredyUsedBid();
+				b = bidGenerator.generateBid();
 			}
 			return new Offer(b);
 				

@@ -121,6 +121,14 @@ public class Party {
 		
 		return utility;
 	}
+
+	public ArrayList<IssueModel> getIssueModels() {
+		return issueModels;
+	}
+
+	public void setIssueModels(ArrayList<IssueModel> issueModels) {
+		this.issueModels = issueModels;
+	}
 	
 	
 }

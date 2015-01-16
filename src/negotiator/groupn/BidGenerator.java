@@ -2,6 +2,7 @@ package negotiator.groupn;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -10,8 +11,10 @@ import negotiator.DeadlineType;
 import negotiator.actions.Offer;
 import negotiator.issue.Issue;
 import negotiator.issue.IssueDiscrete;
+import negotiator.issue.Objective;
 import negotiator.issue.Value;
 import negotiator.issue.ValueDiscrete;
+import negotiator.utility.Evaluator;
 
 public class BidGenerator {
 
@@ -22,8 +25,8 @@ public class BidGenerator {
 	private HashMap<Bid,Double> bidMap = new HashMap<Bid,Double>(); //unused bids
 	private HashMap<Bid,Double> alredyUsedBids = new HashMap<Bid,Double>();
 	private ArrayList<Party> parties = new ArrayList<Party>();
-	private Map<DeadlineType, Object> deadline;
 	private int turnsLeft;
+	private Double divisionUs = 0.75, divisionOther = 0.25; //they have to sum up to 1.00
 	
 
 	public BidGenerator(Groupn temp, HashMap<Bid,Double> map,int deadline) {
@@ -32,17 +35,85 @@ public class BidGenerator {
 		groupn = temp;
 		//parties = temp.getParties();
 		bidMap = map;
-
+		turnsLeft = deadline;
+		HashMap<String, Party> tempParties = new HashMap<String,Party>();
+		tempParties = temp.getParties();
+		for(Entry<String, Party> e : tempParties.entrySet()){
+			parties.add(e.getValue());
+		}
+		
 	}
-	
 	
 	public Bid generateBid(){
 		
 		
-		
-		return highestBid;		
+		return null;
 	}
 	
+
+
+	
+	
+	private int getWeightedRandomIssueIndex(){
+		HashMap<IssueModel,Double> issueWeightsOfOtherParties = new HashMap<IssueModel,Double>();
+		
+		//gets the sum of all weights of all parties for the issues
+		Iterator<Party> partIt = parties.iterator();
+		boolean isFirst = true;
+		while(partIt.hasNext()){
+			Iterator<IssueModel> itr = ((Party)partIt.next()).getIssueModels().iterator();
+			if(isFirst == true){
+				while(itr.hasNext()){
+					IssueModel issue = (IssueModel)itr.next();
+					issueWeightsOfOtherParties.put(issue, issue.getValue());
+					isFirst = false; 
+				}
+			if(isFirst == false){
+				while(itr.hasNext()){
+					IssueModel issue = (IssueModel)itr.next();
+					issueWeightsOfOtherParties.put(issue, issueWeightsOfOtherParties.get(issue) + issue.getValue());
+				}
+			}
+			}
+		}
+		//get totalweight to normalize it
+		Double totalWeight = 0.0;
+		for(Entry<IssueModel,Double> e : issueWeightsOfOtherParties.entrySet()){
+			totalWeight += e.getValue();
+		}
+		//generate other parties weights
+		ArrayList<Double> otherWeights = new ArrayList<Double>();
+		for(Entry<IssueModel,Double> e : issueWeightsOfOtherParties.entrySet()){
+			Double temp = e.getValue();
+			e.setValue(temp / totalWeight);
+			otherWeights.add(temp / totalWeight);
+		}
+		//get my weights
+		ArrayList<Double> myWeights = new ArrayList<Double>();
+		for(Entry<Objective,Evaluator> e : groupn.getUtilitySpace().getEvaluators()){
+			myWeights.add(e.getValue().getWeight());
+		}
+		//get the array of overall weights
+		ArrayList<Double> finalWeights = new ArrayList<Double>();
+		for(int i=0; i< myWeights.size();i++){
+			Double mine =  myWeights.get(i) * divisionUs;
+			Double other = otherWeights.get(i) * divisionOther;
+			finalWeights.add(mine + other);
+		}
+		
+		//pick the Issue by throwing the dice
+		Double diceThrow = Math.random();
+		Double tempWeight = 0.0;
+		Integer issueNumber = null;
+		for(int i=0; i< finalWeights.size();i++){
+			tempWeight += finalWeights.get(i);
+			if(tempWeight >= diceThrow && issueNumber == null){
+				issueNumber = i; 
+			}
+		}
+
+		return (int)issueNumber;
+	}
 	
 	
 	/*
@@ -114,10 +185,10 @@ public class BidGenerator {
 		
 	}
 	
+	
 	private HashMap<Bid,Double> getBidsWithCondition( int indexOfIssue, ValueDiscrete valueOfIssue) throws Exception {
 		HashMap<Bid,Double> conditionBids = new HashMap<Bid,Double>();
 		//HashMap<Integer,Value> bids = new HashMap<Integer,Value>();
-		
 		for (Entry<Bid, Double> e : bidMap.entrySet()){	
 			Value temp = e.getKey().getValue(indexOfIssue); //IDK here it requires the Exception
 			if(temp.equals(valueOfIssue)){
@@ -126,8 +197,7 @@ public class BidGenerator {
 			//Issue asd = e.getKey().getIssues().get(indexOfIssue);
 			//((IssueDiscrete)asd).getValues();
 		}
-		return conditionBids;
-		
+		return conditionBids;	
 	}
 	
 	
