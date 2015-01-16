@@ -120,6 +120,8 @@ public class Groupn extends AbstractNegotiationParty {
 				//it generates the best not used bid
 				b = bidGenerator.generateBid();
 			}
+			
+			setLastGivenBid(b);
 			return new Offer(b);
 				
 			

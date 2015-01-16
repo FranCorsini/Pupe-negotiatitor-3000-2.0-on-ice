@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Random;
 
 import negotiator.Bid;
 import negotiator.DeadlineType;
@@ -14,7 +15,11 @@ import negotiator.issue.IssueDiscrete;
 import negotiator.issue.Objective;
 import negotiator.issue.Value;
 import negotiator.issue.ValueDiscrete;
+
 import negotiator.utility.Evaluator;
+
+import negotiator.utility.UtilitySpace;
+
 
 public class BidGenerator {
 
@@ -27,6 +32,8 @@ public class BidGenerator {
 	private ArrayList<Party> parties = new ArrayList<Party>();
 	private int turnsLeft;
 	private Double divisionUs = 0.75, divisionOther = 0.25; //they have to sum up to 1.00
+	
+	private Random random = new Random();
 	
 
 	public BidGenerator(Groupn temp, HashMap<Bid,Double> map,int deadline) {
@@ -165,6 +172,42 @@ public class BidGenerator {
 		return bestBid;
 	}
 	
+	// Generates the best bid with all issues set, except for one.
+	public Bid generateBidOneOut(HashMap<Integer, Value> condition) {
+		Bid bid = null;
+		double maxUtility = 0.0;
+		UtilitySpace us = groupn.getUtilitySpace();
+		
+		for (int i = 1; i <= condition.size() + 1; i++) {
+			if (!condition.containsKey(i)) {
+				IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssues().get(i);
+				
+				for (int j = 1; j <= issue.getNumberOfValues(); j++) {
+					HashMap<Integer, Value> values = (HashMap<Integer, Value>) condition.clone();
+					values.put(i, issue.getValue(j));
+					
+					try {
+						Bid currentBid = new Bid(us.getDomain(), values);
+						
+						if (maxUtility < us.getUtility(currentBid)) {
+							maxUtility = us.getUtility(currentBid);
+							bid = currentBid;
+						}
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				
+				break;
+			}
+			
+		}
+		
+		return bid;
+	}
+	
+	
 	private Bid getBestUtilityBid(HashMap<Bid,Double> bids){
 		Double bestUtility = 0.0;
 		Bid bestBid = null;
@@ -198,6 +241,25 @@ public class BidGenerator {
 			//((IssueDiscrete)asd).getValues();
 		}
 		return conditionBids;	
+	}
+	
+	private ValueDiscrete getBestIssueValue(int issueNr, double chance) {
+		ValueDiscrete finalValue = null;
+		double randomD = random.nextDouble();
+		Bid lastGivenBid = groupn.getLastGivenBid();
+		HashMap<Integer, Value> lastValues = lastGivenBid.getValues();
+		lastValues.remove(issueNr);
+		
+		// They win by chance
+		if (chance <= chance) {
+			
+		} 
+		// We win by chance
+		else {
+			
+		}
+		
+		return finalValue;
 	}
 	
 	
