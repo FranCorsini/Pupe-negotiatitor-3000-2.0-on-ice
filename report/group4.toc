@@ -9,5 +9,9 @@
 \contentsline {section}{\numberline {3}Agent Design}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Strategy}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Implementation}{5}{subsection.3.2}
-\contentsline {section}{\numberline {4}Test Results}{5}{section.4}
-\contentsline {section}{\numberline {5}Conclusions and Discussion}{5}{section.5}
+\contentsline {subsubsection}{\numberline {3.2.1}Group4.java}{5}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Party.java}{5}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}IssueModel.java}{6}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}BidGenerator.java}{6}{subsubsection.3.2.4}
+\contentsline {section}{\numberline {4}Test Results}{6}{section.4}
+\contentsline {section}{\numberline {5}Conclusions and Discussion}{6}{section.5}

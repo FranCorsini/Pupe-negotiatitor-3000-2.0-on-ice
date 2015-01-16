@@ -13,10 +13,17 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{xcolor}
 \usepackage[sfdefault]{cabin}
+\usepackage{listings}
 
 \setlength{\parindent}{0pt}
 \DeclareTextFontCommand{\emph}{\bf}
+\lstset{language=Java,
+        breaklines=true,
+        basicstyle=\small\ttfamily,
+        keywordstyle=\color{blue},
+        frame=single}
 
 \let\tempone\itemize
 \let\temptwo\enditemize
@@ -38,11 +45,11 @@
     negotiation agent can aid humans in negotiation, since they are not 
     limited in the same way humans are.
 
-    The first step is knowing your own \emph{utility}, a quantization 
+    The first step is knowing your own \emph{utility}, a quantification 
     of your preferences within the negotiation domain. This allows us 
     to make offers that are agreeable to ourselves and also inspect 
     offers made by other agents, to base our decision of rejection or 
-    acception of said offer on. With just this information, it is 
+    acceptation of said offer on. With just this information, it is 
     possible to create a functional agent, although a rather simple 
     one. Such an agent would only make and accept bids that are 
     agreeable to itself. A major issue with this approach is that we 
@@ -71,6 +78,10 @@
     and has to incorporate the preferences of other agents in its 
     decision making process. This will be discussed in section 
     \ref{agent}.
+    
+    Finally, we will show experimental results in section \ref{results}
+    and discuss these results and the performance of our agent in
+    section \ref{conclusion}.
 
 
 \section{Domain}\label{domain}
@@ -195,11 +206,11 @@
     
     \paragraph{Scenario 3: Collaborative}
     
-    The municipality is selling the land, they don't really care what
-    happens to it, as long as they no longer have to maintain it. The
-    farmer wants to buy the land and build a canal, to irrigate his
-    other land. The construction company doesn't necessarily want to
-    buy the land, but they don't want it to turn into a big park, and
+    The municipality is selling the land, they don't really care what 
+    happens to it, as long as they no longer have to maintain it. The 
+    farmer wants to buy the land and build a canal, to irrigate his 
+    other land. The construction company does not necessarily want to 
+    buy the land, but they don't want it to turn into a big park, and 
     they want to build houses, shops or factories on the land.
     
     Since the three parties all care about very different things, they
@@ -234,17 +245,101 @@
 \section{Agent Design}\label{agent}
 
 \subsection{Strategy}
+TODO
+
 
 \subsection{Implementation}
 
+\subsubsection{Group4.java}
+
+This is the agent itself. The agent 
+\begin{itemize}
+\item keeps track of incoming data from other agents through the \verb receiveMessage  method,
+\item keeps track of the viable bids trough the \verb generatePossibleBids  method,
+\item chooses whether to accept a bid or generate and offer a new bid in the \verb chooseAction  method.
+\end{itemize}
+
+\begin{lstlisting}
+private void generatePossibleBids(int n, HashMap<Integer,Value> bidValues)
+\end{lstlisting}
+TODO
+
+\begin{lstlisting}
+@Override
+public Action chooseAction(List<Class> validActions)
+\end{lstlisting}
+TODO
+
+\begin{lstlisting}
+@Override
+public void receiveMessage(Object sender, Action action)
+\end{lstlisting}
+TODO
+
+\subsubsection{Party.java}
+The Party class is a model of the other parties that our agent has. It
+consists of weights for each issue, and utilities for each option.
+The model is updated every time the opponent accepts a bid, rejects a
+bid and makes a bid.
+
+\begin{lstlisting}
+public void updateWithBid(Bid bid,Action action)
+\end{lstlisting}
+When an opponent takes any action, our model of that opponent is updated.
+Making a new bid is treated as accepting that new bid, so there are two
+cases to be distinguished: Either the opponents finds a bid agreeable
+or they don't.
+
+\begin{lstlisting}
+public Double estimateUtility(Bid bid)
+\end{lstlisting}
+This method turns all the IssueModels that are part of this Party model
+into an estimate of utility for a particular bid. This helps us foresee
+how agreeable bids are to opponents, and make more efficient bids.
+
+\subsubsection{IssueModel.java}
+This is a sub-part of the Party model, a Party has an IssueModel for
+each issue in the domain. The IssueModel keeps track of the bids that
+were rejected and accepted, in order to estimate the weight of the
+issue, and it iteratively updates the utility with every new bid that
+comes in.
+
+\begin{lstlisting}
+public void updateUtility(ValueDiscrete option, double change)
+\end{lstlisting}
+If a bid was accepted or rejected, every IssueModel is notified which
+option for said issue was accepted or rejected. The IssueModel then
+alters the utility for that option by a small number ($\pm$\verb change ,
+order of magnitude 0.1). Then all the utilities are normalized, so that
+they are in the range \verb [0,1] .
+
+The weight of the issue is updated by looking at the variation in how 
+often different options were accepted and rejected. The rationale 
+behind this is that is only certain options are accepted, (the 
+variation is large) this issue will be important, because a wrong 
+option is a deal breaker for the party. On the other hand if the 
+variation is small, all options are rejected and accepted almost as
+often, the party will not care for this issue very much.
+
+To cut down on processing time, we decided against calculating the
+actual variation or standard deviation. Instead, we have a counter for
+each option for the issue, which gets a +1 for an accepted bid and a
+-1 for a rejected bid. Then we calculate the spread (max - min) and
+take that as an estimate for the relative variation. The weights for
+every issue are normalized in the Party class such that the sum equals
+one.
 
 
-\section{Test Results}
+\subsubsection{BidGenerator.java}
+TODO
 
 
+\section{Test Results}\label{results}
+TODO
 
-\section{Conclusions and Discussion}
 
+\section{Conclusions and Discussion}\label{conclusion}
+TODO
 
 
 \end{document}

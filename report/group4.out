@@ -3,5 +3,9 @@
 \BOOKMARK [1][-]{section.3}{Agent Design}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Strategy}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Implementation}{section.3}% 5
-\BOOKMARK [1][-]{section.4}{Test Results}{}% 6
-\BOOKMARK [1][-]{section.5}{Conclusions and Discussion}{}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Group4.java}{subsection.3.2}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Party.java}{subsection.3.2}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.3}{IssueModel.java}{subsection.3.2}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.4}{BidGenerator.java}{subsection.3.2}% 9
+\BOOKMARK [1][-]{section.4}{Test Results}{}% 10
+\BOOKMARK [1][-]{section.5}{Conclusions and Discussion}{}% 11
