@@ -206,6 +206,7 @@ public class BidGenerator {
 		
 		return bid;
 	}
+
 	
 	
 	private Bid getBestUtilityBid(HashMap<Bid,Double> bids){
@@ -243,23 +244,23 @@ public class BidGenerator {
 		return conditionBids;	
 	}
 	
-	private ValueDiscrete getBestIssueValue(int issueNr, double chance) {
-		ValueDiscrete finalValue = null;
+	private Bid getBestIssueValue(int issueNr, double chance) {
+		Bid finalBid = null;
 		double randomD = random.nextDouble();
 		Bid lastGivenBid = groupn.getLastGivenBid();
 		HashMap<Integer, Value> lastValues = lastGivenBid.getValues();
 		lastValues.remove(issueNr);
 		
 		// They win by chance
-		if (chance <= chance) {
+		if (chance <= randomD) {
 			
 		} 
 		// We win by chance
 		else {
-			
+			finalBid = generateBidOneOut(lastValues);
 		}
 		
-		return finalValue;
+		return finalBid;
 	}
 	
 	
