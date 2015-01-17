@@ -32,6 +32,7 @@ public class BidGenerator {
 	private ArrayList<Party> parties = new ArrayList<Party>();
 	private int turnsLeft;
 	private Double divisionUs = 0.75, divisionOther = 0.25; //they have to sum up to 1.00
+	private Double chosenIssuePercentage;
 	
 	private Random random = new Random();
 	
@@ -58,9 +59,17 @@ public class BidGenerator {
 	}
 	
 
+	private ValueDiscrete getTheirBestValue(int issueNumber){
+		for (int i = 0; i< parties.size(); i++ ){
+			for(Entry<String, Double> e : 
+		}
+		
+	}
+	
 
-	
-	
+	/*it returns the index of the issue picked. It also updates the chosenIssuePercentage with
+	 * the percentage it has been chosen with 
+	 */
 	private int getWeightedRandomIssueIndex(){
 		HashMap<IssueModel,Double> issueWeightsOfOtherParties = new HashMap<IssueModel,Double>();
 		
@@ -116,6 +125,7 @@ public class BidGenerator {
 			tempWeight += finalWeights.get(i);
 			if(tempWeight >= diceThrow && issueNumber == null){
 				issueNumber = i; 
+				chosenIssuePercentage = finalWeights.get(i);
 			}
 		}
 

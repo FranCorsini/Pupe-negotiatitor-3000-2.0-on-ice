@@ -53,6 +53,15 @@ public class IssueModel{
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public HashMap<String, Double> getUtility() {
+		return utility;
+	}
+
+	public void setUtility(HashMap<String, Double> utility) {
+		this.utility = utility;
+	}
+	
 	
 
 }
