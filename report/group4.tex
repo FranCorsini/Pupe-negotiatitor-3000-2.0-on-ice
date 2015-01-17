@@ -330,7 +330,17 @@ compromise and pick an option that benefits other parties.
 
 \subsubsection{Acceptation}
 
-An opponents bid is 
+An opponents bid is accepted if our utility for that bid meets a 
+certain threshold. The threshold starts at \verb  1.0 and descreases 
+linearly, reaching our \emph{reservation value} at the deadline. The 
+reservation value is the value below which we are not accepting any 
+bid. Any bid we accept or generate will gain us a utility higher than 
+the reservation value, making sure that we don't compromise too 
+heavily.
+
+This acceptation strategy is of course rather simple, but it makes sure
+that we accept bids that are reasonable enough that we could make them
+ourselves.
 
 \subsection{Implementation}
 
