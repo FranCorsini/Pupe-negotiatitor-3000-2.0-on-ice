@@ -15,9 +15,7 @@ import negotiator.issue.IssueDiscrete;
 import negotiator.issue.Objective;
 import negotiator.issue.Value;
 import negotiator.issue.ValueDiscrete;
-
 import negotiator.utility.Evaluator;
-
 import negotiator.utility.UtilitySpace;
 
 
@@ -26,12 +24,18 @@ public class BidGenerator {
 	private Double threshold;
 	private Bid highestBid;
 	private Groupn groupn;
-	//private HashMap<String, Party> parties = new HashMap<String,Party>();
-	private HashMap<Bid,Double> bidMap = new HashMap<Bid,Double>(); //unused bids
-	private HashMap<Bid,Double> alredyUsedBids = new HashMap<Bid,Double>();
+	
+	// Unused bids
+	private HashMap<Bid,Double> bidMap = new HashMap<Bid,Double>();
+	
+	private HashMap<Bid,Double> alreadyUsedBids = new HashMap<Bid,Double>();
 	private ArrayList<Party> parties = new ArrayList<Party>();
 	private int turnsLeft;
-	private Double divisionUs = 0.75, divisionOther = 0.25; //they have to sum up to 1.00
+	
+	// Based on chance, so they have to sum up to 1.00
+	private Double divisionUs = 0.75;
+	private Double divisionOther = 1 - divisionUs;
+	
 	private Double chosenIssuePercentage;
 	
 	private Random random = new Random();
@@ -41,7 +45,6 @@ public class BidGenerator {
 		threshold = temp.getThreshold();
 		highestBid = temp.getHighestBid();
 		groupn = temp;
-		//parties = temp.getParties();
 		bidMap = map;
 		turnsLeft = deadline;
 		HashMap<String, Party> tempParties = new HashMap<String,Party>();
@@ -98,8 +101,10 @@ public class BidGenerator {
 	}
 	
 
-	/*it returns the index of the issue picked. It also updates the chosenIssuePercentage with
-	 * the percentage it has been chosen with 
+	/**
+	 * Returns the index of the issue picked and updates the chosenIssuePercentage with the 
+	 * percentage.
+	 * @return IssueNumber		The chosen issue to be changed in the next bid.
 	 */
 	private int getWeightedRandomIssueIndex(){
 		HashMap<IssueModel,Double> issueWeightsOfOtherParties = new HashMap<IssueModel,Double>();
@@ -149,14 +154,15 @@ public class BidGenerator {
 		}
 		
 		//pick the Issue by throwing the dice
-		Double diceThrow = Math.random();
+		Double diceThrow = random.nextDouble();
 		Double tempWeight = 0.0;
 		Integer issueNumber = null;
 		for(int i=0; i< finalWeights.size();i++){
 			tempWeight += finalWeights.get(i);
-			if(tempWeight >= diceThrow && issueNumber == null){
+			if(tempWeight >= diceThrow){
 				issueNumber = i; 
 				chosenIssuePercentage = finalWeights.get(i);
+				break;
 			}
 		}
 
@@ -164,32 +170,39 @@ public class BidGenerator {
 	}
 	
 	
-	/*
-	 * The best overall bid(even those alredy offered)
+	/**
+	 * Generate the best overall bid, even those already offered.
+	 * @return Bid	The generated bid.
 	 */
 	public Bid generateBestOverallBid(){
 		Bid bestBid = null;
 		
-		if(alredyUsedBids.size() == 0){
+		if(alreadyUsedBids.size() == 0){
 			bestBid = getBestUtilityBid(bidMap);
 		}
 		else {
-			bestBid = getBestUtilityBid(alredyUsedBids);
+			bestBid = getBestUtilityBid(alreadyUsedBids);
 		}
 		
 		return bestBid;
 	}
 	
-	/*
-	 * The best not already offered bid
+	/**
+	 * Generates the best bid which has not been offered yet.
+	 * @return Bid	The generated bid.
 	 */
-	public Bid generateBestNotAlredyUsedBid(){
+	public Bid generateBestNotAlreadyUsedBid(){
 		Bid bestBid = getBestUtilityBid(bidMap);
 		return bestBid;
 	}
 	
-	//bidWithConditions: it get the best bid following the partial bid given(one condition)
-	public Bid generateBid(int indexOfIssue, ValueDiscrete valueOfIssue) throws Exception{
+	/**
+	 * Generates a bid with one issue locked as a condition
+	 * @param indexOfIssue	The index of the locked in issue.
+	 * @param valueOfIssue	The value of the issue.
+	 * @return	Bid			The generated bid with one locked in issue.
+	 */
+	public Bid generateBid(int indexOfIssue, ValueDiscrete valueOfIssue){
 		HashMap<Bid,Double> bids = new HashMap<Bid,Double>();
 		
 		bids = getBidsWithCondition(indexOfIssue,valueOfIssue);
@@ -198,22 +211,12 @@ public class BidGenerator {
 		return bestBid;
 	}
 	
-	//bidWithConditions: it get the best bid following the partial bid given(multiple conditions)
-	//the condition are those of the Bid passed
-	public Bid generateBid(Bid condition) throws Exception{
-		HashMap<Bid,Double> bids = new HashMap<Bid,Double>();
-		HashMap<Integer,Value> temp = new HashMap<Integer,Value>();
-		
-		temp = condition.getValues();
-		for(Entry<Integer,Value> e : temp.entrySet()){
-			bids.putAll(getBidsWithCondition(e.getKey(),(ValueDiscrete)e.getValue()));
-		}
-		
-		Bid bestBid = getBestUtilityBid(bids);
-		return bestBid;
-	}
-	
-	// Generates the best bid with all issues set, except for one.
+	/**
+	 * Generates the best bid with all issues set, except for one.
+	 * @param condition		The pre-set issues
+	 * @return	Bid			The generated bid.
+	 */
+	// TODO Take into account the bids that have already been offered.
 	public Bid generateBidOneOut(HashMap<Integer, Value> condition) {
 		Bid bid = null;
 		double maxUtility = 0.0;
@@ -235,16 +238,12 @@ public class BidGenerator {
 							bid = currentBid;
 						}
 					} catch (Exception e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-				}
-				
+				}				
 				break;
-			}
-			
-		}
-		
+			}			
+		}		
 		return bid;
 	}
 
@@ -261,9 +260,9 @@ public class BidGenerator {
 			}
 		}
 		
-		//updates in alredy used(if not alredy used)
-		if(!(bids.equals(alredyUsedBids))){
-			alredyUsedBids.put(bestBid, bestUtility);
+		//updates in already used(if not already used)
+		if(!(bids.equals(alreadyUsedBids))){
+			alreadyUsedBids.put(bestBid, bestUtility);
 			bidMap.remove(bestBid);
 		}
 		return bestBid;
@@ -271,21 +270,30 @@ public class BidGenerator {
 	}
 	
 	
-	private HashMap<Bid,Double> getBidsWithCondition( int indexOfIssue, ValueDiscrete valueOfIssue) throws Exception {
+	private HashMap<Bid,Double> getBidsWithCondition( int indexOfIssue, ValueDiscrete valueOfIssue) {
 		HashMap<Bid,Double> conditionBids = new HashMap<Bid,Double>();
-		//HashMap<Integer,Value> bids = new HashMap<Integer,Value>();
+		
 		for (Entry<Bid, Double> e : bidMap.entrySet()){	
-			Value temp = e.getKey().getValue(indexOfIssue); //IDK here it requires the Exception
-			if(temp.equals(valueOfIssue)){
-				conditionBids.put(e.getKey(), e.getValue());
+			try {
+				Value temp = e.getKey().getValue(indexOfIssue);
+				if(temp.equals(valueOfIssue)){
+					conditionBids.put(e.getKey(), e.getValue());
+				}
+			} catch (Exception e1) {
+				e1.printStackTrace();
 			}
-			//Issue asd = e.getKey().getIssues().get(indexOfIssue);
-			//((IssueDiscrete)asd).getValues();
 		}
 		return conditionBids;	
 	}
 	
-	private Bid getBestIssueValue(int issueNr, double chance) {
+	/**
+	 * Generates the best bid based on the weights of both us and the parties
+	 * @param issueNr	The issue to be changed for the new bid
+	 * @param chance	Chance of picking their preference
+	 * @return Bid		The best bid with the new issue value.
+	 */
+	public Bid generateBestBid() {
+		int issueNr = getWeightedRandomIssueIndex();
 		Bid finalBid = null;
 		double randomD = random.nextDouble();
 		Bid lastGivenBid = groupn.getLastGivenBid();
@@ -293,8 +301,14 @@ public class BidGenerator {
 		lastValues.remove(issueNr);
 		
 		// They win by chance
-		if (chance <= randomD) {
-			
+		if (chosenIssuePercentage <= randomD) {
+			ValueDiscrete value = getTheirBestValue(issueNr);
+			lastValues.put(issueNr, value);
+			try {
+				finalBid = new Bid(groupn.getUtilitySpace().getDomain(), lastValues);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		} 
 		// We win by chance
 		else {

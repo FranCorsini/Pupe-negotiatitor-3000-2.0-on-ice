@@ -118,7 +118,7 @@ public class Groupn extends AbstractNegotiationParty {
 			//do something to get the bid as answer
 			else{
 				//it generates the best not used bid
-				b = bidGenerator.generateBid();
+				b = bidGenerator.generateBestBid();
 			}
 			
 			setLastGivenBid(b);
