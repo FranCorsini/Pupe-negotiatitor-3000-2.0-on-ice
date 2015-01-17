@@ -26,7 +26,8 @@ public class Group4 extends AbstractNegotiationParty {
 	private Double currentUtility = 0.0;
 	private Double threshold;
 	private final Double RESERVATION_VALUE = 0.5;
-	private final Double STARTING_THRESHOLD = 0.9;
+
+	private final Double STARTING_THRESHOLD = 0.8;
 	private int turns;
 	private int round = 0;
 
