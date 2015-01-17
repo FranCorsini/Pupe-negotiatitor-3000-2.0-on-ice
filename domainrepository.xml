@@ -18,7 +18,9 @@
             <domainRepItem url="file:etc/templates/Group4/Group4.xml">
                 <profile url="file:etc/templates/Group4/Group4_util1.xml"/>
                 <profile url="file:etc/templates/Group4/Group4_util2.xml"/>
-                <profile url="file:etc/templates/Group4/Group4_util3.xml"/>
+                <profile url="file:etc/templates/Group4/Group4_util3.xml"/><profile
+                	url="file:etc/templates/Group4/Group4_util4.xml">
+</profile>
             </domainRepItem>
         </domainRepItem>
         <protocolRepItem/>
