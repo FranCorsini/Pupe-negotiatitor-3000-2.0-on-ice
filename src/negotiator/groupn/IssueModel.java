@@ -61,6 +61,14 @@ public class IssueModel{
 	public void setUtility(HashMap<String, Double> utility) {
 		this.utility = utility;
 	}
+
+	public List<ValueDiscrete> getValues() {
+		return values;
+	}
+
+	public void setValues(List<ValueDiscrete> values) {
+		this.values = values;
+	}
 	
 	
 

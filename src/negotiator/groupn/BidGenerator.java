@@ -60,10 +60,41 @@ public class BidGenerator {
 	
 
 	private ValueDiscrete getTheirBestValue(int issueNumber){
+		HashMap<String, Double> valueWeights = new HashMap<String, Double>();
+		boolean isFirst = true;
+		
+		//sum up all the values of all the parties
 		for (int i = 0; i< parties.size(); i++ ){
-			for(Entry<String, Double> e : 
+			for(Entry<String, Double> e :  parties.get(i).getIssueModels().get(issueNumber).getUtility().entrySet()){
+				if(isFirst == true){
+					valueWeights.put(e.getKey(), e.getValue());
+					isFirst = false;
+				}
+				else{
+					valueWeights.put(e.getKey(),valueWeights.get(e.getKey()) + e.getValue());
+				}
+			}
 		}
 		
+		//take out best value
+		String bestValueKey = null;
+		Double bestValueWeight = 0.0;
+		for(Entry<String, Double> e : valueWeights.entrySet()){
+			if(e.getValue() > bestValueWeight){
+				bestValueWeight = e.getValue();
+				bestValueKey = e.getKey();
+			}
+		}
+		
+		//get the ValueDiscrete     -----i use the first party since everyone has same discrete issues
+		ValueDiscrete value = null;
+		for(int i = 0; i< parties.get(0).getIssueModels().size(); i++){
+			if(parties.get(0).getIssueModels().get(issueNumber).getValues().get(i).getValue() == bestValueKey){
+				value = parties.get(0).getIssueModels().get(issueNumber).getValues().get(i);
+			}
+		}
+		
+		return value;
 	}
 	
 
