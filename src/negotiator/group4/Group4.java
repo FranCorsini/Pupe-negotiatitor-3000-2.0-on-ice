@@ -7,7 +7,6 @@ import java.util.Map;
 
 import negotiator.Bid;
 import negotiator.DeadlineType;
-import negotiator.Domain;
 import negotiator.Timeline;
 import negotiator.actions.Accept;
 import negotiator.actions.Action;
@@ -27,7 +26,7 @@ public class Group4 extends AbstractNegotiationParty {
 	private Double currentUtility = 0.0;
 	private Double threshold;
 	private final Double RESERVATION_VALUE = 0.5;
-	private final Double STARTING_TRESHOLD = 0.9;
+	private final Double STARTING_THRESHOLD = 0.9;
 	private int turns;
 	private int round = 0;
 
@@ -108,13 +107,13 @@ public class Group4 extends AbstractNegotiationParty {
 	@Override
 	public Action chooseAction(List<Class> validActions) {
 		round++;
-		threshold = STARTING_TRESHOLD-(1-RESERVATION_VALUE)*((double)round/(double)turns);
+		threshold = STARTING_THRESHOLD-(STARTING_THRESHOLD-RESERVATION_VALUE)*((double)round/(double)turns);
 		
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
 			if(round == 1){
-				b= bidGenerator.generateBestOverallBid();
+				b = bidGenerator.generateBestOverallBid();
 			}
 			
 			//do something to get the bid as answer
@@ -128,8 +127,7 @@ public class Group4 extends AbstractNegotiationParty {
 			
 			setLastGivenBid(b);
 			return new Offer(b);
-				
-			
+		
 		}
 		else {
 			return new Accept();
