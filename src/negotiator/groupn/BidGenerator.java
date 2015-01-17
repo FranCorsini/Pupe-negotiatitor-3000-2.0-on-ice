@@ -58,15 +58,16 @@ public class BidGenerator {
 
 	private ValueDiscrete getTheirBestValue(int issueNumber){
 		HashMap<String, Double> valueWeights = new HashMap<String, Double>();
-		boolean isFirst = true;
+		
+		// Zero-based index
+		issueNumber = issueNumber - 1;
 		
 		//sum up all the values of all the parties
 		for (int i = 0; i< parties.size(); i++ ){
 			for(Entry<String, Double> e :  parties.get(i).getIssueModels().get(issueNumber).getUtility().entrySet()){
 				Double issWeight = parties.get(i).getIssueModels().get(issueNumber).getValue();
-				if(isFirst == true){
+				if(valueWeights.get(e.getKey()) == null){
 					valueWeights.put(e.getKey(), e.getValue() * issWeight);
-					isFirst = false;
 				}
 				else{
 					valueWeights.put(e.getKey(),valueWeights.get(e.getKey()) + (e.getValue() * issWeight));
@@ -77,10 +78,20 @@ public class BidGenerator {
 		//take out best value
 		String bestValueKey = null;
 		Double bestValueWeight = 0.0;
+		ValueDiscrete previousValue = null;
+		
+		try {
+			previousValue = (ValueDiscrete) groupn.getLastGivenBid().getValue(issueNumber-1);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		
 		for(Entry<String, Double> e : valueWeights.entrySet()){
 			if(e.getValue() > bestValueWeight){
-				bestValueWeight = e.getValue();
-				bestValueKey = e.getKey();
+				if (!previousValue.getValue().equals(e.getValue())) {
+					bestValueWeight = e.getValue();
+					bestValueKey = e.getKey();
+				}
 			}
 		}
 		
@@ -102,7 +113,7 @@ public class BidGenerator {
 	 * @return IssueNumber		The chosen issue to be changed in the next bid.
 	 */
 	private int getWeightedRandomIssueIndex(){
-		HashMap<IssueModel,Double> issueWeightsOfOtherParties = new HashMap<IssueModel,Double>();
+		HashMap<String,Double> issueWeightsOfOtherParties = new HashMap<String,Double>();
 		
 		//gets the sum of all weights of all parties for the issues
 		Iterator<Party> partIt = parties.iterator();
@@ -112,25 +123,25 @@ public class BidGenerator {
 			if(isFirst == true){
 				while(itr.hasNext()){
 					IssueModel issue = (IssueModel)itr.next();
-					issueWeightsOfOtherParties.put(issue, issue.getValue());
+					issueWeightsOfOtherParties.put(issue.getName(), issue.getValue());
 					isFirst = false; 
 				}
+			}
 			if(isFirst == false){
 				while(itr.hasNext()){
 					IssueModel issue = (IssueModel)itr.next();
-					issueWeightsOfOtherParties.put(issue, issueWeightsOfOtherParties.get(issue) + issue.getValue());
+					issueWeightsOfOtherParties.put(issue.getName(), issueWeightsOfOtherParties.get(issue.getName()) + issue.getValue());
 				}
-			}
 			}
 		}
 		//get totalweight to normalize it
 		Double totalWeight = 0.0;
-		for(Entry<IssueModel,Double> e : issueWeightsOfOtherParties.entrySet()){
+		for(Entry<String,Double> e : issueWeightsOfOtherParties.entrySet()){
 			totalWeight += e.getValue();
 		}
 		//generate other parties weights
 		ArrayList<Double> otherWeights = new ArrayList<Double>();
-		for(Entry<IssueModel,Double> e : issueWeightsOfOtherParties.entrySet()){
+		for(Entry<String,Double> e : issueWeightsOfOtherParties.entrySet()){
 			Double temp = e.getValue();
 			e.setValue(temp / totalWeight);
 			otherWeights.add(temp / totalWeight);
@@ -166,7 +177,7 @@ public class BidGenerator {
 			}
 		}
 
-		return (int)issueNumber;
+		return (int)issueNumber + 1;
 	}
 	
 	private ArrayList<Double> getInverseValues(ArrayList<Double> values){
@@ -228,33 +239,37 @@ public class BidGenerator {
 	 * @return	ValueDiscrete	The best value.
 	 */
 	// TODO Take into account the bids that have already been offered.
-	public ValueDiscrete getValueBidOneOut(HashMap<Integer, Value> condition) {
+	public ValueDiscrete getValueBidOneOut(HashMap<Integer, Value> condition, int issueNr) {
 		ValueDiscrete bestValue = null;
 		double maxUtility = 0.0;
 		UtilitySpace us = groupn.getUtilitySpace();
-		
-		for (int i = 1; i <= condition.size() + 1; i++) {
-			if (!condition.containsKey(i)) {
-				IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssues().get(i-1);
-				
-				for (int j = 0; j < issue.getNumberOfValues(); j++) {
-					HashMap<Integer, Value> values = (HashMap<Integer, Value>) condition.clone();
-					values.put(i, issue.getValue(j));
-					
-					try {
-						Bid currentBid = new Bid(us.getDomain(), values);
-						
-						if (maxUtility < us.getUtility(currentBid)) {
-							maxUtility = us.getUtility(currentBid);
-							bestValue = issue.getValue(j);
-						}
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}				
-				break;
-			}			
+		ValueDiscrete previousValue = null;
+
+		try {
+			previousValue = (ValueDiscrete) groupn.getLastGivenBid().getValue(issueNr);
+		} catch (Exception e1) {
+			e1.printStackTrace();
 		}		
+
+		IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssues().get(issueNr-1);
+		
+		for (int j = 0; j < issue.getNumberOfValues(); j++) {
+			if (!previousValue.equals(issue.getValue(j))) {
+				HashMap<Integer, Value> values = (HashMap<Integer, Value>) condition.clone();
+				values.put(issueNr, issue.getValue(j));
+				
+				try {
+					Bid currentBid = new Bid(us.getDomain(), values);
+					
+					if (maxUtility < us.getUtility(currentBid)) {
+						maxUtility = us.getUtility(currentBid);
+						bestValue = issue.getValue(j);
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}						
 		return bestValue;
 	}
 
@@ -322,7 +337,7 @@ public class BidGenerator {
 		
 		
 		// They win by chance
-		if (chosenIssuePercentage <= randomD) {
+		if (chosenIssuePercentage >= randomD) {
 			ValueDiscrete value = getTheirBestValue(issueNr);
 			lastValues.put(issueNr, value);
 			try {
@@ -334,9 +349,11 @@ public class BidGenerator {
 		// We win by chance
 		else {			
 			try {
-				lastValues.remove(issueNr);
-				lastValues.put(issueNr, getValueBidOneOut(lastValues));
-				finalBid = new Bid(groupn.getUtilitySpace().getDomain(), lastValues);
+				HashMap<Integer, Value> condition = (HashMap<Integer, Value>) lastValues.clone();
+				condition.remove(issueNr);
+				ValueDiscrete value = getValueBidOneOut(condition, issueNr);
+				condition.put(issueNr, value);
+				finalBid = new Bid(groupn.getUtilitySpace().getDomain(), condition);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

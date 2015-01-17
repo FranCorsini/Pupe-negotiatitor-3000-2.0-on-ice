@@ -83,7 +83,7 @@ public class Party {
 				max=Math.max(max, p);
 				min=Math.min(min, p);
 			}
-			spread=max-min;
+			spread=max-min + 1;
 			sumSpread=sumSpread+spread;
 		}
 		for (IssueModel issue: issueModels){
@@ -93,7 +93,7 @@ public class Party {
 				max=Math.max(max, p);
 				min=Math.min(min, p);
 			}
-			spread=max-min;
+			spread=max-min + 1;
 			issue.setValue(spread/sumSpread);
 		}
 	}

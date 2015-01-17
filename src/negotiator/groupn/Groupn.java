@@ -25,13 +25,15 @@ import negotiator.utility.UtilitySpace;
 public class Groupn extends AbstractNegotiationParty {
 	
 	private Double currentUtility = 0.0;
-	private Double threshold = 1.0;
-	private Double reservationValue = 0.5;
+	private Double threshold;
+	private final Double RESERVATION_VALUE = 0.5;
+	private final Double STARTING_TRESHOLD = 0.9;
 	private int turns;
 	private int round = 0;
 
 	private Bid highestBid;
 	private Bid lastGivenBid;
+	private Bid lastReceivedBid;
 	private HashMap<String, Party> parties = new HashMap<String, Party>();
 	private ArrayList<List<ValueDiscrete>> values = new ArrayList<List<ValueDiscrete>>(); 
 	private BidGenerator bidGenerator;
@@ -106,19 +108,22 @@ public class Groupn extends AbstractNegotiationParty {
 	@Override
 	public Action chooseAction(List<Class> validActions) {
 		round++;
-		threshold = 1-(1-reservationValue)*((double)round/(double)turns);
+		threshold = STARTING_TRESHOLD-(1-RESERVATION_VALUE)*((double)round/(double)turns);
 		
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
-			if(parties.size() < getNumberOfParties()){
+			if(round == 1){
 				b= bidGenerator.generateBestOverallBid();
 			}
 			
 			//do something to get the bid as answer
 			else{
-				//it generates the best not used bid
-				b = bidGenerator.generateBestBid();
+				//it generates the best not used bid				
+				do {
+					b = bidGenerator.generateBestBid();
+				}
+				while (getUtility(b) < threshold);
 			}
 			
 			setLastGivenBid(b);
@@ -149,14 +154,14 @@ public class Groupn extends AbstractNegotiationParty {
 			parties.put(sender.toString(), party);
 		}
 		
-		if (lastGivenBid!=null){
-		parties.get(sender.toString()).updateWithBid(lastGivenBid,action);
+		if (lastReceivedBid!=null){
+		parties.get(sender.toString()).updateWithBid(lastReceivedBid,action);
 		}
 		
 		if(action instanceof Offer){
-			lastGivenBid = Action.getBidFromAction(action);
-			currentUtility = getUtility(lastGivenBid);
-			updateHighestBid(lastGivenBid);
+			lastReceivedBid = Action.getBidFromAction(action);
+			currentUtility = getUtility(lastReceivedBid);
+			updateHighestBid(lastReceivedBid);
 		}
 		else if (action instanceof Accept) {
 		}
