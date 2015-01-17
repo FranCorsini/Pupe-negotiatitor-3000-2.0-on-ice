@@ -287,11 +287,11 @@ public class BidGenerator {
 		double randomD = random.nextDouble();
 		Bid lastGivenBid = agent.getLastGivenBid();
 		HashMap<Integer, Value> lastValues = lastGivenBid.getValues();
-		
+		ValueDiscrete value = null;
 		
 		// They win by chance
 		if (chosenIssuePercentage >= randomD) {
-			ValueDiscrete value = getTheirBestValue(issueNr);
+			value = getTheirBestValue(issueNr);
 			lastValues.put(issueNr, value);
 			try {
 				finalBid = new Bid(agent.getUtilitySpace().getDomain(), lastValues);
@@ -304,14 +304,13 @@ public class BidGenerator {
 			try {
 				HashMap<Integer, Value> condition = (HashMap<Integer, Value>) lastValues.clone();
 				condition.remove(issueNr);
-				ValueDiscrete value = getValueBidOneOut(condition, issueNr);
+				value = getValueBidOneOut(condition, issueNr);
 				condition.put(issueNr, value);
 				finalBid = new Bid(agent.getUtilitySpace().getDomain(), condition);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
-		
 		return finalBid;
 	}
 	

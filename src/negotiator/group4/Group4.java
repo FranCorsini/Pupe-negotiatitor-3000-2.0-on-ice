@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import negotiator.Bid;
 import negotiator.DeadlineType;
@@ -118,9 +119,16 @@ public class Group4 extends AbstractNegotiationParty {
 			
 			//do something to get the bid as answer
 			else{
-				//it generates the best not used bid				
+				//it generates the best not used bid
+				int index = 0;
 				do {
 					b = bidGenerator.generateBestBid();
+					
+					index++;
+					if (index > 100) {
+						index = 0;
+						threshold = threshold - 0.01;
+					}
 				}
 				while (getUtility(b) < threshold);
 			}
