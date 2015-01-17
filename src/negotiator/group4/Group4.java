@@ -1,4 +1,4 @@
-package negotiator.groupn;
+package negotiator.group4;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +22,7 @@ import negotiator.utility.UtilitySpace;
 /**
  * This is your negotiation party.
  */
-public class Groupn extends AbstractNegotiationParty {
+public class Group4 extends AbstractNegotiationParty {
 	
 	private Double currentUtility = 0.0;
 	private Double threshold;
@@ -51,7 +51,7 @@ public class Groupn extends AbstractNegotiationParty {
 	 * @param timeline Value counting from 0 (start) to 1 (end).
 	 * @param randomSeed If you use any randomisation, use this seed for it.
 	 */
-	public Groupn(UtilitySpace utilitySpace,
+	public Group4(UtilitySpace utilitySpace,
 				  Map<DeadlineType, Object> deadlines,
 				  Timeline timeline,
 				  long randomSeed) {

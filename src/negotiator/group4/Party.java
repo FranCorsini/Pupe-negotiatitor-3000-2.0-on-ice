@@ -1,4 +1,4 @@
-package negotiator.groupn;
+package negotiator.group4;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

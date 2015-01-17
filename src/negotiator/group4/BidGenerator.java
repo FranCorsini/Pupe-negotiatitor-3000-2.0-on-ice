@@ -1,4 +1,4 @@
-package negotiator.groupn;
+package negotiator.group4;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,7 +21,7 @@ import negotiator.utility.UtilitySpace;
 
 public class BidGenerator {
 
-	private Groupn groupn;
+	private Group4 agent;
 	
 	// Unused bids
 	private HashMap<Bid,Double> bidMap = new HashMap<Bid,Double>();
@@ -39,8 +39,8 @@ public class BidGenerator {
 	private Random random = new Random();
 	
 
-	public BidGenerator(Groupn temp, HashMap<Bid,Double> map,int deadline) {
-		groupn = temp;
+	public BidGenerator(Group4 agent, HashMap<Bid,Double> map,int deadline) {
+		this.agent = agent;
 		bidMap = map;
 		turnsLeft = deadline;		
 	}
@@ -76,7 +76,7 @@ public class BidGenerator {
 		
 		try {
 			// Because bid values use one-based indices, +1
-			previousValue = (ValueDiscrete) groupn.getLastGivenBid().getValue(issueNr+1);
+			previousValue = (ValueDiscrete) agent.getLastGivenBid().getValue(issueNr+1);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
@@ -148,7 +148,7 @@ public class BidGenerator {
 		
 		//get my weights
 		ArrayList<Double> myWeights = new ArrayList<Double>();
-		for(Entry<Objective,Evaluator> e : groupn.getUtilitySpace().getEvaluators()){
+		for(Entry<Objective,Evaluator> e : agent.getUtilitySpace().getEvaluators()){
 			myWeights.add(e.getValue().getWeight());
 		}
 		//make my party weights the inverse
@@ -215,11 +215,11 @@ public class BidGenerator {
 	public ValueDiscrete getValueBidOneOut(HashMap<Integer, Value> condition, int issueNr) {
 		ValueDiscrete bestValue = null;
 		double maxUtility = 0.0;
-		UtilitySpace us = groupn.getUtilitySpace();
+		UtilitySpace us = agent.getUtilitySpace();
 		ValueDiscrete previousValue = null;
 
 		try {
-			previousValue = (ValueDiscrete) groupn.getLastGivenBid().getValue(issueNr);
+			previousValue = (ValueDiscrete) agent.getLastGivenBid().getValue(issueNr);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}		
@@ -280,9 +280,9 @@ public class BidGenerator {
 	 */
 	public Bid generateBestBid() {
 		
-		if (parties.size() < groupn.getNumberOfParties()) {
+		if (parties.size() < agent.getNumberOfParties()) {
 			parties.clear();
-			for (Entry<String, Party> e : groupn.getParties().entrySet()){
+			for (Entry<String, Party> e : agent.getParties().entrySet()){
 				parties.add(e.getValue());
 			}
 		}
@@ -290,7 +290,7 @@ public class BidGenerator {
 		int issueNr = getWeightedRandomIssueIndex();
 		Bid finalBid = null;
 		double randomD = random.nextDouble();
-		Bid lastGivenBid = groupn.getLastGivenBid();
+		Bid lastGivenBid = agent.getLastGivenBid();
 		HashMap<Integer, Value> lastValues = lastGivenBid.getValues();
 		
 		
@@ -299,7 +299,7 @@ public class BidGenerator {
 			ValueDiscrete value = getTheirBestValue(issueNr);
 			lastValues.put(issueNr, value);
 			try {
-				finalBid = new Bid(groupn.getUtilitySpace().getDomain(), lastValues);
+				finalBid = new Bid(agent.getUtilitySpace().getDomain(), lastValues);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -311,7 +311,7 @@ public class BidGenerator {
 				condition.remove(issueNr);
 				ValueDiscrete value = getValueBidOneOut(condition, issueNr);
 				condition.put(issueNr, value);
-				finalBid = new Bid(groupn.getUtilitySpace().getDomain(), condition);
+				finalBid = new Bid(agent.getUtilitySpace().getDomain(), condition);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
