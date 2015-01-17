@@ -423,12 +423,17 @@ The main public mothods caled are:
 public Bid generateBestOverallBid()
 public Bid generateBestBid()
 \end{lstlisting}
-These two fuctions are what the Group4 class call in order to generate the bid. The first one is called the first time you have to produce a bid, getting the best utility bid for you. The other is called every other time in order to produce the next bid. 
-Let's take a look at the most important support function in this class:
-\begin{lstlisting
+These two functions are what the Group4 class call in order to generate the bid. The first one is called the first time you have to produce a bid, getting the best utility bid for you. The other is called every other time in order to produce the next bid. \\ \\
+Please note that in order to produce the bid, our strategy is followed. The other parties preferences are weighted and combined together in other to produce a overall "opponent", resulting in the others parties are seen as only one. This has done in order to semplify things by dealing with all the others as one. Obviously, this overall opponent is created by following the model we slowly built about the preferences  of the opponents.  \\ 
+Let's take a closer look at the most important support function in this class:
+\begin{lstlisting}
 private int getWeightedRandomIssueIndex()
 \end{lstlisting}
-This is one of the core function of our strategy. Following a series of steps it return the index of the weighted choice of the weighted inverse random issues. Brief explanation: first it gets the weighted sum of all the values of all the other parties regarding an issue(weighted based on the issue weight),  then normalize the values by deviding them but they overall sum, in order to have them as a percentage; then it inverse them. The same is done with the personal preferences of the agent itself. With both the preferences of the others and ours translated into an inverse percentage regarding the issues, we combine them together following a parameter that changes over time. At start, it is 75% our preference and 25% their preference, but this parameters slowly change due to multiple factors. TODO 
+This is one of the core function of our strategy. Following a series of steps it return the index of the weighted choice of the weighted inverse random issues.\\ Brief explanation: first it gets the weighted sum of all the values of all the other parties regarding an issue(weighted based on the issue weight),  then normalize the values by dividing  them but they overall sum, in order to have them as a percentage; then it inverse them. The same is done with the personal preferences of the agent itself. With both the preferences of the others and ours translated into an inverse percentage regarding the issues, we combine them together following a parameter that changes over time. \\At start, it is 75\% our preference and 25\%  their preference, but this parameters slowly change due to multiple factors. TODO 
+\begin{lstlisting}
+private ValueDiscrete getTheirBestValue(int issueNumber)
+\end{lstlisting}
+This support function is called when the issue to change the bid on has been decided. In order to understand what the other parties (all of them takes as one entity) want, this function is called. It returns the other parties best value choice based on utility from the model. What it does: given the issue, it sum up all the values utilities for each party given each discrete value. The sum is weighted, meaning that parties that care more about that specific issue have a bigger weight. after this, it only takes the value with the highest sum. This results in the best overall value for the other parties for that specific issue.   
 
 \section{Test Results}\label{results}
 TODO
