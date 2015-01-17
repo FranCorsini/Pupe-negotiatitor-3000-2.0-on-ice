@@ -21,8 +21,6 @@ import negotiator.utility.UtilitySpace;
 
 public class BidGenerator {
 
-	private Double threshold;
-	private Bid highestBid;
 	private Groupn groupn;
 	
 	// Unused bids
@@ -42,30 +40,26 @@ public class BidGenerator {
 	
 
 	public BidGenerator(Groupn temp, HashMap<Bid,Double> map,int deadline) {
-		threshold = temp.getThreshold();
-		highestBid = temp.getHighestBid();
 		groupn = temp;
 		bidMap = map;
 		turnsLeft = deadline;		
 	}
-	
-	public Bid generateBid(){
-		
-		
-		return null;
-	}
-	
 
-	private ValueDiscrete getTheirBestValue(int issueNumber){
+	/**
+	 * Returns the best issue value of the other parties.
+	 * @param issueNr		The issue that will be checked.
+	 * @return	ValueDiscrete	The best value.
+	 */
+	private ValueDiscrete getTheirBestValue(int issueNr){
 		HashMap<String, Double> valueWeights = new HashMap<String, Double>();
 		
 		// Zero-based index
-		issueNumber = issueNumber - 1;
+		issueNr = issueNr - 1;
 		
 		//sum up all the values of all the parties
 		for (int i = 0; i< parties.size(); i++ ){
-			for(Entry<String, Double> e :  parties.get(i).getIssueModels().get(issueNumber).getUtility().entrySet()){
-				Double issWeight = parties.get(i).getIssueModels().get(issueNumber).getValue();
+			for(Entry<String, Double> e :  parties.get(i).getIssueModels().get(issueNr).getUtility().entrySet()){
+				Double issWeight = parties.get(i).getIssueModels().get(issueNr).getValue();
 				if(valueWeights.get(e.getKey()) == null){
 					valueWeights.put(e.getKey(), e.getValue() * issWeight);
 				}
@@ -81,7 +75,8 @@ public class BidGenerator {
 		ValueDiscrete previousValue = null;
 		
 		try {
-			previousValue = (ValueDiscrete) groupn.getLastGivenBid().getValue(issueNumber-1);
+			// Because bid values use one-based indices, +1
+			previousValue = (ValueDiscrete) groupn.getLastGivenBid().getValue(issueNr+1);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
@@ -98,8 +93,12 @@ public class BidGenerator {
 		//get the ValueDiscrete     -----i use the first party since everyone has same discrete issues
 		ValueDiscrete value = null;
 		for(int i = 0; i< parties.get(0).getIssueModels().size(); i++){
-			if(parties.get(0).getIssueModels().get(issueNumber).getValues().get(i).getValue() == bestValueKey){
-				value = parties.get(0).getIssueModels().get(issueNumber).getValues().get(i);
+
+			Party randomParty = parties.get(0);
+			IssueModel issueModel = randomParty.getIssueModels().get(issueNr);
+			
+			if(issueModel.getValues().get(i).getValue() == bestValueKey){
+				value = issueModel.getValues().get(i);
 			}
 		}
 		
@@ -110,31 +109,29 @@ public class BidGenerator {
 	/**
 	 * Returns the index of the issue picked and updates the chosenIssuePercentage with the 
 	 * percentage.
-	 * @return IssueNumber		The chosen issue to be changed in the next bid.
+	 * @return IssueNr		The chosen issue to be changed in the next bid (one-based index).
 	 */
 	private int getWeightedRandomIssueIndex(){
 		HashMap<String,Double> issueWeightsOfOtherParties = new HashMap<String,Double>();
 		
 		//gets the sum of all weights of all parties for the issues
-		Iterator<Party> partIt = parties.iterator();
-		boolean isFirst = true;
-		while(partIt.hasNext()){
-			Iterator<IssueModel> itr = ((Party)partIt.next()).getIssueModels().iterator();
-			if(isFirst == true){
-				while(itr.hasNext()){
-					IssueModel issue = (IssueModel)itr.next();
-					issueWeightsOfOtherParties.put(issue.getName(), issue.getValue());
-					isFirst = false; 
+		for (Party p : parties) {
+			for (IssueModel issueModel : p.getIssueModels()) {
+				String key = issueModel.getName();
+				Double weight;
+				if (!issueWeightsOfOtherParties.containsKey(key)) {
+					weight = issueModel.getValue();
+					issueWeightsOfOtherParties.put(key, weight);
 				}
-			}
-			if(isFirst == false){
-				while(itr.hasNext()){
-					IssueModel issue = (IssueModel)itr.next();
-					issueWeightsOfOtherParties.put(issue.getName(), issueWeightsOfOtherParties.get(issue.getName()) + issue.getValue());
+				else {
+					weight = issueWeightsOfOtherParties.get(key) + issueModel.getValue();
+					issueWeightsOfOtherParties.put(key, weight);
 				}
+				weight = -1.0;
 			}
 		}
-		//get totalweight to normalize it
+		
+		//get total weight to normalize it
 		Double totalWeight = 0.0;
 		for(Entry<String,Double> e : issueWeightsOfOtherParties.entrySet()){
 			totalWeight += e.getValue();
@@ -167,17 +164,17 @@ public class BidGenerator {
 		//pick the Issue by throwing the dice
 		Double diceThrow = random.nextDouble();
 		Double tempWeight = 0.0;
-		Integer issueNumber = null;
+		Integer issueNr = null;
 		for(int i=0; i< finalWeights.size();i++){
 			tempWeight += finalWeights.get(i);
-			issueNumber = i; 
+			issueNr = i; 
 			chosenIssuePercentage = finalWeights.get(i);
 			if(tempWeight >= diceThrow){
 				break;
 			}
 		}
 
-		return (int)issueNumber + 1;
+		return (int)issueNr + 1;
 	}
 	
 	private ArrayList<Double> getInverseValues(ArrayList<Double> values){
@@ -210,35 +207,11 @@ public class BidGenerator {
 	}
 	
 	/**
-	 * Generates the best bid which has not been offered yet.
-	 * @return Bid	The generated bid.
-	 */
-	public Bid generateBestNotAlreadyUsedBid(){
-		Bid bestBid = getBestUtilityBid(bidMap);
-		return bestBid;
-	}
-	
-	/**
-	 * Generates a bid with one issue locked as a condition
-	 * @param indexOfIssue	The index of the locked in issue.
-	 * @param valueOfIssue	The value of the issue.
-	 * @return	Bid			The generated bid with one locked in issue.
-	 */
-	public Bid generateBid(int indexOfIssue, ValueDiscrete valueOfIssue){
-		HashMap<Bid,Double> bids = new HashMap<Bid,Double>();
-		
-		bids = getBidsWithCondition(indexOfIssue,valueOfIssue);
-		
-		Bid bestBid = getBestUtilityBid(bids);
-		return bestBid;
-	}
-	
-	/**
 	 * Gets the best value for an issue, with all other issues set.
-	 * @param condition			The pre-set issues
+	 * @param condition			The pre-set issues.
+	 * @param issueNr			The id of the issue to be changed.
 	 * @return	ValueDiscrete	The best value.
 	 */
-	// TODO Take into account the bids that have already been offered.
 	public ValueDiscrete getValueBidOneOut(HashMap<Integer, Value> condition, int issueNr) {
 		ValueDiscrete bestValue = null;
 		double maxUtility = 0.0;
@@ -251,7 +224,8 @@ public class BidGenerator {
 			e1.printStackTrace();
 		}		
 
-		IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssues().get(issueNr-1);
+		// Zero-based index
+		IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssue(issueNr-1);
 		
 		for (int j = 0; j < issue.getNumberOfValues(); j++) {
 			if (!previousValue.equals(issue.getValue(j))) {
@@ -274,10 +248,12 @@ public class BidGenerator {
 	}
 
 	
-	
-	private Bid getBestUtilityBid(HashMap<Bid,Double> bids){
-	
-		
+	/**
+	 * Gets the bid with the highest utility
+	 * @param bids	The list of bids with their utility to choose from.
+	 * @return Bid	The bid with the highest utility.
+	 */
+	private Bid getBestUtilityBid(HashMap<Bid,Double> bids){	
 		Double bestUtility = 0.0;
 		Bid bestBid = null;
 		
@@ -298,26 +274,8 @@ public class BidGenerator {
 	}
 	
 	
-	private HashMap<Bid,Double> getBidsWithCondition( int indexOfIssue, ValueDiscrete valueOfIssue) {
-		HashMap<Bid,Double> conditionBids = new HashMap<Bid,Double>();
-		
-		for (Entry<Bid, Double> e : bidMap.entrySet()){	
-			try {
-				Value temp = e.getKey().getValue(indexOfIssue);
-				if(temp.equals(valueOfIssue)){
-					conditionBids.put(e.getKey(), e.getValue());
-				}
-			} catch (Exception e1) {
-				e1.printStackTrace();
-			}
-		}
-		return conditionBids;	
-	}
-	
 	/**
 	 * Generates the best bid based on the weights of both us and the parties
-	 * @param issueNr	The issue to be changed for the new bid
-	 * @param chance	Chance of picking their preference
 	 * @return Bid		The best bid with the new issue value.
 	 */
 	public Bid generateBestBid() {
