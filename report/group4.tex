@@ -247,7 +247,18 @@
 \section{Agent Design}\label{agent}
 
 \subsection{Strategy}
-TODO
+
+The strategy our agent uses is twofold, on one hand we have to decide
+how to generate bids, on the other hand we have to choose which bids
+to accept. We decided that the bid generation is more important and
+should therefore be more complex. The bid generation is based on our
+expectation of how the other parties will respond to our bid, while
+keeping our own utility a priority.
+
+The acceptation strategy only looks at our utility for the bid and
+accepts it if it gives us a utility higher than a time-dependent
+threshold value. The threshold is lowered each turn, because we are
+willing to compromise more as we near the negotiation deadline.
 
 
 \subsubsection{Bid Generation}
