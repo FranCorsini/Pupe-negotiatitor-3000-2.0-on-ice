@@ -8,6 +8,8 @@
 \contentsline {paragraph}{Scenario 3: Collaborative}{4}{section*.7}
 \contentsline {section}{\numberline {3}Agent Design}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Strategy}{5}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Bid Generation}{5}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Acceptation}{6}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Implementation}{6}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Group4.java}{6}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Party.java}{7}{subsubsection.3.2.2}

@@ -25,7 +25,10 @@ import negotiator.utility.UtilitySpace;
 public class Groupn extends AbstractNegotiationParty {
 	
 	private Double currentUtility = 0.0;
-	private Double threshold = 0.75;
+	private Double threshold = 1.0;
+	private Double reservationValue = 0.5;
+	private int turns;
+	private int round = 0;
 
 	private Bid highestBid;
 	private Bid lastGivenBid;
@@ -60,7 +63,7 @@ public class Groupn extends AbstractNegotiationParty {
 		
 		//creates the generator
 		generatePossibleBids(0, null);
-		int turns = (int)deadlines.get(DeadlineType.ROUND);
+		turns = (int)deadlines.get(DeadlineType.ROUND);
 		bidGenerator = new BidGenerator(this, possibleBids, turns);//30 is placeholder for turns of deadline
 	}
 
@@ -102,6 +105,8 @@ public class Groupn extends AbstractNegotiationParty {
 	 */
 	@Override
 	public Action chooseAction(List<Class> validActions) {
+		round++;
+		threshold = 1-(1-reservationValue)*((double)round/(double)turns);
 		
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
