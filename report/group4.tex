@@ -360,14 +360,9 @@ ourselves.
 This is the agent itself. The agent 
 \begin{itemize}
 \item keeps track of incoming data from other agents through the \verb receiveMessage  method,
-\item keeps track of the viable bids trough the \verb generatePossibleBids  method,
-\item chooses whether to accept a bid or generate and offer a new bid in the \verb chooseAction  method.
+\item chooses whether to accept a bid or generate and offer a new bid in the \verb chooseAction  method,
+\item creates new bids in the \verb BidGenerator  class, following the previously described strategy. 
 \end{itemize}
-
-\begin{lstlisting}
-private void generatePossibleBids(int n, HashMap<Integer,Value> bidValues)
-\end{lstlisting}
-TODO
 
 \begin{lstlisting}
 @Override
@@ -444,17 +439,25 @@ The main public mothods caled are:
 public Bid generateBestOverallBid()
 public Bid generateBestBid()
 \end{lstlisting}
-These two functions are what the Group4 class call in order to generate the bid. The first one is called the first time you have to produce a bid, getting the best utility bid for you. The other is called every other time in order to produce the next bid. \\ \\
+These two functions are what the Group4 class call in order to generate the bid.\\ The first one is called the first time you have to produce a bid, getting the best utility bid for you. \\The second is called every other time in order to produce the next bid. It calls 
+all the support functions in order to create the bid. It will be described in more details later\\ \\
 Please note that in order to produce the bid, our strategy is followed. The other parties preferences are weighted and combined together in other to produce a overall "opponent", resulting in the others parties are seen as only one. This has done in order to semplify things by dealing with all the others as one. Obviously, this overall opponent is created by following the model we slowly built about the preferences  of the opponents.  \\ 
 Let's take a closer look at the most important support function in this class:
 \begin{lstlisting}
 private int getWeightedRandomIssueIndex()
 \end{lstlisting}
-This is one of the core function of our strategy. Following a series of steps it return the index of the weighted choice of the weighted inverse random issues.\\ Brief explanation: first it gets the weighted sum of all the values of all the other parties regarding an issue(weighted based on the issue weight),  then normalize the values by dividing  them but they overall sum, in order to have them as a percentage; then it inverse them. The same is done with the personal preferences of the agent itself. With both the preferences of the others and ours translated into an inverse percentage regarding the issues, we combine them together following a parameter that changes over time. \\At start, it is 75\% our preference and 25\%  their preference, but this parameters slowly change due to multiple factors. TODO 
+This is one of the core function of our strategy. Following a series of steps it return the index of the weighted choice of the weighted inverse random issues.\\ Brief explanation: first it gets the weighted sum of all the values of all the other parties regarding an issue(weighted based on the issue weight),  then normalize the values by dividing  them but they overall sum, in order to have them as a percentage; then it inverse them. The same is done with the personal preferences of the agent itself. With both the preferences of the others and ours translated into an inverse percentage regarding the issues, we combine them together following a parameter that changes over time. \\At start, this parameter is 75\% our preference and 25\%  their preference, but this parameters slowly change due to multiple factors. TODO 
 \begin{lstlisting}
 private ValueDiscrete getTheirBestValue(int issueNumber)
 \end{lstlisting}
-This support function is called when the issue to change the bid on has been decided. In order to understand what the other parties (all of them takes as one entity) want, this function is called. It returns the other parties best value choice based on utility from the model. What it does: given the issue, it sum up all the values utilities for each party given each discrete value. The sum is weighted, meaning that parties that care more about that specific issue have a bigger weight. after this, it only takes the value with the highest sum. This results in the best overall value for the other parties for that specific issue.   
+This support function is called when the issue to change the bid on has been decided. In order to understand what the other parties (all of them takes as one entity) want, this function is called. It returns the other parties best value choice based on utility from the model. What it does: given the issue, it sum up all the values utilities for each party given each discrete value. The sum is weighted, meaning that parties that care more about that specific issue have a bigger weight. after this, it only takes the value with the highest sum. This results in the best overall value for the other parties for that specific issue.  
+\begin{lstlisting}
+public Bid generateBestBid()
+\end{lstlisting}
+This function is the main function of the generating bid process. // It first call the getWeightedRandomIssueIndex() to decide which issue to change in the next bid. As explained previously, the more the issue is important to us the less it is likely to be chosen; this is even applied to the other parties models, giving higher chance to pick those which the others care less. 
+Then, a value for the chosen issue has to be taken. This is done by first finding our favourite value, then by calling getTheirBestValue() to get the other parties favourite. Then a weighted random dice is thrown to see which value will be selected. The weight depends on how much the agent care about that specific issue, and on how close the deadline is. If the value chosen has already appeared in the last proposed bid, the picking of the value is called again.   
+
+
 
 \section{Test Results}\label{results}
 TODO
