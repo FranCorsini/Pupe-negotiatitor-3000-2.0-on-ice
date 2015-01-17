@@ -3,14 +3,10 @@ package negotiator.group4;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
 
 import negotiator.Bid;
-import negotiator.DeadlineType;
-import negotiator.actions.Offer;
-import negotiator.issue.Issue;
 import negotiator.issue.IssueDiscrete;
 import negotiator.issue.Objective;
 import negotiator.issue.Value;
@@ -184,7 +180,7 @@ public class BidGenerator {
 			sumOfDivision += 1/values.get(i);
 		}
 		for(int i = 0; i<values.size();i++){
-			returnValues.add(values.get(i)/sumOfDivision);
+			returnValues.add((1/values.get(i))/sumOfDivision);
 		}
 		return returnValues;
 	}
