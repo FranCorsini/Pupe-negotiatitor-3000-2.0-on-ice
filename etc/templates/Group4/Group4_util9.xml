@@ -1,0 +1,62 @@
+<utility_space> 
+<objective name="Group 4" index="0" description="" etype="objective" type="objective"> 
+<issue vtype="discrete" name="Segmentation" index="1" etype="discrete" type="discrete"> 
+<item evaluation="100" index="1" value="all to one(farmer)"> 
+</item> 
+<item evaluation="100" index="2" value="all to one(cons. comp.)"> 
+</item> 
+<item evaluation="0" index="3" value="all to one(municipality)"> 
+</item> 
+<item evaluation="40" index="4" value="all to two(farmer & mun.)"> 
+</item> 
+<item evaluation="100" index="5" value="all to two(farmer & cons. comp.)"> 
+</item> 
+<item evaluation="40" index="6" value="all to two(mun. & cons. comp.)"> 
+</item> 
+<item evaluation="60" index="7" value="33%,33%,33%"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="Water Canal" index="2" etype="discrete" type="discrete"> 
+<item evaluation="0" index="1" value="Big"> 
+</item> 
+<item evaluation="0" index="2" value="Medium"> 
+</item> 
+<item evaluation="0" index="3" value="Small"> 
+</item> 
+<item evaluation="0" index="4" value="None"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="Park" index="3" etype="discrete" type="discrete"> 
+<item evaluation="0" index="1" value="Big"> 
+</item> 
+<item evaluation="0" index="2" value="Medium"> 
+</item> 
+<item evaluation="0" index="3" value="Small"> 
+</item> 
+<item evaluation="0" index="4" value="None"> 
+</item> 
+</issue> 
+<issue vtype="discrete" name="Functionality" index="4" etype="discrete" type="discrete"> 
+<item evaluation="0" index="1" value="Farming"> 
+</item> 
+<item evaluation="0" index="2" value="Commercial"> 
+</item> 
+<item evaluation="0" index="3" value="Housing"> 
+</item> 
+<item evaluation="0" index="4" value="Industrial"> 
+</item> 
+</issue> 
+<weight index="1" value="0.9994179124632624"> 
+</weight> 
+<weight index="2" value="2.2173271250848316E-4"> 
+</weight> 
+<weight index="3" value="1.802200017232695E-4"> 
+</weight> 
+<weight index="4" value="1.801348225059263E-4"> 
+</weight> 
+</objective> 
+<discount_factor value="1.0"> 
+</discount_factor> 
+<reservation value="0.0"> 
+</reservation> 
+</utility_space> 
