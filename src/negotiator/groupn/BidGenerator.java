@@ -140,11 +140,17 @@ public class BidGenerator {
 			e.setValue(temp / totalWeight);
 			otherWeights.add(temp / totalWeight);
 		}
+		//make other party weights the inverse
+		otherWeights = getInverseValues(otherWeights);
+		
 		//get my weights
 		ArrayList<Double> myWeights = new ArrayList<Double>();
 		for(Entry<Objective,Evaluator> e : groupn.getUtilitySpace().getEvaluators()){
 			myWeights.add(e.getValue().getWeight());
 		}
+		//make my party weights the inverse
+		myWeights = getInverseValues(myWeights);
+		
 		//get the array of overall weights
 		ArrayList<Double> finalWeights = new ArrayList<Double>();
 		for(int i=0; i< myWeights.size();i++){
@@ -152,7 +158,6 @@ public class BidGenerator {
 			Double other = otherWeights.get(i) * divisionOther;
 			finalWeights.add(mine + other);
 		}
-		
 		//pick the Issue by throwing the dice
 		Double diceThrow = random.nextDouble();
 		Double tempWeight = 0.0;
@@ -169,6 +174,17 @@ public class BidGenerator {
 		return (int)issueNumber;
 	}
 	
+	private ArrayList<Double> getInverseValues(ArrayList<Double> values){
+		ArrayList<Double> returnValues = new ArrayList<Double>(); 
+		Double sumOfDivision = 0.0;
+		for(int i = 0; i<values.size();i++){
+			sumOfDivision += 1/values.get(i);
+		}
+		for(int i = 0; i<values.size();i++){
+			returnValues.add(values.get(i)/sumOfDivision);
+		}
+		return returnValues;
+	}
 	
 	/**
 	 * Generate the best overall bid, even those already offered.
@@ -250,6 +266,8 @@ public class BidGenerator {
 	
 	
 	private Bid getBestUtilityBid(HashMap<Bid,Double> bids){
+	
+		
 		Double bestUtility = 0.0;
 		Bid bestBid = null;
 		
