@@ -46,13 +46,7 @@ public class BidGenerator {
 		highestBid = temp.getHighestBid();
 		groupn = temp;
 		bidMap = map;
-		turnsLeft = deadline;
-		HashMap<String, Party> tempParties = new HashMap<String,Party>();
-		tempParties = temp.getParties();
-		for(Entry<String, Party> e : tempParties.entrySet()){
-			parties.add(e.getValue());
-		}
-		
+		turnsLeft = deadline;		
 	}
 	
 	public Bid generateBid(){
@@ -165,9 +159,9 @@ public class BidGenerator {
 		Integer issueNumber = null;
 		for(int i=0; i< finalWeights.size();i++){
 			tempWeight += finalWeights.get(i);
+			issueNumber = i; 
+			chosenIssuePercentage = finalWeights.get(i);
 			if(tempWeight >= diceThrow){
-				issueNumber = i; 
-				chosenIssuePercentage = finalWeights.get(i);
 				break;
 			}
 		}
@@ -229,21 +223,21 @@ public class BidGenerator {
 	}
 	
 	/**
-	 * Generates the best bid with all issues set, except for one.
-	 * @param condition		The pre-set issues
-	 * @return	Bid			The generated bid.
+	 * Gets the best value for an issue, with all other issues set.
+	 * @param condition			The pre-set issues
+	 * @return	ValueDiscrete	The best value.
 	 */
 	// TODO Take into account the bids that have already been offered.
-	public Bid generateBidOneOut(HashMap<Integer, Value> condition) {
-		Bid bid = null;
+	public ValueDiscrete getValueBidOneOut(HashMap<Integer, Value> condition) {
+		ValueDiscrete bestValue = null;
 		double maxUtility = 0.0;
 		UtilitySpace us = groupn.getUtilitySpace();
 		
 		for (int i = 1; i <= condition.size() + 1; i++) {
 			if (!condition.containsKey(i)) {
-				IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssues().get(i);
+				IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssues().get(i-1);
 				
-				for (int j = 1; j <= issue.getNumberOfValues(); j++) {
+				for (int j = 0; j < issue.getNumberOfValues(); j++) {
 					HashMap<Integer, Value> values = (HashMap<Integer, Value>) condition.clone();
 					values.put(i, issue.getValue(j));
 					
@@ -252,7 +246,7 @@ public class BidGenerator {
 						
 						if (maxUtility < us.getUtility(currentBid)) {
 							maxUtility = us.getUtility(currentBid);
-							bid = currentBid;
+							bestValue = issue.getValue(j);
 						}
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -261,7 +255,7 @@ public class BidGenerator {
 				break;
 			}			
 		}		
-		return bid;
+		return bestValue;
 	}
 
 	
@@ -312,12 +306,20 @@ public class BidGenerator {
 	 * @return Bid		The best bid with the new issue value.
 	 */
 	public Bid generateBestBid() {
+		
+		if (parties.size() < groupn.getNumberOfParties()) {
+			parties.clear();
+			for (Entry<String, Party> e : groupn.getParties().entrySet()){
+				parties.add(e.getValue());
+			}
+		}
+		
 		int issueNr = getWeightedRandomIssueIndex();
 		Bid finalBid = null;
 		double randomD = random.nextDouble();
 		Bid lastGivenBid = groupn.getLastGivenBid();
 		HashMap<Integer, Value> lastValues = lastGivenBid.getValues();
-		lastValues.remove(issueNr);
+		
 		
 		// They win by chance
 		if (chosenIssuePercentage <= randomD) {
@@ -330,8 +332,14 @@ public class BidGenerator {
 			}
 		} 
 		// We win by chance
-		else {
-			finalBid = generateBidOneOut(lastValues);
+		else {			
+			try {
+				lastValues.remove(issueNr);
+				lastValues.put(issueNr, getValueBidOneOut(lastValues));
+				finalBid = new Bid(groupn.getUtilitySpace().getDomain(), lastValues);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 		
 		return finalBid;
