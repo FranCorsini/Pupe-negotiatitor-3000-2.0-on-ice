@@ -248,6 +248,88 @@
 TODO
 
 
+\subsubsection{Bid Generation}
+
+After having looked at several strategies, we decided to go with a 
+pseudo-random strategy. The major advantage of this is that we might 
+reach solutions in the solution space that are unreachable to 
+deterministic agents.
+
+The agent starts out with its best possible bid, which is probably not 
+agreeable to other parties. The agents estimation of the other parties' 
+weights and utilities improves with every message they receive. (see 
+section \ref{opponentmodel}) and with this information and our 
+knowledge about our own weights and utilities, we incrementally modify 
+our previous bid.
+
+One issue is modified at the time. To select which issue, we look at
+all our weights for different issues and the estimated weights our
+opponents have for these issues. We take a pseudo-random approach,
+taking an issue at random, but first weighing every issue with
+\begin{equation}\label{issuweight}
+W_{i} = \left[ \epsilon \times \frac{1/W_{i,0}}{\sum_{j} 1/W_{j,0}} \right] + \left[(1-\epsilon) \times \sum_{p\neq 0} \frac{W_{i,p}}{P-1} \right]
+\end{equation}
+\begin{itemize}
+    \item $W_{i}$ is the total weight of the issue $i$ for this method.
+    \item $\epsilon$ is a number in the range \verb [0,1]  that becomes smaller as we approach our deadline.
+    \item $W_{i,p}$ is the weight party $p$ assigns to the issue, where $p=0$ is the agent itself.
+    \item $P$ is the total number of parties.
+\end{itemize}
+
+As we start out with a large $\epsilon$, we change the issues that we 
+care about the least more often, as $1/W_{i,0}$ is largest for those 
+issues. As time goes on, $\epsilon$ increases, and the weights for this 
+formula shift more towards what the other parties find important 
+issues. The denominator of both fractions are to normalize the sum of 
+$W_{i}$ to one.
+
+Once we have selected which issue to change, the process of changing it 
+takes a similarly pseudo-random approach. We generate two possible 
+options for the change. The first option is the value for the issue 
+that gives \emph{us} the highest utility (except for the previously 
+selected value, because we need to change the selected issue)
+
+The second option is selected by generating a change that is ``best'' 
+for the other parties combined.
+
+\begin{eqnarray}
+    v_{0}&=&\argmax_{v} \left\{ u_{0}(i=v) \right\}\\
+    v_{1}&=&\argmax_{v} \left\{ \sum_{p\neq0} W_{i,p}\times u_{p}(i=v) \right\}
+\end{eqnarray}
+\begin{itemize}
+    \item $i$ is the issue selected to be changed.
+    \item $v$ is the value that issue $i$ takes.
+    \item $W_{i,p}$ is the weight that party $p$ assigns to issue $i$
+    \item $u_{p}(i=v)$ is the utility that party $p$ assigns to setting issue $i$ to value $v$.
+\end{itemize}
+
+Now that we have selected two possible alterations to our bid, we weigh
+these again before selecting one randomly. The weight for each option
+is as follows
+\begin{eqnarray}
+    V_{i,v_{0}} =& &W_{i,0} - \phi\\
+    V_{i,v_{1}} =& 1-&W_{i,0} + \phi
+\end{eqnarray}
+\begin{itemize}
+    \item $V_{i,v}$ is the weight assigned to changing issue $i$ into value $v$.
+    \item $W_{i,0}$ is the weight this agent assigns to issue $i$.
+    \item $\phi$ is a small number in the range \verb [-1,1] .
+\end{itemize}
+
+This means that if we care a lot about the issue we're about to change,
+($W_{i,0}$ is large) there is a high probability that pick our own
+choice of change. While if we do not care about issue $i$ a lot, we
+tend to pick the option that benefits the other parties.
+
+The parameter $\phi$ changes over time, starting out small and 
+increasing as we near the deadline, making it more likely that we 
+compromise and pick an option that benefits other parties.
+
+
+\subsubsection{Acceptation}
+
+An opponents bid is 
+
 \subsection{Implementation}
 
 \subsubsection{Group4.java}
