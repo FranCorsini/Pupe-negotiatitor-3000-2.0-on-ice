@@ -56,7 +56,18 @@ public class Party {
 						issue.updateUtility(value, rateOfChange);
 						
 						List<Integer> acc = accepted.get(issue);
-						acc.set(i, acc.get(i)+1);
+						int j=0;
+						for(ValueDiscrete v: issue.getValues()){
+							try {
+								if (v.getValue().equals(bid.getValue(i+1).toString())){
+									acc.set(j, acc.get(j)+1);
+								}
+							} catch (Exception e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							j++;
+						}
 						accepted.put(issue, acc);
 					} else if (action instanceof Offer){
 						issue.updateUtility(value, -rateOfChange);
@@ -64,7 +75,18 @@ public class Party {
 						updateWithBid(newBid, new Accept());
 						
 						List<Integer> acc = accepted.get(issue);
-						acc.set(i, acc.get(i)-1);
+						int j=0;
+						for(ValueDiscrete v: issue.getValues()){
+							try {
+								if (v.getValue().equals(bid.getValue(i+1).toString())){
+									acc.set(j, acc.get(j)-1);
+								}
+							} catch (Exception e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							j++;
+						}
 						accepted.put(issue, acc);
 					}
 					break;
@@ -82,7 +104,7 @@ public class Party {
 				max=Math.max(max, p);
 				min=Math.min(min, p);
 			}
-			spread=max-min + 1;
+			spread=max-min;
 			sumSpread=sumSpread+spread;
 		}
 		for (IssueModel issue: issueModels){
@@ -92,7 +114,7 @@ public class Party {
 				max=Math.max(max, p);
 				min=Math.min(min, p);
 			}
-			spread=max-min + 1;
+			spread=max-min;
 			issue.setValue(spread/sumSpread);
 		}
 	}
