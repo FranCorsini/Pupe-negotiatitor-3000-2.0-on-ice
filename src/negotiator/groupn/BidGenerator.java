@@ -69,12 +69,13 @@ public class BidGenerator {
 		//sum up all the values of all the parties
 		for (int i = 0; i< parties.size(); i++ ){
 			for(Entry<String, Double> e :  parties.get(i).getIssueModels().get(issueNumber).getUtility().entrySet()){
+				Double issWeight = parties.get(i).getIssueModels().get(issueNumber).getValue();
 				if(isFirst == true){
-					valueWeights.put(e.getKey(), e.getValue());
+					valueWeights.put(e.getKey(), e.getValue() * issWeight);
 					isFirst = false;
 				}
 				else{
-					valueWeights.put(e.getKey(),valueWeights.get(e.getKey()) + e.getValue());
+					valueWeights.put(e.getKey(),valueWeights.get(e.getKey()) + (e.getValue() * issWeight));
 				}
 			}
 		}
