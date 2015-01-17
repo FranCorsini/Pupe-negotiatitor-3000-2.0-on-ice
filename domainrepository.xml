@@ -21,6 +21,11 @@
                 <profile url="file:etc/templates/Group4/Group4_util3.xml"/><profile
                 	url="file:etc/templates/Group4/Group4_util4.xml">
 </profile>
+            	<profile url="file:etc/templates/Group4/Group4_util5.xml"></profile>
+            	<profile url="file:etc/templates/Group4/Group4_util6.xml"></profile>
+            	<profile url="file:etc/templates/Group4/Group4_util7.xml"></profile>
+            	<profile url="file:etc/templates/Group4/Group4_util8.xml"></profile>
+            	<profile url="file:etc/templates/Group4/Group4_util9.xml"></profile>
             </domainRepItem>
         </domainRepItem>
         <protocolRepItem/>
