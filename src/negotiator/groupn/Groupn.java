@@ -32,7 +32,6 @@ public class Groupn extends AbstractNegotiationParty {
 	private HashMap<String, Party> parties = new HashMap<String, Party>();
 	private ArrayList<List<ValueDiscrete>> values = new ArrayList<List<ValueDiscrete>>(); 
 	private BidGenerator bidGenerator;
-	private boolean isFirstturn;
 	
 	private HashMap<Bid, Double> possibleBids = new HashMap<Bid, Double>();
 	private UtilitySpace utilitySpace;
@@ -53,9 +52,6 @@ public class Groupn extends AbstractNegotiationParty {
 				  long randomSeed) {
 		// Make sure that this constructor calls it's parent.
 		super(utilitySpace, deadlines, timeline, randomSeed);
-		
-		//it's the first turn
-		isFirstturn = true;
 		
 		this.utilitySpace = utilitySpace;
 		for (Issue issue : utilitySpace.getDomain().getIssues()) {
@@ -110,9 +106,8 @@ public class Groupn extends AbstractNegotiationParty {
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
-			if(isFirstturn == true){
+			if(parties.size() < getNumberOfParties()){
 				b= bidGenerator.generateBestOverallBid();
-				isFirstturn = false;
 			}
 			
 			//do something to get the bid as answer
@@ -143,11 +138,7 @@ public class Groupn extends AbstractNegotiationParty {
 	@Override
 	public void receiveMessage(Object sender, Action action) {
 		super.receiveMessage(sender, action);
-		//if you receive an offer it means you are not the first to play
-		if (isFirstturn == true){
-			isFirstturn = false;
-		}
-		
+				
 		if (!parties.containsKey(sender.toString())){
 			Party party = new Party(sender.toString(), utilitySpace.getDomain());
 			parties.put(sender.toString(), party);
