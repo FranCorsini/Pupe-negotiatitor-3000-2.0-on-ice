@@ -87,7 +87,8 @@ public class BidGenerator {
 		
 		//get the ValueDiscrete     -----i use the first party since everyone has same discrete issues
 		ValueDiscrete value = null;
-		for(int i = 0; i< parties.get(0).getIssueModels().size(); i++){
+		int size = parties.get(0).getIssueModels().get(issueNr).getValues().size();
+		for(int i = 0; i < size; i++){
 
 			Party randomParty = parties.get(0);
 			IssueModel issueModel = randomParty.getIssueModels().get(issueNr);
@@ -122,7 +123,6 @@ public class BidGenerator {
 					weight = issueWeightsOfOtherParties.get(key) + issueModel.getValue();
 					issueWeightsOfOtherParties.put(key, weight);
 				}
-				weight = -1.0;
 			}
 		}
 		
