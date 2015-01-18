@@ -1,58 +1,58 @@
 <utility_space> 
-<objective name="Group 4" index="0" description="" etype="objective" type="objective"> 
-<issue vtype="discrete" name="Segmentation" index="1" etype="discrete" type="discrete"> 
-<item evaluation="0" index="1" value="all to one(farmer)"> 
+<objective index="0" description="" name="Group 4" type="objective" etype="objective"> 
+<issue index="1" name="Segmentation" vtype="discrete" type="discrete" etype="discrete"> 
+<item index="1" value="all to one(farmer)" evaluation="0"> 
 </item> 
-<item evaluation="100" index="2" value="all to one(cons. comp.)"> 
+<item index="2" value="all to one(cons. comp.)" evaluation="100"> 
 </item> 
-<item evaluation="0" index="3" value="all to one(municipality)"> 
+<item index="3" value="all to one(municipality)" evaluation="0"> 
 </item> 
-<item evaluation="0" index="4" value="all to two(farmer & mun.)"> 
+<item index="4" value="all to two(farmer & mun.)" evaluation="0"> 
 </item> 
-<item evaluation="40" index="5" value="all to two(farmer & cons. comp.)"> 
+<item index="5" value="all to two(farmer & cons. comp.)" evaluation="40"> 
 </item> 
-<item evaluation="40" index="6" value="all to two(mun. & cons. comp.)"> 
+<item index="6" value="all to two(mun. & cons. comp.)" evaluation="40"> 
 </item> 
-<item evaluation="20" index="7" value="33%,33%,33%"> 
-</item> 
-</issue> 
-<issue vtype="discrete" name="Water Canal" index="2" etype="discrete" type="discrete"> 
-<item evaluation="20" index="1" value="Big"> 
-</item> 
-<item evaluation="50" index="2" value="Medium"> 
-</item> 
-<item evaluation="75" index="3" value="Small"> 
-</item> 
-<item evaluation="100" index="4" value="None"> 
+<item index="7" value="33%,33%,33%" evaluation="20"> 
 </item> 
 </issue> 
-<issue vtype="discrete" name="Park" index="3" etype="discrete" type="discrete"> 
-<item evaluation="0" index="1" value="Big"> 
+<issue index="2" name="Water Canal" vtype="discrete" type="discrete" etype="discrete"> 
+<item index="1" value="Big" evaluation="20"> 
 </item> 
-<item evaluation="30" index="2" value="Medium"> 
+<item index="2" value="Medium" evaluation="50"> 
 </item> 
-<item evaluation="60" index="3" value="Small"> 
+<item index="3" value="Small" evaluation="75"> 
 </item> 
-<item evaluation="100" index="4" value="None"> 
-</item> 
-</issue> 
-<issue vtype="discrete" name="Functionality" index="4" etype="discrete" type="discrete"> 
-<item evaluation="10" index="1" value="Farming"> 
-</item> 
-<item evaluation="100" index="2" value="Commercial"> 
-</item> 
-<item evaluation="80" index="3" value="Housing"> 
-</item> 
-<item evaluation="75" index="4" value="Industrial"> 
+<item index="4" value="None" evaluation="100"> 
 </item> 
 </issue> 
-<weight index="1" value="0.2973308216061573"> 
+<issue index="3" name="Park" vtype="discrete" type="discrete" etype="discrete"> 
+<item index="1" value="Big" evaluation="0"> 
+</item> 
+<item index="2" value="Medium" evaluation="30"> 
+</item> 
+<item index="3" value="Small" evaluation="60"> 
+</item> 
+<item index="4" value="None" evaluation="100"> 
+</item> 
+</issue> 
+<issue index="4" name="Functionality" vtype="discrete" type="discrete" etype="discrete"> 
+<item index="1" value="Farming" evaluation="10"> 
+</item> 
+<item index="2" value="Commercial" evaluation="100"> 
+</item> 
+<item index="3" value="Housing" evaluation="80"> 
+</item> 
+<item index="4" value="Industrial" evaluation="75"> 
+</item> 
+</issue> 
+<weight index="1" value="0.29741092663321694"> 
 </weight> 
-<weight index="2" value="0.09612732368938705"> 
+<weight index="2" value="0.0961325994577108"> 
 </weight> 
-<weight index="3" value="0.10112305508928418"> 
+<weight index="3" value="0.10111602921286833"> 
 </weight> 
-<weight index="4" value="0.5054187996151714"> 
+<weight index="4" value="0.505340444696204"> 
 </weight> 
 </objective> 
 <discount_factor value="1.0"> 

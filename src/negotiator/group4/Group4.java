@@ -26,9 +26,9 @@ public class Group4 extends AbstractNegotiationParty {
 	
 	private Double currentUtility = 0.0;
 	private Double threshold;
-	private final Double RESERVATION_VALUE = 0.5;
-
-	private final Double STARTING_THRESHOLD = 0.8;
+	private final Double RESERVATION_VALUE;
+	private final Double STARTING_THRESHOLD = 0.9;
+	private final Double COMPROMISE_RATE = 3.0; //1 is linear, higher is slower to compromise
 	private int turns;
 	private int round = 0;
 
@@ -68,6 +68,8 @@ public class Group4 extends AbstractNegotiationParty {
 		generatePossibleBids(0, null);
 		turns = (int)deadlines.get(DeadlineType.ROUND);
 		bidGenerator = new BidGenerator(this, possibleBids, turns);//30 is placeholder for turns of deadline
+		
+		RESERVATION_VALUE = utilitySpace.getReservationValue();
 	}
 
 	private void generatePossibleBids(int n, HashMap<Integer, Value> bidValues){
@@ -109,7 +111,7 @@ public class Group4 extends AbstractNegotiationParty {
 	@Override
 	public Action chooseAction(List<Class> validActions) {
 		round++;
-		threshold = STARTING_THRESHOLD-(STARTING_THRESHOLD-RESERVATION_VALUE)*((double)round/(double)turns);
+		threshold = STARTING_THRESHOLD-(STARTING_THRESHOLD-RESERVATION_VALUE)*Math.pow((double)round/(double)turns,COMPROMISE_RATE);
 		
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
@@ -223,6 +225,9 @@ public class Group4 extends AbstractNegotiationParty {
 	public void setParties(HashMap<String, Party> parties) {
 		this.parties = parties;
 	}
-	
+
+	public int getTurns() {
+		return turns;
+	}
 
 }

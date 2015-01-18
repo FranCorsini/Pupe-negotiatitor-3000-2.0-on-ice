@@ -139,7 +139,8 @@ public class BidGenerator {
 			otherWeights.add(temp / totalWeight);
 		}
 		//make other party weights the inverse
-		otherWeights = getInverseValues(otherWeights);
+		//otherWeights = getInverseValues(otherWeights);
+		//NO! We want to change the issues that they *DO* care about!
 		
 		//get my weights
 		ArrayList<Double> myWeights = new ArrayList<Double>();
@@ -148,6 +149,7 @@ public class BidGenerator {
 		}
 		//make my party weights the inverse
 		myWeights = getInverseValues(myWeights);
+		
 		
 		//get the array of overall weights
 		ArrayList<Double> finalWeights = new ArrayList<Double>();
@@ -176,10 +178,10 @@ public class BidGenerator {
 		ArrayList<Double> returnValues = new ArrayList<Double>(); 
 		Double sumOfDivision = 0.0;
 		for(int i = 0; i<values.size();i++){
-			sumOfDivision += 1/values.get(i);
+			sumOfDivision += 1-values.get(i);
 		}
 		for(int i = 0; i<values.size();i++){
-			returnValues.add((1/values.get(i))/sumOfDivision);
+			returnValues.add((1-values.get(i))/sumOfDivision);
 		}
 		return returnValues;
 	}
