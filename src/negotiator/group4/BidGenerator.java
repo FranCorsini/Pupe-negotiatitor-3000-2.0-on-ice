@@ -178,10 +178,10 @@ public class BidGenerator {
 		ArrayList<Double> returnValues = new ArrayList<Double>(); 
 		Double sumOfDivision = 0.0;
 		for(int i = 0; i<values.size();i++){
-			sumOfDivision += 1-values.get(i);
+			sumOfDivision += 1/values.get(i);
 		}
 		for(int i = 0; i<values.size();i++){
-			returnValues.add((1-values.get(i))/sumOfDivision);
+			returnValues.add((1/values.get(i))/sumOfDivision);
 		}
 		return returnValues;
 	}

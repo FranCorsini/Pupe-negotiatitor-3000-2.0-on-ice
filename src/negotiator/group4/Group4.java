@@ -116,7 +116,7 @@ public class Group4 extends AbstractNegotiationParty {
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
-			if(round == 1){
+			if(lastGivenBid==null){
 				b = bidGenerator.generateBestOverallBid();
 			}
 			
@@ -135,7 +135,6 @@ public class Group4 extends AbstractNegotiationParty {
 				}
 				while (getUtility(b) < threshold);
 			}
-			
 			setLastGivenBid(b);
 			return new Offer(b);
 		
