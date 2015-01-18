@@ -454,7 +454,7 @@ This support function is called when the issue to change the bid on has been dec
 \begin{lstlisting}
 public Bid generateBestBid()
 \end{lstlisting}
-This function is the main function of the generating bid process. // It first call the getWeightedRandomIssueIndex() to decide which issue to change in the next bid. As explained previously, the more the issue is important to us the less it is likely to be chosen; this is even applied to the other parties models, giving higher chance to pick those which the others care less. 
+This function is the main function of the generating bid process. \\ It first call the getWeightedRandomIssueIndex() to decide which issue to change in the next bid. As explained previously, the more the issue is important to us the less it is likely to be chosen; this is even applied to the other parties models, giving higher chance to pick those which the others care less. 
 Then, a value for the chosen issue has to be taken. This is done by first finding our favourite value, then by calling getTheirBestValue() to get the other parties favourite. Then a weighted random dice is thrown to see which value will be selected. The weight depends on how much the agent care about that specific issue, and on how close the deadline is. If the value chosen has already appeared in the last proposed bid, the picking of the value is called again.   
 
 
@@ -464,7 +464,13 @@ TODO
 
 
 \section{Conclusions and Discussion}\label{conclusion}
-TODO
+Here we will briefly discuss the overall conclusions of this agent.\\
+During the development of our agent we first started off with a different strategy, connected to a geometry model to help us create the bids in a multidimensional space, but the strategy we developed would had been really computationally intensive, requiring to compute all the possible combinations of bids every time some value was updates So we turned our attention to the previously explained  strategy, with very positive overall results. \\ \\
+As the next deadline will approach, we will look into improving the overall performance, especially by improving the bid generation model. There are a few parameters that we have inserted in the model but as now are static. We want to make them dynamic regarding the opponent model, in order to adapt even more regarding the other parties. \\ \\
+Even if the strategy we implemented has some random mechanics, the weights and the importance of specific issues and values bring the agent to follow recurring patterns, The overall behaviour of the agent tends to be nice: the most common bid it proposes is the \textit{nice}  kind of bid. The second most common bid is the \textit{concession}, followed by the \textit{selfish}. Since it starts from it’s best bid overall, it’s very unlikely that makes \textit{fortunate} bids. Anyway it doesn’t make \textit{unfortunate} bids at all. \\ \\
+We started to look to pseudo-random strategy in order not to tend to get “stuck” always in the same bid, but eventually we found out that the results produced by the smart use of a weighted random generator were promising; in addition to the fact that we didn’t have to calculate all the possible bids in order to get the bid we were looking for.\\ \\
+
+
 
 
 \end{document}
