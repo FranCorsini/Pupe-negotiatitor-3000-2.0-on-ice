@@ -19,6 +19,8 @@ import negotiator.issue.ValueDiscrete;
 import negotiator.parties.AbstractNegotiationParty;
 import negotiator.utility.UtilitySpace;
 
+
+
 /**
  * This is your negotiation party.
  */
@@ -28,7 +30,7 @@ public class Group4 extends AbstractNegotiationParty {
 	private Double threshold;
 	private final Double RESERVATION_VALUE;
 	private final Double STARTING_THRESHOLD = 0.9;
-	private final Double COMPROMISE_RATE = 3.0; //1 is linear, higher is slower to compromise
+	private final Double COMPROMISE_RATE = 5.0; //1 is linear, higher is slower to compromise
 	private int turns;
 	private int round = 0;
 
@@ -66,7 +68,7 @@ public class Group4 extends AbstractNegotiationParty {
 		
 		//creates the generator
 		generatePossibleBids(0, null);
-		turns = (int)deadlines.get(DeadlineType.ROUND);
+		turns = (int)deadlines.get(DeadlineType.ROUND); //-1 helps with very low deadline, doesn't hurt large.
 		bidGenerator = new BidGenerator(this, possibleBids, turns);
 		
 		RESERVATION_VALUE = utilitySpace.getReservationValue();

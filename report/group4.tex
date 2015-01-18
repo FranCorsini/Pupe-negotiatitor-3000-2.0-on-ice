@@ -303,7 +303,8 @@ that gives \emph{us} the highest utility (except for the previously
 selected value, because we need to change the selected issue)
 
 The second option is selected by generating a change that is ``best'' 
-for the other parties combined.
+for the other parties combined, again excluding the option used in the
+previous bid, to prevent stagnation.
 
 \begin{eqnarray}
     v_{0}&=&\argmax_{v} \left\{ u_{0}(i=v) \right\}\\
@@ -343,7 +344,7 @@ compromise and pick an option that benefits other parties.
 
 An opponents bid is accepted if our utility for that bid meets a 
 certain threshold. The threshold starts at starting value $T_{0}$ and 
-descreases, reaching our \emph{reservation value} $T_{\infty}$ at the 
+decreases, reaching our \emph{reservation value} $T_{\infty}$ at the 
 deadline. The reservation value is the value below which we are not 
 accepting any bid. Any bid we accept or generate will gain us a utility 
 higher than the reservation value, making sure that we don't compromise 
@@ -478,7 +479,58 @@ Then, a value for the chosen issue has to be taken. This is done by first findin
 
 
 \section{Test Results}\label{results}
-TODO
+The test results are obviously lacking at this stage. We have only
+tested our agents in the domain we designed ourselves, and only in
+negotiation with other instances of itself. Especially the fact that we
+lack other agents to test our agent against makes the significance of
+our results lackluster.
+
+That being said, our agent performed stellar in negotiations against 
+itself. We performed tests with different numbers of parties, ranging
+from 2 to 9, and different deadlines, ranging from 4 to 512.
+
+For the different numbers of parties, we looked at negotiations with
+a number of agents from the domain we defined in section \ref{domain}.
+We used the most competitive agents available each time, the standard
+deadline of 180 rounds and performed each test ten times. In figure
+\ref{paretoparties} we show the average distance to the Pareto boundary
+for the solution that was reached. Note that for six or more parties,
+all found solution were on the Pareto boundary.
+
+\begin{figure}[t]
+    \includegraphics[width=\textwidth]{paretoparties.png}
+    \caption{Plot of the distance to the Pareto boundary for negotiations
+    with different numbers of parties. With six or more parties, the
+    agent always reached a solution on the Pareto boundary.}
+    \label{paretoparties}
+\end{figure}
+
+The fact that every solution is Pareto optimal, starting at six parties,
+might have the following explanation: as more and more parties are added
+it becomes harder to find a solution at all. It makes sense that as the
+number of parties increases, the amount of solution that are \emph{not}
+Pareto optimal decreases. The sudden drop is slightly unexpected, and
+might easily be an artifact of the used scenarios.
+
+For the different deadlines, we looked at deadlines that are powers of 
+two, starting at 4. We used the three agents from the competitive 
+scenario, described in section \ref{domain}. Each test was performed 
+ten times. The averaged results are shown in figure 
+\ref{paretodeadlines}.
+
+\begin{figure}[t]
+    \includegraphics[width=\textwidth]{paretodeadlines.png}
+    \caption{Plot of the distance to the Pareto boundary for negotiations
+    with different deadlines.}
+    \label{paretodeadlines}
+\end{figure}
+
+A clear trend can be seen that the distance to the Pareto boundary
+decreases as the number of rounds increases. This makes sense, with more
+rounds we are slower to compromise and more likely to find a solution
+that is Pareto optimal, because we are not accepting bids that may be
+sub-optimal to us.
+
 
 
 \section{Conclusions and Discussion}\label{conclusion}
