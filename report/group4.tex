@@ -342,12 +342,30 @@ compromise and pick an option that benefits other parties.
 \subsubsection{Acceptation}
 
 An opponents bid is accepted if our utility for that bid meets a 
-certain threshold. The threshold starts at \verb  1.0 and descreases 
-linearly, reaching our \emph{reservation value} at the deadline. The 
-reservation value is the value below which we are not accepting any 
-bid. Any bid we accept or generate will gain us a utility higher than 
-the reservation value, making sure that we don't compromise too 
-heavily.
+certain threshold. The threshold starts at starting value $T_{0}$ and 
+descreases, reaching our \emph{reservation value} $T_{\infty}$ at the 
+deadline. The reservation value is the value below which we are not 
+accepting any bid. Any bid we accept or generate will gain us a utility 
+higher than the reservation value, making sure that we don't compromise 
+too heavily.
+
+The decrease is not linear, however. Near the start of the negotiation,
+we don't want to compromise too much, because we don't have a lot of
+information on our opponents, and we might miss out if we lower our
+threshold too quickly. The formula for the threshold is
+\begin{equation}
+    T=T_{0}-(T_{0}-T_{\infty})\times\left(\frac{r}{R}\right)^{p}
+\end{equation}
+\begin{itemize}
+    \item $T$ is the current threshold.
+    \item $T_{0}$ is the starting threshold.
+    \item $T_{\infty}$ is our reservation value.
+    \item $r$ is the current round.
+    \item $R$ is the total number of rounds.
+    \item $p$ is a power that scales the speed of the descent. $p=1$ is
+    a linear descent, higher values of $p$ make the agent wait before
+    compromising too much.
+\end{itemize}
 
 This acceptation strategy is of course rather simple, but it makes sure
 that we accept bids that are reasonable enough that we could make them

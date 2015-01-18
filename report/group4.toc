@@ -1,19 +1,19 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {section}{\numberline {2}Domain}{2}{section.2}
-\contentsline {paragraph}{\nonumberline Background:}{2}{section*.2}
-\contentsline {paragraph}{\nonumberline Parties:}{2}{section*.3}
-\contentsline {paragraph}{\nonumberline Issues:}{3}{section*.4}
-\contentsline {paragraph}{\nonumberline Scenario 1: Competitive}{3}{section*.5}
-\contentsline {paragraph}{\nonumberline Scenario 2: Moderate Conflict}{4}{section*.6}
-\contentsline {paragraph}{\nonumberline Scenario 3: Collaborative}{4}{section*.7}
+\contentsline {paragraph}{Background:}{2}{section*.2}
+\contentsline {paragraph}{Parties:}{2}{section*.3}
+\contentsline {paragraph}{Issues:}{3}{section*.4}
+\contentsline {paragraph}{Scenario 1: Competitive}{3}{section*.5}
+\contentsline {paragraph}{Scenario 2: Moderate Conflict}{4}{section*.6}
+\contentsline {paragraph}{Scenario 3: Collaborative}{4}{section*.7}
 \contentsline {section}{\numberline {3}Agent Design}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Strategy}{5}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Bid Generation}{5}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Acceptation}{6}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Implementation}{6}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Group4.java}{6}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2}Implementation}{7}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Group4.java}{7}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Party.java}{7}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}IssueModel.java}{7}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3}IssueModel.java}{8}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}BidGenerator.java}{8}{subsubsection.3.2.4}
 \contentsline {section}{\numberline {4}Test Results}{9}{section.4}
-\contentsline {section}{\numberline {5}Conclusions and Discussion}{9}{section.5}
+\contentsline {section}{\numberline {5}Conclusions and Discussion}{10}{section.5}

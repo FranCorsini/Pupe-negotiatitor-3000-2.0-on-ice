@@ -78,7 +78,7 @@ public class BidGenerator {
 		
 		for(Entry<String, Double> e : valueWeights.entrySet()){
 			if(e.getValue() > bestValueWeight){
-				if (!previousValue.getValue().equals(e.getValue())) {
+				if (!previousValue.getValue().equals(e.getKey())) {
 					bestValueWeight = e.getValue();
 					bestValueKey = e.getKey();
 				}
@@ -93,7 +93,7 @@ public class BidGenerator {
 			Party randomParty = parties.get(0);
 			IssueModel issueModel = randomParty.getIssueModels().get(issueNr);
 			
-			if(issueModel.getValues().get(i).getValue() == bestValueKey){
+			if(issueModel.getValues().get(i).getValue().equals(bestValueKey)){
 				value = issueModel.getValues().get(i);
 			}
 		}
@@ -225,15 +225,15 @@ public class BidGenerator {
 		IssueDiscrete issue = (IssueDiscrete) us.getDomain().getIssue(issueNr-1);
 		
 		for (int j = 0; j < issue.getNumberOfValues(); j++) {
-			if (!previousValue.equals(issue.getValue(j))) {
+			if (!previousValue.getValue().equals(issue.getValue(j).getValue())) {
 				HashMap<Integer, Value> values = (HashMap<Integer, Value>) condition.clone();
 				values.put(issueNr, issue.getValue(j));
 				
 				try {
 					Bid currentBid = new Bid(us.getDomain(), values);
 					
-					if (maxUtility < us.getUtility(currentBid)) {
-						maxUtility = us.getUtility(currentBid);
+					if (maxUtility < agent.getUtility(currentBid)) {
+						maxUtility = agent.getUtility(currentBid);
 						bestValue = issue.getValue(j);
 					}
 				} catch (Exception e) {
@@ -288,7 +288,7 @@ public class BidGenerator {
 		Bid finalBid = null;
 		double randomD = random.nextDouble();
 		Bid lastGivenBid = agent.getLastGivenBid();
-		HashMap<Integer, Value> lastValues = lastGivenBid.getValues();
+		HashMap<Integer, Value> lastValues = (HashMap<Integer, Value>) lastGivenBid.getValues().clone();
 		ValueDiscrete value = null;
 		
 		// They win by chance

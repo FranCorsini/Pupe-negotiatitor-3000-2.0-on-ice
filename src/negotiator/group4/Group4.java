@@ -67,7 +67,7 @@ public class Group4 extends AbstractNegotiationParty {
 		//creates the generator
 		generatePossibleBids(0, null);
 		turns = (int)deadlines.get(DeadlineType.ROUND);
-		bidGenerator = new BidGenerator(this, possibleBids, turns);//30 is placeholder for turns of deadline
+		bidGenerator = new BidGenerator(this, possibleBids, turns);
 		
 		RESERVATION_VALUE = utilitySpace.getReservationValue();
 	}
@@ -78,7 +78,7 @@ public class Group4 extends AbstractNegotiationParty {
         	
 			try {
 				b = new Bid(utilitySpace.getDomain(), bidValues);
-				possibleBids.put(b, utilitySpace.getUtility(b));
+				possibleBids.put(b, getUtility(b));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -96,7 +96,6 @@ public class Group4 extends AbstractNegotiationParty {
         	 	
         	currentBid.put(n+1, v);
             generatePossibleBids(n+1, currentBid);
-            
         }
     }
 	
@@ -116,24 +115,30 @@ public class Group4 extends AbstractNegotiationParty {
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
-			if(lastGivenBid==null){
-				b = bidGenerator.generateBestOverallBid();
+			//This helps us get back up after proposing a bid that was bad for us as well.
+			if(getUtility(lastGivenBid) < threshold){
+				try {
+					b = utilitySpace.getMaxUtilityBid();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			
 			//do something to get the bid as answer
 			else{
 				//it generates the best not used bid
 				int index = 0;
-				do {
+				do {				
 					b = bidGenerator.generateBestBid();
 					
 					index++;
 					if (index > 100) {
 						index = 0;
-						threshold = threshold - 0.01;
+						threshold = threshold - 0.01; //safety measure
 					}
-				}
-				while (getUtility(b) < threshold);
+				} while (getUtility(b) < threshold);
+					
 			}
 			setLastGivenBid(b);
 			return new Offer(b);
