@@ -115,8 +115,7 @@ public class Group4 extends AbstractNegotiationParty {
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
-			//This helps us get back up after proposing a bid that was bad for us as well.
-			if(getUtility(lastGivenBid) < threshold){
+			if(lastGivenBid==null){
 				try {
 					b = utilitySpace.getMaxUtilityBid();
 				} catch (Exception e) {
