@@ -374,6 +374,8 @@ ourselves.
 
 \subsection{Implementation}
 
+During the development of our agent we first started off with a different strategy, connected to a geometry model to help us create the bids in a multidimensional space, but the strategy we developed would had been really computationally intensive, requiring to compute all the possible combinations of bids every time some value was updates So we turned our attention to the previously explained  strategy, with very positive overall results. \\ \\
+
 \subsubsection{Group4.java}
 
 This is the agent itself. The agent 
@@ -535,7 +537,12 @@ sub-optimal to us.
 
 \section{Conclusions and Discussion}\label{conclusion}
 Here we will briefly discuss the overall conclusions of this agent.\\
-During the development of our agent we first started off with a different strategy, connected to a geometry model to help us create the bids in a multidimensional space, but the strategy we developed would had been really computationally intensive, requiring to compute all the possible combinations of bids every time some value was updates So we turned our attention to the previously explained  strategy, with very positive overall results. \\ \\
+The advantages of using this agent and it's strategy are multiple:
+\begin{itemize}
+\item a new bid is guaranteed every time, with no possibility of getting "stuck" due to some bidding conditions
+\item easy switch between different sensitivity values only by change a few parameters
+\item no easily trackable strategy by other parties due to a random component 
+\end{itemize}
 As the next deadline will approach, we will look into improving the overall performance, especially by improving the bid generation model. There are a few parameters that we have inserted in the model but as now are static. We want to make them dynamic regarding the opponent model, in order to adapt even more regarding the other parties. \\ \\
 Even if the strategy we implemented has some random mechanics, the weights and the importance of specific issues and values bring the agent to follow recurring patterns, The overall behaviour of the agent tends to be nice: the most common bid it proposes is the \textit{nice}  kind of bid. The second most common bid is the \textit{concession}, followed by the \textit{selfish}. Since it starts from it’s best bid overall, it’s very unlikely that makes \textit{fortunate} bids. Anyway it doesn’t make \textit{unfortunate} bids at all. \\ \\
 We started to look to pseudo-random strategy in order not to tend to get “stuck” always in the same bid, but eventually we found out that the results produced by the smart use of a weighted random generator were promising; in addition to the fact that we didn’t have to calculate all the possible bids in order to get the bid we were looking for.\\ \\ \\
