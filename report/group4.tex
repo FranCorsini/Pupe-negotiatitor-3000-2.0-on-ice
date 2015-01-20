@@ -60,7 +60,7 @@
     never converge to a solution, depending on the parameters of the 
     scenario.
 
-    A good second step, would be to observe the other agents' behavior, 
+    A good second step would be to observe the other agents' behavior, 
     to work out what their utilities are. This allows us to find the 
     solution that gives us the highest utility, \emph{within} the 
     solutions we expect to be acceptable to the other parties. To this 
@@ -85,6 +85,7 @@
     and discuss these results and the performance of our agent in
     section \ref{conclusion}.
 
+\newpage
 
 \section{Domain}\label{domain}
 
@@ -270,8 +271,8 @@ deterministic agents.
 
 The agent starts out with its best possible bid, which is probably not 
 agreeable to other parties. The agents estimation of the other parties' 
-weights and utilities improves with every message they receive. (see 
-section \ref{opponentmodel}) and with this information and our 
+weights and utilities improves with every message they receive, as will be discussed in the following paragraph,
+ and with this information and our 
 knowledge about our own weights and utilities, we incrementally modify 
 our previous bid.
 
@@ -280,7 +281,7 @@ all our weights for different issues and the estimated weights our
 opponents have for these issues. We take a pseudo-random approach,
 taking an issue at random, but first weighing every issue with
 \begin{equation}\label{issuweight}
-W_{i} = \left[ \epsilon \times \frac{1/W_{i,0}}{\sum_{j} 1/W_{j,0}} \right] + \left[(1-\epsilon) \times \sum_{p\neq 0} \frac{W_{i,p}}{P-1} \right]
+W_{i} = \left[ \epsilon \times \frac{1 - W_{i,0}}{\sum_{j} 1 - W_{j,0}} \right] + \left[(1-\epsilon) \times \sum_{p\neq 0} \frac{W_{i,p}}{P-1} \right]
 \end{equation}
 \begin{itemize}
     \item $W_{i}$ is the total weight of the issue $i$ for this method.
@@ -290,7 +291,7 @@ W_{i} = \left[ \epsilon \times \frac{1/W_{i,0}}{\sum_{j} 1/W_{j,0}} \right] + \l
 \end{itemize}
 
 As we start out with a large $\epsilon$, we change the issues that we 
-care about the least more often, as $1/W_{i,0}$ is largest for those 
+care about the least more often, as $1 - W_{i,0}$ is largest for those 
 issues. As time goes on, $\epsilon$ increases, and the weights for this 
 formula shift more towards what the other parties find important 
 issues. The denominator of both fractions are to normalize the sum of 
@@ -317,7 +318,7 @@ previous bid, to prevent stagnation.
     \item $u_{p}(i=v)$ is the utility that party $p$ assigns to setting issue $i$ to value $v$.
 \end{itemize}
 
-Now that we have selected two possible alterations to our bid, we weigh
+Now that we have specified two different possibilities as our bid, we weigh
 these again before selecting one randomly. The weight for each option
 is as follows
 \begin{eqnarray}
@@ -376,9 +377,11 @@ ourselves.
 
 During the development of our agent we first started off with a different strategy, connected to a geometry model to help us create the bids in a multidimensional space, but the strategy we developed would had been really computationally intensive, requiring to compute all the possible combinations of bids every time some value was updates So we turned our attention to the previously explained  strategy, with very positive overall results. \\ \\
 
+\newpage
+
 \subsubsection{Group4.java}
 
-This is the agent itself. The agent 
+This is the agent itself. The agent:
 \begin{itemize}
 \item keeps track of incoming data from other agents through the \verb receiveMessage  method,
 \item chooses whether to accept a bid or generate and offer a new bid in the \verb chooseAction  method,
@@ -389,7 +392,7 @@ This is the agent itself. The agent
 @Override
 public void receiveMessage(Object sender, Action action)
 \end{lstlisting}
-This function is the core of the update of our predictive model. Every time an action is recieved, depending on that action (Offer, Acceptance) our model of the others parties is updated. 
+This function is the core of the update of our predictive model. Every time an action is received, depending on that action (Offer, Acceptance) our model of the others parties is updated. 
 Moreover, this functions register the bids from other parties to be processed later in the chooseAction.
 
 
@@ -397,11 +400,11 @@ Moreover, this functions register the bids from other parties to be processed la
 @Override
 public Action chooseAction(List<Class> validActions)
 \end{lstlisting}
-In the chooseAction funtion the agent itself chose what to do next. It analyses the bid previusly recieved and decide if it is worth to be accepted. If not, it generates a new bid thanks to the use of the BidGenerator
+In the chooseAction funtion the agent itself chose what to do next. It analyses the bid previously received and decides if it is worth it to accept the bid. If not, it generates a new bid thanks to the use of the BidGenerator.
 
 \subsubsection{Party.java}
 The Party class is a model of the other parties that our agent has. It
-consists of weights for each issue, and utilities for each option.
+consists of weights for each issue and utilities for each option.
 The model is updated every time the opponent accepts a bid, rejects a
 bid and makes a bid.
 
@@ -417,7 +420,7 @@ or they don't.
 public Double estimateUtility(Bid bid)
 \end{lstlisting}
 This method turns all the IssueModels that are part of this Party model
-into an estimate of utility for a particular bid. This helps us foresee
+into an estimate of utility for a particular bid. This helps us predict
 how agreeable bids are to opponents, and make more efficient bids.
 
 \subsubsection{IssueModel.java}
@@ -454,29 +457,29 @@ one.
 
 
 \subsubsection{BidGenerator.java}
-BidGenerator is a support class that manage the creation of the bids following the previuoly described strategy. 
-The main public mothods caled are:
+BidGenerator is a support class that manage the creation of the bids following the previously described strategy. 
+The main public methods caled are:
 \begin{lstlisting}
 public Bid generateBestOverallBid()
 public Bid generateBestBid()
 \end{lstlisting}
-These two functions are what the Group4 class call in order to generate the bid.\\ The first one is called the first time you have to produce a bid, getting the best utility bid for you. \\The second is called every other time in order to produce the next bid. It calls 
+These two functions are what the Group4 class call in order to generate the bid.\\ The first one is called the first time you have to generate a bid, getting the best utility bid for you. \\The second is called every other time in order to generate the next bid. It calls 
 all the support functions in order to create the bid. It will be described in more details later\\ \\
-Please note that in order to produce the bid, our strategy is followed. The other parties preferences are weighted and combined together in other to produce a overall "opponent", resulting in the others parties are seen as only one. This has done in order to semplify things by dealing with all the others as one. Obviously, this overall opponent is created by following the model we slowly built about the preferences  of the opponents.  \\ 
+Please note that in order to generate the bid, our strategy is followed. The other parties preferences are weighted and combined together in other to produce a overall "opponent", resulting in the others parties are seen as only one. This has done in order to simplify things by dealing with all the others as one. Obviously, this overall opponent is created by following the model we slowly built about the preferences of the opponents.  \\ 
 Let's take a closer look at the most important support function in this class:
 \begin{lstlisting}
 private int getWeightedRandomIssueIndex()
 \end{lstlisting}
-This is one of the core function of our strategy. Following a series of steps it return the index of the weighted choice of the weighted inverse random issues.\\ Brief explanation: first it gets the weighted sum of all the values of all the other parties regarding an issue(weighted based on the issue weight),  then normalize the values by dividing  them but they overall sum, in order to have them as a percentage; then it inverse them. The same is done with the personal preferences of the agent itself. With both the preferences of the others and ours translated into an inverse percentage regarding the issues, we combine them together following a parameter that changes over time. \\At start, this parameter is 75\% our preference and 25\%  their preference, but this parameters slowly change due to multiple factors. TODO 
+This is one of the core functions of our strategy. Following a series of steps it returns the index of the weighted choice of the weighted inverse random issues.\\ Brief explanation: first it gets the weighted sum of all the values of all the other parties regarding an issue (weighted based on the issue weight), then normalize the values by dividing them but their overall sum, in order to have them as a percentage; then it inverses them. The same is done with the personal preferences of the agent itself. With both the preferences of the others and ours translated into an inverse percentage regarding the issues, we combine them together following a parameter that changes over time. \\At start, this parameter is 75\% our preference and 25\%  their preference, but this parameters slowly change due to multiple factors. 
 \begin{lstlisting}
 private ValueDiscrete getTheirBestValue(int issueNumber)
 \end{lstlisting}
-This support function is called when the issue to change the bid on has been decided. In order to understand what the other parties (all of them takes as one entity) want, this function is called. It returns the other parties best value choice based on utility from the model. What it does: given the issue, it sum up all the values utilities for each party given each discrete value. The sum is weighted, meaning that parties that care more about that specific issue have a bigger weight. after this, it only takes the value with the highest sum. This results in the best overall value for the other parties for that specific issue.  
+This support function is called when the issue to change the bid on has been decided. In order to understand what the other parties (all of them taken as one entity) want, this function is called. It returns the other parties' best value choice based on utility from the model. What it does: given the issue, it sums up all the values utilities for each party given each discrete value. The sum is weighted, meaning that parties that care more about that specific issue have a bigger weight. After this, it only takes the value with the highest sum. This results in the best overall value for the other parties for that specific issue.  
 \begin{lstlisting}
 public Bid generateBestBid()
 \end{lstlisting}
-This function is the main function of the generating bid process. // It first call the getWeightedRandomIssueIndex() to decide which issue to change in the next bid. As explained previously, the more the issue is important to us the less it is likely to be chosen; this is even applied to the other parties models, giving higher chance to pick those which the others care less. 
-Then, a value for the chosen issue has to be taken. This is done by first finding our favourite value, then by calling getTheirBestValue() to get the other parties favourite. Then a weighted random dice is thrown to see which value will be selected. The weight depends on how much the agent care about that specific issue, and on how close the deadline is. If the value chosen has already appeared in the last proposed bid, the picking of the value is called again.   
+This function is the main function of the generating bid process. It first calls the getWeightedRandomIssueIndex function to decide which issue to change in the next bid. As explained previously, the more important the issue is to us, the less likely it is to be chosen; this is even applied to the other parties' models, giving higher chance to pick those which the others care less about. 
+Then, a value for the chosen issue has to be taken. This is done by first finding our favorite value, then by calling the getTheirBestValue function to get the other parties favorite. Then a weighted random dice is thrown to see which value will be selected. The weight depends on how much the agent care about that specific issue, and on how close the deadline is. If the value chosen has already appeared in the last proposed bid, the picking of the value is called again.   
 
 
 
@@ -492,12 +495,12 @@ itself. We performed tests with different numbers of parties, ranging
 from 2 to 9, and different deadlines, ranging from 4 to 512.
 
 For the different numbers of parties, we looked at negotiations with
-a number of agents from the domain we defined in section \ref{domain}.
-We used the most competitive agents available each time, the standard
+a number of agents using the profiles from the domain we defined in section \ref{domain}.
+We used the most competitive profiles available each time, the standard
 deadline of 180 rounds and performed each test ten times. In figure
 \ref{paretoparties} we show the average distance to the Pareto boundary
 for the solution that was reached. Note that for six or more parties,
-all found solution were on the Pareto boundary.
+all found solutions were on the Pareto boundary.
 
 \begin{figure}[t]
     \includegraphics[width=\textwidth]{paretoparties.png}
@@ -534,18 +537,19 @@ that is Pareto optimal, because we are not accepting bids that may be
 sub-optimal to us.
 
 
+\newpage
 
 \section{Conclusions and Discussion}\label{conclusion}
 Here we will briefly discuss the overall conclusions of this agent.\\
-The advantages of using this agent and it's strategy are multiple:
+The advantages of using this agent and its strategy are multiple:
 \begin{itemize}
 \item a new bid is guaranteed every time, with no possibility of getting "stuck" due to some bidding conditions
-\item easy switch between different sensitivity values only by change a few parameters
-\item no easily trackable strategy by other parties due to a random component 
+\item easy switch between different sensitivity values only by changing a few parameters
+\item no easily determinable strategy by other parties due to the pseudo-random element 
 \end{itemize}
-As the next deadline will approach, we will look into improving the overall performance, especially by improving the bid generation model. There are a few parameters that we have inserted in the model but as now are static. We want to make them dynamic regarding the opponent model, in order to adapt even more regarding the other parties. \\ \\
-Even if the strategy we implemented has some random mechanics, the weights and the importance of specific issues and values bring the agent to follow recurring patterns, The overall behaviour of the agent tends to be nice: the most common bid it proposes is the \textit{nice}  kind of bid. The second most common bid is the \textit{concession}, followed by the \textit{selfish}. Since it starts from it’s best bid overall, it’s very unlikely that makes \textit{fortunate} bids. Anyway it doesn’t make \textit{unfortunate} bids at all. \\ \\
-We started to look to pseudo-random strategy in order not to tend to get “stuck” always in the same bid, but eventually we found out that the results produced by the smart use of a weighted random generator were promising; in addition to the fact that we didn’t have to calculate all the possible bids in order to get the bid we were looking for.\\ \\ \\
+In phase two, we will look into improving the overall performance, especially by improving the bid generation model. There are a few parameters that we have inserted in the model but as now are static. We want to make them dynamic regarding the opponent model, in order to adapt even more regarding the other parties. \\ \\
+Even if the strategy we implemented has some random mechanics, the weights and the importance of specific issues and values bring the agent to follow recurring patterns, The overall behaviour of the agent tends to be nice: the most common bid it proposes is the \textit{nice}  kind of bid. The second most common bid is the \textit{concession}, followed by the \textit{selfish}. Since it starts from its best bid overall, it's very unlikely that it generates \textit{fortunate} bids. Though it has to be stated that it is very unlikely that it generates \textit{unfortunate} bids at all. \\ \\
+We started to look at the pseudo-random strategy in order to avoid always getting “stuck” in the same bid, but eventually we found out that the results produced by the smart use of a weighted random generator were promising; in addition to the fact that we didn't have to calculate all the possible bids in order to get the bid we were looking for.\\ \\ \\
 
 
 \end{document}
