@@ -114,6 +114,10 @@ public class Group4 extends AbstractNegotiationParty {
 		round++;
 		threshold = STARTING_THRESHOLD-(STARTING_THRESHOLD-RESERVATION_VALUE)*Math.pow((double)round/(double)turns,COMPROMISE_RATE);
 		
+		if(round >= turns){
+			return new Accept();
+		}
+		
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;
 			//if it's first turn, get out with best possible bid
