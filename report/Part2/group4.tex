@@ -1,0 +1,66 @@
+\documentclass[a4,11pt]{scrartcl} 
+
+\title{Artificial Intelligence Techniques}
+\subtitle{Negotiation Agent Design - Analysis Report}
+\author{\emph{Group 4}\\
+\begin{tabular}{ll}
+\texttt{4004868}&Tung Phan\\
+\texttt{4409159}&Francesco Corsini\\
+\texttt{1369326}&Dirk Meijer
+\end{tabular}} 
+
+\usepackage[margin=1.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage[sfdefault]{cabin}
+\usepackage{listings}
+
+\setlength{\parindent}{0pt}
+\DeclareTextFontCommand{\emph}{\bf}
+\lstset{language=Java,
+        breaklines=true,
+        basicstyle=\small\ttfamily,
+        keywordstyle=\color{blue},
+        frame=single}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{-0.5\baselineskip}}{\temptwo}
+
+\begin{document}
+\maketitle
+
+\null\vfill
+\tableofcontents
+\pagebreak
+
+\section{Introduction}
+To prepare the competing negotiation agents for the upcoming tournament, all compiled agents were publically made available. This enabled us to run tests against these other agents, generating data such as the the utility of the agent per session, the distances of the solutions to Pareto and Nash, social welfare and whether the agents reached an agreement or not. These results are invaluable to tweaking and optimizing our agent, which helps us prepare for the tournament.
+\\ \\
+Our testing approach will be elaborated in section \ref{sec:testingapproach}, followed by the test results in section \ref{sec:testresults}. Using these test results, we made impovements to our agent, which will be discussed in section \ref{sec:improvements}, along with our reasons for those changes. Finally, we will do a quick test to verify that the changes we made actually improved the performance of our agent in section \ref{sec:finalresults}.
+    
+\section{Testing approach}
+\label{sec:testingapproach}
+In order to produce meaningful test results, we first have to prepare a testing approach. Putting it into context, we have to choose the right negotiation profiles, the number of parties per negotiation and whether we use all the available parties.
+\\ \\
+We chose to keep using our domain for the testing, because we are the most familiar with our own profiles and scenarios. Our domain contains 3 distinct scenarios, which is elaborated in the previous agent report. We also discovered that using the other domains did not provide enough diversity in choices, resulting in almost the same results across all scenarios. 
+\\ \\
+The amount of parties involved per session is set to 3, as more will only increase the amount of test results without providing actual additional useful data, and it further complicates the negotiation sessions due to the amount of parties needed to agree.
+We opted to leave the deadline at 180, as we see it as a reasonable deadline. For our own agent, the deadline will have minimal impact, as our behaviour scales along with the deadline. The only difference it will have is that our agent will concede quicker, because the deadline is nearer.
+\\ \\
+We ommitted group 9 from our testing, because group 9 was the only group producing NullPointerExceptions.
+
+\section{Test results}
+\label{sec:testresults}
+
+\section{Improvements made to the agent}
+\label{sec:improvements}
+
+\section{Final results}
+\label{sec:finalresults}
+
+\end{document}
