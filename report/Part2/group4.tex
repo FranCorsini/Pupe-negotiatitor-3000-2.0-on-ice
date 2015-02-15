@@ -62,9 +62,23 @@ We ommitted group 9 from our testing, because group 9 was the only group produci
 \section{Improvements made to the agent}
 Given how the agent was programmed in first place, no big major code rework were made. This is because we already implemented the agent with a set of parameters, ready to be tweaked during this second iteration of the project. The process was to see the test results, change a little bit the parameters, run the test again and try to improve the overall performance.
 \\ \\
-The parameters we mainly worked on were those regarding the acceptance of the bid.
+The parameter we mainly worked on was the parameter that changed the shape of the threshold function for the acceptance of the bid. For easy reference, the definition of the function is shown below:
+\\
+\begin{equation}
+    T=T_{0}-(T_{0}-T_{\infty})\times\left(\frac{r}{R}\right)^{p}
+\end{equation}
+\begin{itemize}
+    \item $T$ is the current threshold.
+    \item $T_{0}$ is the starting threshold.
+    \item $T_{\infty}$ is our reservation value.
+    \item $r$ is the current round.
+    \item $R$ is the total number of rounds.
+    \item $p$ is a power that scales the speed of the descent. $p=1$ is
+    a linear descent, higher values of $p$ make the agent wait before
+    compromising too much.
+\end{itemize}
 
-The first one was the parameter that changed the shape of the threshold function for the acceptance of the bid. We started with $p=5$, that made the acceptance function almost linear, starting from our best utility point and ending in our reservation value (in this case 0). However, after intense testing, we discovered that $p=25$ is the best, making the function flat in the beginning of the negotiation(early stage, keep position) and steep in the end, making more concessions as the deadline approaches. This is shown in figure \ref{fig:chicken}.
+We started with $p=5$, that made the acceptance function almost linear, starting from our best utility point and ending in our reservation value (in this case 0). However, after a sufficient amount of testing, we discovered that $p=25$ is the best, making the function flat in the beginning of the negotiation (early stage, holding its ground) and steep in the end, making more concessions as the deadline approaches. This is shown in figure \ref{fig:chicken}.
 \label{sec:improvements}
 \begin{figure}[ht]
     \centering
