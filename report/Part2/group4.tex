@@ -47,7 +47,7 @@ Our testing approach will be elaborated in section \ref{sec:testingapproach}, fo
 \label{sec:testingapproach}
 In order to produce meaningful test results, we first have to prepare a testing approach. Putting it into context, we have to choose the right negotiation profiles, the number of parties per negotiation and whether we use all the available parties.
 \\ \\
-We chose to keep using our domain for the testing, because we are the most familiar with our own profiles and scenarios. Our domain contains 3 distinct scenarios, which is elaborated in the previous agent report. We also discovered that using the other domains did not provide enough diversity in choices, resulting in almost the same results across all scenarios. 
+We chose to use a different domain for our test, since we wanted even to see how our agent performed in a different domain. We picked the Tram Domain. This domain has 3 different scenarios, we therefore tested them all. We also discovered that using the other domains did not provide enough diversity in choices, resulting in almost the same results across all scenarios. 
 \\ \\
 The amount of parties involved per session is set to 3, as more will only increase the amount of test results without providing actual additional useful data, and it further complicates the negotiation sessions due to the amount of parties needed to agree.
 We opted to leave the deadline at 180, as we see it as a reasonable deadline. For our own agent, the deadline will have minimal impact, as our behaviour scales along with the deadline. The only difference it will have is that our agent will concede quicker, because the deadline is nearer.
@@ -55,6 +55,56 @@ We opted to leave the deadline at 180, as we see it as a reasonable deadline. Fo
 We ommitted group 9 from our testing, because group 9 was the only group producing \verb|NullPointerExceptions|.
 
 \section{Test results}
+We therefore tested our agent on a tournament. Following here are the results with the parameter $p=5$ (see next section for details).
+Tram Domain:
+\begin{itemize}
+
+  \item Profiles: 1,2,3
+  \begin{itemize}
+  \item Total Negotiatiations: 216
+  \item Average Utility: 0.8776
+  \item Max Utility: 1.0
+  \item Min Utility: 0.6454
+  \item Average welfare Utility: 2.5036
+  \item Pareto counting: 154
+  \item Nash counting: 9
+\end{itemize}
+
+  \item Profiles: 4,5,6
+  \begin{itemize}
+  \item Total Negotiatiations: 216
+  \item Average Utility: 0.8287
+  \item Max Utility: 1.0
+  \item Min Utility: 0.5123
+  \item Average welfare Utility: 2.3010
+  \item Pareto counting: 160
+  \item Nash counting: 2
+\end{itemize}
+
+  \item Profiles: 7,8,9
+  \begin{itemize}
+  \item Total Negotiatiations: 216
+  \item Average Utility: 0.7780
+  \item Max Utility: 1.0
+  \item Min Utility: 0.5992
+  \item Average welfare Utility: 2.1345
+  \item Pareto counting: 122
+  \item Nash counting: 2
+\end{itemize}
+\end{itemize}
+
+From the above we can clearly see that the first implementation of our agents already provide great results. 
+\\ 
+For every set of profiles(collaborative, competitive, moderate competitive) the following can be seen:
+  \begin{itemize} 
+  \item utility always over the 77\%
+  \item more than half of the sessions have a Pareto outcome
+  \item the welfare utility is always above 2
+  \item the maximum utility reached is always 1
+  \item the minimum utility is never lower than 0.5
+  \end{itemize}
+
+However we were not satisfied with our utility performance, believing that a better grade could be achieved. For that we decided to change our agent, as described in the following section.  
 \label{sec:testresults}
 
 
