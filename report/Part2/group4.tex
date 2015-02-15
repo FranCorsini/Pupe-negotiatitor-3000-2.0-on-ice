@@ -92,7 +92,11 @@ We made the choice to go to $p=25$ empirically. It turned out that one agent in 
 
 \section{Final results}
 
-To benchmark our improvement, we performed several tournaments, with all the available agents (except for Group9, which kept throwing \verb|NullPointerExceptions|) on domains other than our own, with varying deadlines. In figure \ref{fig:utility} we show the averaged utility over all the sessions in the tournament for each agent with $p=25$. Our agent, Group4, and the agent Group7 outperform the rest by a small amount. And with $p=25$, we outperform Group7 by a tiny amount, averaging at $$E[U_{4}]=0.9200$$ while Group7 averages at $$E[U_{7}]=0.918$$
+To benchmark our improvement, we performed several tournaments, with all 
+the available agents (except for Group9, which kept throwing 
+\verb|NullPointerExceptions|) on our own domain, 
+with 
+varying deadlines. In figure \ref{fig:utility} we show the averaged utility over all the sessions in the tournament for each agent with $p=25$. Our agent, Group4, and the agent Group7 outperform the rest by a small amount. And with $p=25$, we outperform Group7 by a tiny amount, averaging at $$E[U_{4}]=0.9200$$ while Group7 averages at $$E[U_{7}]=0.918$$
 
 This improved utility does harm the \emph{Social Welfare} slightly, but not by a significant amount.
 
