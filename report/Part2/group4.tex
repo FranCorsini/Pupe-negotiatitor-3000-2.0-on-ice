@@ -78,7 +78,7 @@ The parameter we mainly worked on was the parameter that changed the shape of th
     compromising too much.
 \end{itemize}
 
-We started with $p=5$, that made the acceptance function almost linear, starting from our best utility point and ending in our reservation value (in this case 0). However, after a sufficient amount of testing, we discovered that $p=25$ is the best, making the function flat in the beginning of the negotiation (early stage, holding its ground) and steep in the end, making more concessions as the deadline approaches. This is shown in figure \ref{fig:chicken}.
+The first one was the parameter that changed the shape of the threshold function for the acceptance of the bid. We started with $p=5$, that made our acceptance function a good compromise between our own utility and the overall welfare. However, after intense testing, we discovered that $p=25$ is the best for our own utility, making the function flat in the beginning of the negotiation(early stage, keep position) and steep in the end, making more concessions as the deadline approaches. This is shown in figure \ref{fig:chicken}.
 \label{sec:improvements}
 \begin{figure}[ht]
     \centering
@@ -94,7 +94,7 @@ We made the choice to go to $p=25$ empirically. It turned out that one agent in 
 
 To benchmark our improvement, we performed several tournaments, with all 
 the available agents (except for Group9, which kept throwing 
-\verb|NullPointerExceptions|) on our own domain, 
+\verb|NullPointerExceptions|) on differents domains, 
 with 
 varying deadlines. In figure \ref{fig:utility} we show the averaged utility over all the sessions in the tournament for each agent with $p=25$. Our agent, Group4, and the agent Group7 outperform the rest by a small amount. And with $p=25$, we outperform Group7 by a tiny amount, averaging at $$E[U_{4}]=0.9200$$ while Group7 averages at $$E[U_{7}]=0.918$$
 
