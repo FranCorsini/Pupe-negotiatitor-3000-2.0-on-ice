@@ -1,0 +1,29 @@
+Starting negotiation session.
+Round 1
+  Turn 1: Party 1       (Offer: Bid[Functionality: Farming, Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, ])
+  Turn 2: Party 2       (Offer: Bid[Functionality: Commercial, Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, ])
+  Turn 3: Party 3       (Offer: Bid[Functionality: Industrial, Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, ])
+Round 2
+  Turn 1: Party 1       (Offer: Bid[Functionality: Farming, Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, ])
+  Turn 2: Party 2       (Offer: Bid[Functionality: Commercial, Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, ])
+  Turn 3: Party 3       (Offer: Bid[Functionality: Industrial, Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, ])
+Round 3
+  Turn 1: Party 1       (Offer: Bid[Functionality: Farming, Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: Big, ])
+  Turn 2: Party 2       (Offer: Bid[Functionality: Commercial, Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, ])
+  Turn 3: Party 3       (Offer: Bid[Functionality: Industrial, Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, ])
+Round 4
+  Turn 1: Party 1       (Offer: Bid[Functionality: Farming, Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, ])
+  Turn 2: Party 2       (Offer: Bid[Functionality: Commercial, Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Small, ])
+  Turn 3: Party 3       (Accept)
+Round 5
+  Turn 1: Party 1       (Accept)
+Deadline reached: {ROUND=5}
+No agreement found.
+Finished negotiation session in 0.009s
+Time (s):		0.008913096
+Rounds			5
+Agreement?:		No
+Agent utility:		0.00000 (Party 1)
+Agent utility:		0.00000 (Party 2)
+Agent utility:		0.00000 (Party 3)
+

@@ -1,0 +1,1687 @@
+Starting negotiation session.
+Round 1
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 2
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 3
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 4
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 5
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 6
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 7
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 8
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 9
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 10
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 11
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 12
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 13
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 14
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 15
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 16
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 17
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 18
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 19
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 20
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 21
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 22
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 23
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 24
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 25
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 26
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 27
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 28
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 29
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 30
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 31
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 32
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 33
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 34
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 35
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 36
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 37
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 38
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 39
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 40
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 41
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 42
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 43
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 44
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 45
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 46
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 47
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Industrial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 48
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 49
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 50
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 51
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 52
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 53
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 54
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 55
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 56
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 57
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 58
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 59
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 60
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 61
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 62
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 63
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 64
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 65
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 66
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 67
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 68
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 69
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 70
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 71
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 72
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 73
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 74
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 75
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 76
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 77
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 78
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 79
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 80
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 81
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 82
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 83
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 84
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 85
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 86
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 87
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 88
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 89
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 90
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 91
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 92
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 93
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 94
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 95
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 96
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 97
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 98
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 99
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 100
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 101
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 102
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 103
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 104
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 105
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 106
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 107
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 108
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 109
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 110
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 111
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 112
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 113
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 114
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 115
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 116
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 117
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 118
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 119
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 120
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 121
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 122
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 123
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 124
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 125
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 126
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 127
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 128
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 129
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 130
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 131
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 132
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 133
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 134
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 135
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 136
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 137
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 138
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 139
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 140
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 141
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 142
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 143
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 144
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 145
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 146
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 147
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 148
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 149
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 150
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 151
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 152
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 153
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 154
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 155
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 156
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 157
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 158
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 159
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 160
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 161
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 162
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 163
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 164
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 165
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 166
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 167
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 168
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 169
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 170
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 171
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 172
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 173
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 174
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 175
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 176
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 177
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 178
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 179
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 180
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Commercial, ])
+Round 181
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Commercial, ])
+Round 182
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Commercial, ])
+Round 183
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 184
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 185
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 186
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Housing, ])
+Round 187
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Housing, ])
+Round 188
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 189
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 190
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 191
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 192
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 193
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 194
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 195
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 196
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 197
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 198
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 199
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 200
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 201
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 202
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 203
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 204
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 205
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 206
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 207
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 208
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 209
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 210
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 211
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 212
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 213
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 214
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 215
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 216
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 217
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 218
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 219
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 220
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 221
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 222
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 223
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 224
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 225
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 226
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 227
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 228
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 229
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 230
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 231
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 232
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 233
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 234
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 235
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 236
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 237
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 238
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 239
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 240
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 241
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 242
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 243
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 244
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 245
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 246
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 247
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 248
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 249
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 250
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 251
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 252
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 253
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 254
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 255
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 256
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 257
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 258
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 259
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 260
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 261
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 262
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 263
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 264
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 265
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 266
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 267
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 268
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 269
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 270
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 271
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 272
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 273
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 274
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 275
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 276
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 277
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 278
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 279
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 280
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 281
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 282
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 283
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 284
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 285
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 286
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 287
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 288
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 289
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 290
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 291
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 292
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 293
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 294
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 295
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 296
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 297
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 298
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 299
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 300
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 301
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 302
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 303
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 304
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 305
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 306
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 307
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 308
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 309
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 310
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 311
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 312
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 313
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 314
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 315
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 316
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 317
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 318
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 319
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 320
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 321
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 322
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 323
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 324
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 325
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 326
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 327
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 328
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 329
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 330
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 331
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Industrial, ])
+Round 332
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+Round 333
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 334
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 335
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Industrial, ])
+Round 336
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 337
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 338
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 339
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 340
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 341
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 342
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 343
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+Round 344
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+Round 345
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 346
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+Round 347
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 348
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 349
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 350
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 351
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 352
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 353
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 354
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 355
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 356
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+Round 357
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+Round 358
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+Round 359
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+Round 360
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+Round 361
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 362
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+Round 363
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 364
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 365
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 366
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 367
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 368
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 369
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 370
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 371
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 372
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 373
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 374
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 375
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 376
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 377
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 378
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 379
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 380
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 381
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Big, Functionality: Industrial, ])
+Round 382
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 383
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 384
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 385
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 386
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 387
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 388
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 389
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 390
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 391
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 392
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Farming, ])
+Round 393
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 394
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 395
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Medium, Functionality: Industrial, ])
+Round 396
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 397
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 398
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 399
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Housing, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 400
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 401
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 402
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 403
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 404
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Industrial, ])
+Round 405
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+Round 406
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 407
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 408
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 409
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 410
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Medium, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 411
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Big, Functionality: Commercial, ])
+  Turn 3: Party 3       (Accept)
+Round 412
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 413
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 414
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Small, Park: Big, Functionality: Housing, ])
+  Turn 3: Party 3       (Accept)
+Round 415
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Big, Functionality: Housing, ])
+  Turn 3: Party 3       (Accept)
+Round 416
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Small, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & mun.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 417
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 418
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Accept)
+Found an agreement: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Farming, ]
+Finished negotiation session in 0.312s
+Time (s):		0.311690263
+Rounds			419
+Agreement?:		Yes
+Approval:		3
+Min. utility:		0.60245
+Max. utility:		0.87568
+Distance to pareto:	0.00000
+Distance to Nash:	0.00000
+Social welfare:		2.09387
+Agent utility:		0.60245 (Party 1)
+Agent utility:		0.61574 (Party 2)
+Agent utility:		0.87568 (Party 3)
+

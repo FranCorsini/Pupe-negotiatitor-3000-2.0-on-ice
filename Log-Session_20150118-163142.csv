@@ -1,0 +1,70 @@
+Starting negotiation session.
+Round 1
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+  Turn 4: Party 4       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 5: Party 5       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: None, Park: None, Functionality: Commercial, ])
+  Turn 6: Party 6       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+  Turn 7: Party 7       (Accept)
+  Turn 8: Party 8       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 9: Party 9       (Accept)
+Round 2
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+  Turn 4: Party 4       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 5: Party 5       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 6: Party 6       (Offer: Bid[Segmentation: 33%,33%,33%, Water Canal: Big, Park: Big, Functionality: Farming, ])
+  Turn 7: Party 7       (Accept)
+  Turn 8: Party 8       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 9: Party 9       (Accept)
+Round 3
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: None, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Medium, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+  Turn 4: Party 4       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 5: Party 5       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Commercial, ])
+  Turn 6: Party 6       (Offer: Bid[Segmentation: 33%,33%,33%, Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 7: Party 7       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Farming, ])
+  Turn 8: Party 8       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Housing, ])
+  Turn 9: Party 9       (Accept)
+Round 4
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Medium, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+  Turn 4: Party 4       (Accept)
+  Turn 5: Party 5       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: Small, Functionality: Housing, ])
+  Turn 6: Party 6       (Offer: Bid[Segmentation: 33%,33%,33%, Water Canal: Big, Park: Big, Functionality: Farming, ])
+  Turn 7: Party 7       (Accept)
+  Turn 8: Party 8       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ])
+  Turn 9: Party 9       (Accept)
+Round 5
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Accept)
+  Turn 3: Party 3       (Accept)
+  Turn 4: Party 4       (Accept)
+  Turn 5: Party 5       (Accept)
+  Turn 6: Party 6       (Accept)
+  Turn 7: Party 7       (Accept)
+Found an agreement: Bid[Segmentation: all to one(cons. comp.), Water Canal: Big, Park: None, Functionality: Commercial, ]
+Finished negotiation session in 0.078s
+Time (s):		0.078120765
+Rounds			6
+Agreement?:		Yes
+Approval:		9
+Min. utility:		0.18425
+Max. utility:		0.99995
+Distance to pareto:	0.00000
+Distance to Nash:	0.79767
+Social welfare:		6.31653
+Agent utility:		0.18425 (Party 1)
+Agent utility:		0.83904 (Party 2)
+Agent utility:		0.67113 (Party 3)
+Agent utility:		0.32153 (Party 4)
+Agent utility:		0.92309 (Party 5)
+Agent utility:		0.57888 (Party 6)
+Agent utility:		0.79875 (Party 7)
+Agent utility:		0.99991 (Party 8)
+Agent utility:		0.99995 (Party 9)
+

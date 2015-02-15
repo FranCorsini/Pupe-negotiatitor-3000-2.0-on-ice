@@ -30,7 +30,7 @@ public class Group4 extends AbstractNegotiationParty {
 	private Double threshold;
 	private final Double RESERVATION_VALUE;
 	private final Double STARTING_THRESHOLD = 0.9;
-	private final Double COMPROMISE_RATE = 5.0; //1 is linear, higher is slower to compromise
+	private final Double COMPROMISE_RATE = 4.0; //1 is linear, higher is slower to compromise
 	private int turns;
 	private int round = 0;
 
@@ -114,9 +114,9 @@ public class Group4 extends AbstractNegotiationParty {
 		round++;
 		threshold = STARTING_THRESHOLD-(STARTING_THRESHOLD-RESERVATION_VALUE)*Math.pow((double)round/(double)turns,COMPROMISE_RATE);
 		
-		if(round >= turns){
+		/*if(round >= turns){
 			return new Accept();
-		}
+		}*/
 		
 		if (!validActions.contains(Accept.class) || currentUtility<threshold) {
 			Bid b = null;

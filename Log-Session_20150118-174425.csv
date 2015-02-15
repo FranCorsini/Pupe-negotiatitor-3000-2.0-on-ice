@@ -1,0 +1,42 @@
+Starting negotiation session.
+Round 1
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 2
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Medium, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 3
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Small, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Industrial, ])
+Round 4
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Small, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Housing, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+Round 5
+  Turn 1: Party 1       (Accept)
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Big, Functionality: Housing, ])
+  Turn 3: Party 3       (Accept)
+Round 6
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Housing, ])
+  Turn 3: Party 3       (Accept)
+Round 7
+  Turn 1: Party 1       (Accept)
+Found an agreement: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: Medium, Functionality: Housing, ]
+Finished negotiation session in 0.028s
+Time (s):		0.02804926
+Rounds			8
+Agreement?:		Yes
+Approval:		3
+Min. utility:		0.34928
+Max. utility:		0.87012
+Distance to pareto:	0.00000
+Distance to Nash:	0.38320
+Social welfare:		1.96074
+Agent utility:		0.34928 (Party 1)
+Agent utility:		0.87012 (Party 2)
+Agent utility:		0.74135 (Party 3)
+

@@ -1,0 +1,11 @@
+Starting negotiation session.
+Round 1
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Medium, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Industrial, ])
+Round 2
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: Medium, Park: Big, Functionality: Farming, ])
+  Turn 2: Party 2       (Offer: Bid[Segmentation: all to one(cons. comp.), Water Canal: Small, Park: None, Functionality: Commercial, ])
+  Turn 3: Party 3       (Offer: Bid[Segmentation: all to two(farmer & cons. comp.), Water Canal: Big, Park: Big, Functionality: Farming, ])
+Round 3
+  Turn 1: Party 1       (Offer: Bid[Segmentation: all to one(farmer), Water Canal: None, Park: Big, Functionality: Farming, ])
